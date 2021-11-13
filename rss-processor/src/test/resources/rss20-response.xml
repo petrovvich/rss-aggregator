@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+
+    <channel>
+        <title>JetBrains Blog</title>
+        <atom:link href="https://blog.jetbrains.com/feed/" rel="self" type="application/rss+xml"/>
+        <link>https://blog.jetbrains.com</link>
+        <description>Developer Tools for Professionals and Teams</description>
+        <lastBuildDate>Fri, 12 Nov 2021 14:55:09 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly
+        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1
+        </sy:updateFrequency>
+
+        <image>
+            <url>https://blog.jetbrains.com/wp-content/uploads/2020/07/favicon-32x32-1.png</url>
+            <title>JetBrains Blog</title>
+            <link>https://blog.jetbrains.com</link>
+            <width>32</width>
+            <height>32</height>
+        </image>
+        <item>
+            <title>WebStorm 2021.3 Beta 2</title>
+            <link>https://blog.jetbrains.com/webstorm/2021/11/webstorm-2021-3-beta-2/</link>
+
+            <dc:creator><![CDATA[Ekaterina Ryabukha]]></dc:creator>
+            <pubDate>Fri, 12 Nov 2021 14:55:08 +0000</pubDate>
+            <featuredImage>https://blog.jetbrains.com/wp-content/uploads/2021/11/Beta_Preview_image_1280x600.png
+            </featuredImage>
+            <category><![CDATA[eap]]></category>
+            <category><![CDATA[webstorm-2021-3]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=webstorm&#038;p=201281</guid>
+
+            <description>
+                <![CDATA[WebStorm 2021.3 Beta 2 is now available! You can upgrade to the latest build using the Toolbox App or from our website. To catch up on what has already been implemented, check out our previous EAP blog posts. DOWNLOAD WEBSTORM 2021.3 BETA We’d like to thank everyone who has been testing out our EAP builds [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>WebStorm 2021.3 Beta 2 is now available! You can upgrade to the latest build using the <a href="https://www.jetbrains.com/toolbox/app/">Toolbox App</a> or from our website. To catch up on what has already been implemented, check out our <a href="https://blog.jetbrains.com/webstorm/tag/webstorm-2021-3/">previous EAP blog posts</a>.</p>
+<p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/webstorm/nextversion">DOWNLOAD WEBSTORM 2021.3 BETA</a></p>
+<p>We’d like to thank everyone who has been testing out our EAP builds and shared their feedback with us! If you’ve tried them but you haven’t had a chance to give us your feedback, please do – here’s <a href="https://youtrack.jetbrains.com/issues/WEB">our issue tracker</a>.</p>
+<p>Below you’ll find some of the highlights of WebStorm 2021.3 Beta 2.</p>
+<h2 id="angular_support">Angular 13 support</h2>
+<p>One of the most pressing problems that we’ve addressed in this build is support for Angular 13. It was broken because of the changes to the Angular Package Format. This build takes these changes into account and supports the new version of Angular.</p>
+<h2 id="new_intention_for_converting_to_jsdoc_comments">New intention for converting to JSDoc comments</h2>
+<p>WebStorm can now help you replace single and multi-line comments with JSDoc comments in one click. To try it out, place the caret on a comment, press <em>⌥⏎ / Alt+Enter </em>and select <em>Replace with JSDoc comment</em>.</p>
+<p><img src="https://blog.jetbrains.com/wp-content/uploads/2021/11/replace-with-jsdoc-comment.png" alt="replace-with-jsdoc-comment" width="600" data-gif-src="https://blog.jetbrains.com/wp-content/uploads/2021/11/replace-with-jsdoc-comment.gif" /></p>
+<h2 id="built_in_troubleshooting_tool">Built-in troubleshooting tool</h2>
+<p>WebStorm 2021.3 comes with cache recovery, a useful built-in troubleshooting tool that can be invoked right from the main menu.</p>
+<p>This action has been introduced to solve problems related to cache inconsistency without requiring complete cache invalidation, when possible. The new <em>Run Guided Cache Recovery…</em> action offers two main advantages compared to <em>Invalidate Caches</em>. <em>Run Guided Cache Recovery…</em> can be performed per project, and it’s faster.</p>
+<p><em>The Run Guided Cache Recovery… </em>action consists of a sequence of several actions, with the ability to stop after each of them. Each action will take less time than reindexing and won’t lead to the loss of caches for other projects. The final action –<em> Invalidate Caches and Restart </em>– will reboot the IDE. After each action is performed, you’ll see a notification with the option to abort the cache recovery process or perform the next step.</p>
+<p><img src="https://blog.jetbrains.com/wp-content/uploads/2021/11/built-in-troubleshooting-webstorm.png" alt="built-in-troubleshooting-webstorm" width="600" /></p>
+<p>That’s it for today. For a full list of the latest enhancements available in this update, please see the <a href="https://confluence.jetbrains.com/display/WI/WebStorm+213.5744.37+Release+Notes">release notes</a>.</p>
+<p><em>The WebStorm team</em></p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>PhpStorm 2021.3 Beta</title>
+            <link>https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-beta/</link>
+
+            <dc:creator><![CDATA[Roman Pronskiy]]></dc:creator>
+            <pubDate>Fri, 12 Nov 2021 14:22:15 +0000</pubDate>
+            <featuredImage>
+                https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Featured_image_1280x600_PhpStorm-2x.png
+            </featuredImage>
+            <category><![CDATA[eap]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=phpstorm&#038;p=201696</guid>
+
+            <description>
+                <![CDATA[PhpStorm 2021.3 Beta is now available. Below is a roundup of the most notable updates for the upcoming 2021.3 release. The links will take you to the EAP posts published over the last few months, which contain detailed descriptions of each feature. PhpStorm 2021.3 Beta also delivers some updates we haven’t previously covered. Have a [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-201743" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Post_image_1280x600_PhpStorm-2x.png" alt="" width="1280"></p>
+<p>PhpStorm 2021.3 Beta is now available.</p>
+<p>Below is a roundup of the most notable updates for the upcoming 2021.3 release. The links will take you to the EAP posts published over the last few months, which contain detailed descriptions of each feature.</p>
+<p>PhpStorm 2021.3 Beta also delivers some updates we haven’t previously covered. Have a look!</p>
+<p><strong>Full support for PHP 8.1</strong></p>
+<ul>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#readonly_properties">Readonly properties</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#pure_intersection_types">Pure intersection types</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#new_return_type_never">New return type: `never`</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#final_constants">Final constants</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-6/#new_operator_in_initializers">`new` operator in initializers</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-6/#first_class_callables">First-class callables</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-6/#deprecations">Deprecations</a></li>
+</ul>
+<p><strong>Generics in PHP</strong></p>
+<ul>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#improved_support_for_doctrine_collections">Improved support for Doctrine Collections</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#support_for_future_laravel_collections">Support for future Laravel 9 collections</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#infer_generic_types_from_constructor">​​Infer generic types from constructor</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/09/phpstorm-2021-3-early-access-program-is-open/#support_for_the_phpstan_annotation_for_templates">​​Support for the phpstan-* annotation for templates</a></li>
+</ul>
+<p><strong>Improved refactorings</strong></p>
+<ul>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-5/#inline_function_or_method">Inline function or method</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-5/#inline_variable">Inline variable</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-5/#introduce_extract_variable">Introduce (extract) variable</a></li>
+<li><strong><em>New!</em></strong> Drag’n’drop support for the Move Class refactoring</li>
+</ul>
+<p><strong>Faster and better deployment</strong></p>
+<ul>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-2/#support_for_rscync">Support for `rsync</a>`</li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-2/#retransmit_files_that_failed_to_upload_wi">Retry for failed uploads</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-2/#speedup_for_sftp_ftp_ftps_with_multithreaded_connection_wi">Speedup for SFTP/FTP/FTPS with multithreaded connection</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-2/#upload_all_opened_files_wi">Upload all opened files</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-2/#quickly_switch_default_server_for_project_wi">Quickly switch default server for project</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-3/#proxy_support_for_ssh_connections">Proxy support for SSH connections</a></li>
+</ul>
+<p><strong>HTTP Client</strong></p>
+<ul>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-7/#text_streams">Support for text streams and JSON streams</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-7/#binary_responses">Binary responses</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-7/#output_redirection">Output redirection to custom file or directory</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-7/#request_identifiers">Support for HTTP request identifiers</a></li>
+</ul>
+<p><strong>UI Updates</strong></p>
+<ul>
+<li>New Bookmarks tool window</li>
+<li>Source preview for Show Usages</li>
+<li>Ability to split the Run tool window</li>
+</ul>
+<p><strong>VCS</strong></p>
+<ul>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-3/#checkout_and_rebase_onto_current_for_remote_branches">Checkout and Rebase onto Current for remote branches</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/10/phpstorm-2021-3-eap-3/#reorganized_vcs_settings">Reorganized VCS settings</a></li>
+<li><a href="https://blog.jetbrains.com/phpstorm/2021/11/phpstorm-2021-3-eap-6/#vcs_new_push_all_up_to_here_action">New ‘Push All up to Here’ action</a></li>
+</ul>
+<p>Note that while Beta builds are significantly more stable than EAP builds, they can still have some issues. If you run into any, please report them to our <a href="https://youtrack.jetbrains.com/issues/WI">issue tracker</a>.</p>
+<p><a class="jb-download-button" href="https://www.jetbrains.com/phpstorm/nextversion/"><i class="download-icon"></i>Download PhpStorm 2021.3 Beta</a></p>
+<hr>
+<p>The full list of changes in this build is available in the <a href="https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+213.5744.38+Release+Notes"><strong>release notes</strong></a>.</p>
+<hr>
+<p><em>Your JetBrains PhpStorm team</em><br />
+<em>The Drive to Develop</em></p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>Talking to SerenityOS Contributors About Scratch-build C++ Developer’s Playground in Modern C++
+            </title>
+            <link>https://blog.jetbrains.com/clion/2021/11/talking-to-serenityos-contributors/</link>
+
+            <dc:creator><![CDATA[Anastasia Kazakova]]></dc:creator>
+            <pubDate>Fri, 12 Nov 2021 13:54:43 +0000</pubDate>
+            <featuredImage>https://blog.jetbrains.com/wp-content/uploads/2021/11/serenity_featured.png</featuredImage>
+            <category><![CDATA[interviews]]></category>
+            <category><![CDATA[news]]></category>
+            <category><![CDATA[guest-post]]></category>
+            <category><![CDATA[newsletter-cpp]]></category>
+            <category><![CDATA[open-source]]></category>
+            <category><![CDATA[serenityos]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=clion&#038;p=201557</guid>
+
+            <description>
+                <![CDATA[Hi all, SerenityOS is a graphical Unix-like operating system for desktop computers. It’s also a great open-source project that proves that if you want to see something happen, you can do it yourself! In this interview, we talked to Andreas Kling, founder and main contributor to SerenityOS, and Linus Groh, another main contributor to SerenityOS, [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>Hi all,</p>
+<p><a href="http://serenityos.org">SerenityOS</a> is a graphical Unix-like operating system for desktop computers. It’s also a great open-source project that proves that if you want to see something happen, you can do it yourself! In this interview, we talked to Andreas Kling, founder and main contributor to SerenityOS, and Linus Groh, another main contributor to SerenityOS, about the project itself, their experience with C++, and how CLion helps them to develop the project.</p>
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img src="https://blog.jetbrains.com/wp-content/uploads/2021/11/andreas.png" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Andreas Kling</h4>
+                                                <p><span style="font-weight: 400;">Andreas has been writing open source C++ for the last 16 years, working on projects like KDE, Qt, and WebKit. Past employers include Apple and Nokia, but nowadays he works full time on SerenityOS, a new Unix-like operating system with the look &amp; feel of a ‘90s office computer. He frequently posts videos of his programming sessions to YouTube and wants to share the joy of systems development with the world.</span></p>
+<p><a href="https://twitter.com/awesomekling">Twitter</a> <a href="https://github.com/awesomekling">GitHub</a> <a href="https://awesomekling.github.io/">Blog</a></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img src="https://blog.jetbrains.com/wp-content/uploads/2021/11/linus.png" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Linus Groh</h4>
+                                                <p><span style="font-weight: 400;">Linus started his programming journey in 2012 fiddling around with languages like Python and JavaScript, eventually combining them in his work as a full stack web developer. Later he decided to learn C++ and dive into operating system development by contributing to the SerenityOS project, where he is now a maintainer and active member of the community. You’ll mostly find him working on the system’s own JavaScript engine, LibJS.</span></p>
+<p><a href="https://twitter.com/linusgroh">Twitter</a> <a href="https://github.com/linusg">GitHub</a> <a href="https://linus.dev">Website</a></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+<p><strong>Hi Andreas, Linus! Can you please tell us a bit more about the project. What makes SerenityOS different from other OSes and what’s the overall goal of the project?</strong></p>
+<p>Andreas:<br>I started the project in 2018 with the short-term goal of keeping myself busy and the long-term goal of building an OS I would be able to use as my main system in the future.<br><img src="https://blog.jetbrains.com/wp-content/uploads/2021/11/ladyball_new.png" alt="SerenityOS logo" width="212" align="right"><br>We&#8217;re building a complete system from scratch in a single repository with no third-party runtime dependencies. That means we have our own kernel, shell, libraries, desktop, file manager, web browser, etc. It&#8217;s all written in modern C++20 with a custom standard library (not STL) used in both the kernel and user space.</p>
+<p>Unlike other systems, SerenityOS is primarily made for its own developers. Everyone works on the things they are interested in, or the things they want to have in the system for themselves. There is no ambition to attract regular users, but everyone is welcome to join the development!</p>
+<p>Linus:<br>This autonomy also means that there’s no general roadmap or specific plans. While each individual contributor might have their own goals and TODO lists, there’s no guarantee that any features will be implemented at a certain point in time. In this project, the best way to make sure something gets done is to do it yourself!</p>
+<p>At the moment there are no versions or releases either, as everything is still changing rapidly. To try the OS, the latest source code from the repository must be compiled locally – a process that has been made more and more convenient over time.</p>
+<p><strong>Can you briefly describe the tech stack you are using in SerenityOS?</strong></p>
+<p>Andreas:<br>The foundation of the system is a monolithic Unix-like kernel (x86 or x86_64) with a POSIX compliant C library as the low-level system API. This provides a familiar interface and allows us to run third-party software like GCC on SerenityOS.</p>
+<p>On top of that, we&#8217;ve got a large collection of C++ libraries covering everything you could possibly need for a modern desktop system. There are building blocks for graphics, sound, crypto, networking, and also more complex components like TLS, JavaScript, HTML, CSS, PDF, and so on.</p>
+<p>The windowing system is implemented similarly to X11, with a control protocol that runs over local sockets, and bitmaps in shared memory being displayed by a compositing window manager.</p>
+<p><strong>You mentioned C++20. So you are on the latest C++ standard already. Right?</strong></p>
+<p>Andreas:<br>Yes, we&#8217;re using the intersection of C++20 that&#8217;s available in the latest versions of GCC and Clang. Since the project has no backwards compatibility concerns, we&#8217;re free to stay on the bleeding edge of C++ and we try to take advantage of this.</p>
+<p><strong>When I first came across the project, you were using Makefiles, but then moved to CMake. Why did you decide to do that? What were the major benefits of such migration?</strong></p>
+<p>Andreas:<br>There were two main reasons: <em>dependency management and parallelism</em>. With Makefiles, it was a constant battle to keep things building in the right order while spreading the compilation tasks across multiple cores. Moving to CMake was a big task, but one that has paid off greatly, both in terms of maintainability and build performance.</p>
+<p><strong>Andreas, in May 2021 you published a </strong><a href="https://awesomekling.github.io/I-quit-my-job-to-focus-on-SerenityOS-full-time/"><strong>story</strong></a><strong> about why you quit your job to focus on SerenityOS full time. </strong><strong>How has it worked out for you?</strong></p>
+<p>Andreas:<br>It&#8217;s been absolutely great so far! Thanks to the generous support of people around the world, I&#8217;m able to put my full attention into the SerenityOS project.</p>
+<p>The biggest difference I&#8217;ve noticed is that it&#8217;s much easier to tackle large-scale refactoring and less glamorous things like project administration etc. When I did this purely as a hobby, I had much less time (and energy) per day, so I preferred to spend it on “funner” tasks.</p>
+<p><strong>Andreas, I guess you’ve inspired a few contributors with your story. Do you know why people join the project? What drives them towards SerenityOS specifically?</strong></p>
+<p>Andreas:<br>This is one of my favorite things about this project: everyone has their own personal reasons for joining, but we all share a love for programming and curiosity about technology.</p>
+<p>I like to imagine the project as a &#8220;developer&#8217;s playground&#8221; where people can learn how software works by building it inside a monolithic environment. Since we don&#8217;t use third-party code, there&#8217;s a strong feeling of cohesion within the codebase. It also creates a high degree of accountability within the project. If something needs changing, there&#8217;s no need to look outside for an answer.</p>
+<p><strong>Linus, you spoke in a recent CppCast </strong><a href="https://cppcast.com/learning-cpp-serenity/"><strong>episode</strong></a><strong> about learning C++ with SerenityOS, as you’ve never developed in C++ before this project. Was it tough to get started with such a tricky language as C++ with its large heritage? How did you accomplish it?</strong></p>
+<p>Linus:<br>It could have been much tougher in many aspects! I was by no means a programming beginner anymore, having learned and used various languages for various tasks over the years, so I no longer had to familiarize myself with basic programming concepts and could focus on the language specifically instead. This was no different. Initially, my entire goal in learning C++ was to contribute to this OS project that had been fascinating me for a while. This provided a lot of motivation, which of course helped me to keep going, even when progress was slow.</p>
+<p>The timing also played a role. I dived into C++ in early 2020, right when the first lockdown started and I had plenty of time at home, which allowed me to spend more time on it than I would otherwise have been able to. Naturally, much of that time was spent investigating and debugging my beginner mistakes :^)</p>
+<p>It’s also important to distinguish learning C++ in general from what we call <em>“Serenity C++”</em> – a subset of the language and using simple and understandable patterns – e.g. no exceptions, no STL, no consideration for compilers that can’t use the latest features.</p>
+<p>Finally, being around C++ experts helped massively. Not only Andreas but many other contributors answered my countless questions or gave me hints when I knew what I wanted to achieve, but didn’t know what terms to look up (a common occurrence early on!) in the IRC channel and code reviews. It is a great environment for bringing both beginners in the language and experienced programmers – like me, and several others – up to speed.</p>
+<p><strong>Linus, what is the most challenging thing for you in the C++ language?</strong></p>
+<p>Linus:<br>In the beginning it was definitely the compiler error messages, often many terminal pages long and not very clear about the true source of the issue. It’s become easier to grasp those over time, but in my opinion there’s still a lot of room for improvement in the various C++ compilers to show clear and human-friendly errors.</p>
+<p>Nowadays I sometimes struggle with templates, one of the concepts uniquely new to me from C++. After learning a couple of different languages and using them for a while, many things are somewhat familiar in the next new language – but this wasn’t the case here.</p>
+<p>Also going from a “dynamic language mindset” (I had primarily used Python and JavaScript before) to strict static typing – this was not completely new to me, but it requires different approaches every now and then.</p>
+<p><img src="https://blog.jetbrains.com/wp-content/uploads/2021/11/serenityos-jetbrains.png" alt="SerenityOS tribute to JetBrains" width="683"></p>
+<p><strong>I know you both use CLion for SerenityOS development. How did you start with CLion? What was your first experience like?</strong></p>
+<p>Andreas:<br>Earlier this year, I was looking for a new C++ IDE. I was already happy with my previous IDE, but I also wondered if maybe there was an even better IDE available, and I would never know if I didn’t try others.</p>
+<p>So I decided to try something new, and the first one I looked up was CLion. One of the screenshots on the CLion website had a &#8220;SerenityOS&#8221; project on it, which was very surprising, and I thought this must be a sign! (I later learned that JetBrains had been using our SerenityOS makefiles for testing their makefile support.)</p>
+<p>So I decided to give CLion a try. To be honest, it was a bit awkward at first until I got used to the keyboard shortcuts. But within a few days I was moving faster, and it felt really great. I&#8217;ve been using it every single day ever since then.</p>
+<p>Linus:<br>Like many other contributors, I started using CLion after seeing Andreas using it in his videos on YouTube – specifically after being offered a free license! I happily ditched my general purpose code editor that I had to configure to a point where it was usable for C++ development specifically, so I really enjoyed the <em>“IDE, not just an editor”</em> aspect of it. Everything worked out of the box, and the few add-ons I installed over time are not playing a part in my core development experience at all – I’d be totally fine without them.</p>
+<p><strong>What do you find the most beneficial in CLion for C++ developers?</strong></p>
+<p>Andreas:<br>I really like the fast and fluid navigation tools. Jumping to a specific file/class/function/etc. is super smooth. The integration of static analysis tools is also great. I love seeing tips from clang-tidy alongside compiler warnings.</p>
+<p>Lately I’ve been using the 2021.3 EAP, and I’m a huge fan of the <a href="https://blog.jetbrains.com/clion/2021/09/clion-starts-2021-3-eap/#type_hints">deduced type inlays</a> for C++ “auto”!</p>
+<p>Linus:<br>I pretty much agree with Andreas here. Both the navigation within code and static analysis integration are great! Those clang-tidy warnings especially help me to avoid some pitfalls every now and then. I also regularly look up warnings when I come across them for the first time to learn more about the relevant issue. I generally find that the warnings give good advice, so they are part of my learning process :^)</p>
+<p>Additionally, I rely massively on automatic code completion, which needs to be fast, accurate, and have an understanding of the language to be helpful – and in CLion it ticks all of these boxes!</p>
+<p><strong>Linus, as C++ was a new language for you, was it hard to get used to a new IDE at the same time?</strong></p>
+<p>Linus:<br>Not at all! As mentioned, I had used a different editor (not IDE!) for almost a year after first starting to learn C++ before switching to CLion, so when I did I was already comfortable with the new language.<br>Additionally I had used both PyCharm and Android Studio for several years in the past, so there was an instant familiarity.</p>
+<p><strong>Can you please share some tips for other CLion users to get the most out of the IDE and your favorite action/shortcut?</strong></p>
+<p>Linus:<br>One of my favorite shortcuts is Double Shift, i.e. the <a href="https://blog.jetbrains.com/idea/2020/05/when-the-shift-hits-the-fan-search-everywhere/">Search Everywhere functionality</a>, which makes it incredibly easy to switch to files anywhere in the project or execute actions that would otherwise be hidden somewhere in menus. I cannot remember shortcuts for everything, so being able to search for them by name is helpful.</p>
+<p>I also enjoy the Git integration, which is really well done. I’m nowhere near using the full range of available functionality, but everyone will at the very least need to commit, amend, and fix conflicts during development, all of which can be done without ever leaving the IDE.</p>
+<p><strong>SerenityOS is an open source project that falls under </strong><a href="https://www.jetbrains.com/community/opensource/#support"><strong>JetBrains’s OS support program</strong></a><strong>, so now most active contributors to the project can claim a free license from us. Would you recommend that other </strong><strong>contributors take</strong><strong> this opportunity?</strong></p>
+<p>Andreas:<br>Definitely! I&#8217;ve been recommending it to people since I started using it myself.</p>
+<p><strong>Thank you both for the interview! And I hope you enjoy working on SerenityOS in CLion!</strong></p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>GoLand 2021.3 Beta 2: Improved Error Messages for Debugging Tests and the Ability to Compare Profiler
+                Snapshots
+            </title>
+            <link>
+                https://blog.jetbrains.com/go/2021/11/12/goland-2021-3-beta-2-improved-error-messages-for-debugging-tests-and-the-ability-to-compare-profiler-snapshots/
+            </link>
+
+            <dc:creator><![CDATA[Sergey Kozlovskiy]]></dc:creator>
+            <pubDate>Fri, 12 Nov 2021 12:32:33 +0000</pubDate>
+            <featuredImage>
+                https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Featured_image_1280x600_GoLand.png
+            </featuredImage>
+            <category><![CDATA[eap]]></category>
+            <category><![CDATA[2021-3]]></category>
+            <category><![CDATA[newsletter]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=go&#038;p=201365</guid>
+
+            <description>
+                <![CDATA[GoLand 2021.3 Beta 2 is out.&#160; You can get the build via the Toolbox App, download it from our website, use a snap package (for Ubuntu), or from inside the GoLand IDE select Check IDE updates for Early Access Program in Preferences / Settings &#124; Appearance &#38; Behavior &#124; System Settings &#124; Updates.&#160;&#160; Download GoLand [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>GoLand 2021.3 Beta 2 is out.&nbsp;</p>
+
+
+
+<p>You can get the build via the <a href="https://www.jetbrains.com/toolbox/app/?_gl=1*r6u7kg*_ga*MTMzMTM3NzQ1MS4xNjIxOTM2MTky*_ga_0WQ2ZF5VGT*MTYyMjc5ODA0MS42MS4xLjE2MjI3OTg4NzguMA..&amp;_ga=2.128561929.463726163.1622398163-1331377451.1621936192&amp;_gac=1.257356409.1622733323.Cj0KCQjw--GFBhDeARIsACH_kdYJNa3me-RrM8rVpyFt4Ep5vqVq1MW0ib0F_aqcJRnqwiJVKbB3oFIaAmPDEALw_wcB">Toolbox App</a>, download it from our <a href="https://www.jetbrains.com/go/nextversion/?_gl=1*19wtq3y*_ga*MTMzMTM3NzQ1MS4xNjIxOTM2MTky*_ga_0WQ2ZF5VGT*MTYyMjc5ODA0MS42MS4xLjE2MjI3OTg4NzguMA..&amp;_ga=2.165313978.463726163.1622398163-1331377451.1621936192&amp;_gac=1.57473368.1622733323.Cj0KCQjw--GFBhDeARIsACH_kdYJNa3me-RrM8rVpyFt4Ep5vqVq1MW0ib0F_aqcJRnqwiJVKbB3oFIaAmPDEALw_wcB">website</a>, use a snap package (for Ubuntu), or from inside the GoLand IDE select <em>Check IDE updates for Early Access Program</em> in <em>Preferences / Settings </em>|<em> Appearance &amp; Behavior </em>|<em> System Settings </em>|<em> Updates</em>.&nbsp;&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1600" height="800" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Post_image_1280x600_GoLand-2x.png" alt="goland beta" class="wp-image-199574"/></figure>
+
+
+
+<p align="center">
+    <a class="jb-download-button" href="https://www.jetbrains.com/go/nextversion/">
+        Download GoLand 2021.3 Beta 2
+    </a>
+</p>
+
+
+
+<h2 id="Improved-error-messages-for-debugging-tests">Improved error messages for debugging tests</h2>
+
+
+
+<p>When you select a directory in a project tree and run <em>Debug</em> | <em>go test ‘directoryName’</em>, you will get a vague error.&nbsp;</p>
+
+
+
+<p>It happens because, in this case, GoLand creates a configuration with <em>Test Kind: Directory</em>, and you can’t debug tests in directory-kind configurations.&nbsp;</p>
+
+
+
+<p>The message, which was shown for this kind of error, was not very understandable.&nbsp;</p>
+
+
+
+<p>We have improved it, and now the error says that you can’t debug tests in directory-kind run configurations, but you can debug tests for each package.&nbsp;</p>
+
+
+
+<p>There is also a link to the <em>Run/Debug Configurations</em> settings where you can change <em>Test kind</em> from <em>Directory</em> to <em>Package</em>.&nbsp;&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1500" height="691" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/better-errors-tests.png" alt="" class="wp-image-201367"/></figure>
+
+
+
+<h2 id="Visualize-the-difference-between-profiler-snapshots">Visualize the difference between profiler snapshots&nbsp;</h2>
+
+
+
+<p>The profiler is GoLand’s main tool for diagnosing performance issues and exploring program operation at runtime. Naturally, it would be nice to be able to compare two profiler snapshots.</p>
+
+
+
+<p>In this build, we’ve introduced the ability to visualize the difference between two snapshots on the flame graph.&nbsp;</p>
+
+
+
+<p>From the opened project go to <em>Run</em> | <em>Open Profiler Snapshots. </em>Or press ⇧ (<em>Shift</em>)<em> </em>twice and type “Open Profiler Snapshots” in the search bar.&nbsp;&nbsp;</p>
+
+
+
+<p>You will see a list of snapshots. Open one of them, then repeat the same actions to open another.</p>
+
+
+
+<p>Then click the <em>Compare With Baseline</em> button staying in a tab of one of the snapshots. From the menu, select the snapshot that you want to compare against.</p>
+
+
+
+<p>A separate <em>Diff</em> tab will open with the results of the comparison, combining two flame graphs and showing the differences as red and green.</p>
+
+
+
+<p>If you see that 6% percent of the frame is green, it means that the corresponding method became 6% faster during the second profiler run. The red color means that the corresponding method became slower.&nbsp;&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1500" height="600" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/profiler-diff.1.gif" alt="" class="wp-image-201381"/></figure>
+
+
+
+<h2 id="Other-improvements-and-bug-fixes">Other improvements and bug-fixes&nbsp;</h2>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/GO-11860">GO-11860</a> – We’ve disabled <em>Optimize Imports </em>while running the <em>Sync dependencies</em> <em>of ‘projectName’</em> quick fix, and GoLand no longer removes <em>import</em> declarations when you apply this quick fix.&nbsp;&nbsp;&nbsp;</li><li><a href="https://youtrack.jetbrains.com/issue/GO-11868">GO-11868</a> –&nbsp; <em>math.Floor()</em> and other functions from the <em>math</em> package work as expected in the <em>Evaluate Expression </em>dialog. GoLand 2021.3 will have a fix for this bug. For earlier versions, follow <a href="https://youtrack.jetbrains.com/issue/GO-11868#focus=Comments-27-5375140.0-0">these instructions</a>.&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>
+
+
+
+<p>That’s it for today! If you want a full overview of the features that will make their way into v2021.3, read <a href="https://blog.jetbrains.com/go/2021/11/04/goland-2021-3-goes-beta/">this post</a>. You can report any bugs or suggest ideas here in the comments, on <a href="https://twitter.com/GoLandIDE">Twitter</a>, in <a href="https://youtrack.jetbrains.com/issues/GO?_gl=1*1ryja4i*_ga*MTMzMTM3NzQ1MS4xNjIxOTM2MTky*_ga_0WQ2ZF5VGT*MTYyMjQ3MTM1Ny4zOS4xLjE2MjI0NzE0NDkuMA..&amp;_ga=2.61428393.463726163.1622398163-1331377451.1621936192&amp;_gac=1.49805012.1621529532.Cj0KCQjwkZiFBhD9ARIsAGxFX8CLxXvfJzlAlF42EN3ry-0foEM5GdeLKEOzRSUXC2Dj1LK8EQNhW5UaAoKBEALw_wcB">our tracker</a>, or in the <a href="https://invite.slack.golangbridge.org/">Gophers Slack</a> #goland channel.&nbsp;</p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>JetBrains welcomes Embarcadero Most Valuable Professionals to the Developer Recognition Program
+            </title>
+            <link>
+                https://blog.jetbrains.com/blog/2021/11/12/jetbrains-welcomes-embarcadero-most-valuable-professionals-to-the-developer-recognition-program/
+            </link>
+
+            <dc:creator><![CDATA[Natalia Ershova]]></dc:creator>
+            <pubDate>Fri, 12 Nov 2021 10:41:24 +0000</pubDate>
+            <featuredImage>https://blog.jetbrains.com/wp-content/uploads/2021/10/BlogFeatureImageAllProdGradle-2.png
+            </featuredImage>
+            <category><![CDATA[community]]></category>
+            <category><![CDATA[news]]></category>
+            <category><![CDATA[community-support]]></category>
+            <category><![CDATA[developer-recognition-program]]></category>
+            <category><![CDATA[embarcaderomvps]]></category>
+            <category><![CDATA[news-company]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=blog&#038;p=196213</guid>
+
+            <description>
+                <![CDATA[One of the key goals of the JetBrains Developer Recognition Program is to support active technology experts in spreading their knowledge and helping other developers grow. Not long ago, Gradle Fellows joined the program and obtained their first All Products Pack licenses along with the Microsoft MVPs, Java Champions, ASPInsiders, Google Developers Experts, and Docker [&#8230;]]]></description>
+            <content:encoded><![CDATA[<figure class="wp-block-image size-large"><img loading="lazy" width="1280" height="720" src="https://blog.jetbrains.com/wp-content/uploads/2021/10/BlogFeatureImageAllProdGradle-2.png" alt="" class="wp-image-196215"/></figure>
+
+
+
+<p>One of the key goals of the JetBrains Developer Recognition Program is to support active technology experts in spreading their knowledge and helping other developers grow. Not long ago, Gradle Fellows joined the program and obtained their first All Products Pack licenses along with the Microsoft MVPs, Java Champions, ASPInsiders, Google Developers Experts, and Docker Captains. Currently, over 1500 developer experts have free access to JetBrains tools, and this number grows every day.</p>
+
+
+
+<p>We are proud to announce that Embarcadero Most Valuable Professionals are invited to join the Developer Recognition Program today. Every Embarcadero MVP is now eligible to get a free All Products Pack license, consisting of ten IDEs, three extensions, and two profilers.</p>
+
+
+
+<span id="more-196213"></span>
+
+
+
+<p>Embarcadero has a long history when it comes to software development, especially with Delphi, for which Embarcadero provided a home. Delphi still runs many of the world&#8217;s systems and remains one of the most productive development environments for native applications across Windows, macOS, Linux, Android, and iOS.&nbsp;<br><br>We are also working with Embarcadero for all members of the JetBrains Developer Recognition Program to receive access to Embarcadero’s developer tools, including Delphi, C++Builder, PyScripter, RAD Studio, and InterBase, as well as others from the <a href="https://www.ideracorp.com/developertools" class="ek-link">Idera Developer Tools</a> family of products. Stay tuned here and to <a href="https://blogs.embarcadero.com/" class="ek-link">Embarcadero’s blog</a> for more information.</p>
+
+
+
+<p>If you are an active Embarcadero Most Valuable Professional, please feel free to apply for a complimentary All Products Pack now!</p>
+
+
+
+<p style="text-align: center;"><a class="jb-download-button" title="Apply Now" href="https://www.jetbrains.com/shop/eform/devRecognition/">Apply Now</a></p>
+
+
+
+<p>We are happy to answer any questions you have at <a href="mailto:community-support@jetbrains.com">community-support@jetbrains.com</a>.</p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>IntelliJ IDEA 2021.3 Beta 2 Is Available</title>
+            <link>https://blog.jetbrains.com/idea/2021/11/intellij-idea-2021-3-beta-2/</link>
+
+            <dc:creator><![CDATA[Irina Maryasova]]></dc:creator>
+            <pubDate>Thu, 11 Nov 2021 14:04:59 +0000</pubDate>
+            <featuredImage>
+                https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Featured_image_1280x600_IntelliJIDEA-2x.png
+            </featuredImage>
+            <category><![CDATA[eap]]></category>
+            <category><![CDATA[idea]]></category>
+            <category><![CDATA[2021-3]]></category>
+            <category><![CDATA[intellij-idea-2021-3]]></category>
+            <category><![CDATA[intellij-idea-2021-3-eap]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=idea&#038;p=200538</guid>
+
+            <description>
+                <![CDATA[IntelliJ IDEA 2021.3 Beta 2 is out! The latest build is available from our website and the free Toolbox App, or via snaps for Ubuntu. We are now in the process of fine-tuning the build for the upcoming Release Candidate. Meanwhile, you can read about the notable features IntelliJ IDEA 2021.3 offers in our series [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>IntelliJ IDEA 2021.3 Beta 2 is out! The latest build is available from our <a href="https://www.jetbrains.com/idea/nextversion/">website</a> and the free <a href="https://www.jetbrains.com/toolbox-app/">Toolbox App</a>, or via snaps for Ubuntu.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="800" height="400" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Post_image_1280x600_IntelliJIDEA.png" alt="" class="wp-image-200551"/></figure>
+
+
+
+<p>We are now in the process of fine-tuning the build for the upcoming Release Candidate. Meanwhile, you can read about the notable features IntelliJ IDEA 2021.3 offers in our series of blog posts tagged with <a href="https://blog.jetbrains.com/idea/tag/intellij-idea-2021-3-eap/">IntelliJ IDEA 2021.3</a>.</p>
+
+
+
+<p>If you find any bugs, please report them to our <a href="https://youtrack.jetbrains.com/issues/idea">issue tracker</a>. Thank you for testing the recent updates and helping us polish IntelliJ IDEA 2021.3!</p>
+
+
+
+<p>Happy developing!</p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>Seven Highlights from the Kotlin Roadmap Autumn 2021</title>
+            <link>https://blog.jetbrains.com/kotlin/2021/11/kotlin-roadmap-autumn-2021/</link>
+
+            <dc:creator><![CDATA[Egor Tolstoy]]></dc:creator>
+            <pubDate>Thu, 11 Nov 2021 12:38:30 +0000</pubDate>
+            <featuredImage>
+                https://blog.jetbrains.com/wp-content/uploads/2021/11/Seven-highlights-from-the-Kotlin-Roadmap-02-2.png
+            </featuredImage>
+            <category><![CDATA[news]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=201363</guid>
+
+            <description>
+                <![CDATA[Kotlin is built for translating ideas into code. We try to remove all obstacles that are in the way of your ideas and make reading and writing Kotlin simple and fun. To make this possible, we need a very complex engineering system that consists of many parts: the language syntax, the compiler frontend and backends, [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>Kotlin is built for translating ideas into code. We try to remove all obstacles that are in the way of your ideas and make reading and writing Kotlin simple and fun. To make this possible, we need a very complex engineering system that consists of many parts: the language syntax, the compiler frontend and backends, the IDE, the build tooling, the libraries, and all of the other tools. To maintain and develop all of these components, we have about 110 people on our team. All of them work simultaneously on different projects and tasks.</p>
+
+
+
+<p>If you want to stay up to date with all of these projects, you can check out the <a href="https://kotl.in/h4nimn">Kotlin public roadmap</a>. We’ve just updated it to reflect our plans for Kotlin 1.7.0 and beyond! If you just want a quick overview of what’s going on without going into the details, you can get the gist of what we are working on in this blog post, which covers the seven most notable highlights.</p>
+
+
+
+<h2>1. K2 compiler frontend is on its way to Alpha</h2>
+
+
+
+<p>The compiler is the heart of Kotlin. It is the powerhouse of the entire language that drives every aspect of creating an application, including IDE responsiveness, build speed, binary size, and efficiency. That’s why we’re actively investing into the Kotlin compiler, notably by building the <a href="https://blog.jetbrains.com/kotlin/2021/10/the-road-to-the-k2-compiler/">new K2 compiler</a>.</p>
+
+
+
+<p>Our team is currently focusing on bringing the K2 compiler frontend to the <a href="https://kotlinlang.org/docs/components-stability.html#stability-levels-explained">Alpha</a> state. The frontend is the compiler part that is responsible for code analysis and transformation to an intermediate representation, which is later processed by backends. The new compiler is already showing great results! It’s able to compile huge JVM production projects such as Kotlin itself and IntelliJ IDEA. For those projects, the compilation speed is twice as fast on average.</p>
+
+
+
+<p>We will continue stabilizing it by compiling more projects and fixing bugs and performance issues. The plan is to have the K2/JVM compiler public preview up and running by Spring 2022. The Alpha version will provide a preview of the new plugin infrastructure that will allow the community to build more tools.</p>
+
+
+
+<p>We’re also investing in support for non-JVM backends, which will allow multiplatform projects to be built with the K2 compiler.</p>
+
+
+
+<p>Explore the roadmap tickets:</p>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/KT-46756">Release the K2/JVM compiler in Alpha</a></li><li><a href="https://youtrack.jetbrains.com/issue/KT-49508">Stabilize the Compiler Plugin API</a></li><li><a href="https://youtrack.jetbrains.com/issue/KT-49510">Investigate JS backend for the K2 compiler</a></li></ul>
+
+
+
+<p></p>
+
+
+
+<h2>2. Focus on stability and robustness for KMM</h2>
+
+
+
+<p><a href="https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/">KMM is going Beta in Spring 2022</a>! That means we are now focused on finding and fixing as many issues that interrupt user workflows as possible. This includes code highlighting, navigation and completion, debugging, and build tooling stability.</p>
+
+
+
+<p>We’ll also continue to improve the concurrency experience. We’ve just released an Experimental <a href="https://blog.jetbrains.com/kotlin/2021/08/try-the-new-kotlin-native-memory-manager-development-preview/">Kotlin/Native memory manager</a>. It smoothes out the differences between the JVM and Native platforms and makes it easy for you to write common, concurrent code for both iOS and Android platforms. Further plans include improving stability and performance to make the future migration to the new memory manager easier.</p>
+
+
+
+<p>Explore the roadmap tickets:</p>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/KT-49525">Improve stability and robustness of the multiplatform toolchain</a></li><li><a href="https://youtrack.jetbrains.com/issue/KT-49520">Promote new memory manager to Alpha</a></li></ul>
+
+
+
+<p><em>Kotlin moves fast! </em><a href="https://kotl.in/h4nimn"><strong><em>Check out our public roadmap</em></strong></a><em> to get a full picture of all the features that we’re focusing on right now!</em></p>
+
+
+
+<h2>3. Namespaces research and prototyping</h2>
+
+
+
+<p>In Kotlin, you can have an extension to the class only if the corresponding class declares a companion object. That brings with it many unwanted consequences, such as the inability to extend many of the third-party library classes and inefficiency when declaring private static class members.</p>
+
+
+
+<p>We&#8217;re planning to prototype a solution that is based on introducing the new concept of a namespace – a kind of ephemeral object without an instance that every class automatically possesses. Namespace members are naturally compiled down to static members on the JVM. This keeps static helpers grouped together in the source, but removes all of the object overhead. This is intended to significantly improve Kotlin&#8217;s interoperability with Java&#8217;s static methods, and will enable extensions on any Java types. As a result, it should help with further Kotlin/JVM adoption.</p>
+
+
+
+<p>Explore the roadmap tickets:</p>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/KT-11968?_gl=1*13zrdzm*_ga*ODQyNTk4NDYzLjE2MTIzNzY3ODE.*_ga_J6T75801PF*MTYzNjM1OTAzNC4yOTguMS4xNjM2MzU5MTI5LjA.&amp;_ga=2.124001795.881152214.1636359035-842598463.1612376781">Research and prototype namespace-based solution for statics and static extensions</a></li></ul>
+
+
+
+<h2>4. Kover, a Kotlin test coverage tool</h2>
+
+
+
+<p>We believe that having a robust, Kotlin-specific solution for collecting the test coverage of Kotlin applications and libraries is essential for our ecosystem growth. That’s why we introduced <a href="https://www.youtube.com/watch?v=jNu5LY9HIbw">Kover</a>, a Gradle plugin that measures code coverage for Kotlin code and works with all language constructs, including inline functions.</p>
+
+
+
+<p>Among our long-term plans are DSL for verification rules, JaCoCo usage stabilization, advanced filtering, and advanced Android support. We plan to develop Kover based on your feedback, so try it out and share your feedback with us!</p>
+
+
+
+<p>Explore the roadmap tickets:</p>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/KT-49527">Launch kotlinx-kover and productize it further</a></li></ul>
+
+
+
+<h2>5. Dokka, a revamped tool for generating lib docs</h2>
+
+
+
+<p>Another tool for library developers that we work on is Dokka, a documentation generation tool. We’re promoting it to Beta with 1.6.0 and, in doing so, focusing on usability and design unification with official Kotlin documentation. We want developers to have a seamless experience when they work with Kotlin documentation, no matter whether it’s the official language reference or library documentation. Using a uniform visual style and structure helps reduce the cost of context switching.</p>
+
+
+
+<p>The next step is to promote Dokka to Stable with only one stable output – HTML. Other output formats like GitHub Markdown or Jekyll, API for plugin developers, and wall-to-wall support for Java will stay in Alpha. To move them forward, we will run a series of interviews and wait for your feedback as well!</p>
+
+
+
+<p>Explore the roadmap tickets:</p>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/KT-48998">Release Dokka as Stable</a></li></ul>
+
+
+
+<p><em>Hint: Want to participate in UX studies? </em><a href="https://surveys.jetbrains.com/s3/kotlin-panel"><em>Apply</em></a><em>!</em></p>
+
+
+
+<h2>6. Improving the Kotlin IDE plugin release adoption</h2>
+
+
+
+<p>Moving the Kotlin IDE plugin to the IntelliJ platform development infrastructure was a complex engineering task that allowed us to provide support for the new tooling functionality together with the IntelliJ platform. However, there are some drawbacks. For example, if you’re an EAP user, you may have noticed that IntelliJ IDEA EAP releases don’t support preview versions of upcoming Kotlin releases. We plan to improve our internal infrastructure to address this and other problems with Kotlin IDE plugin release adoption.</p>
+
+
+
+<p>Explore the roadmap tickets:</p>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/KTIJ-20044">Make update of compiler/platform versions faster</a></li></ul>
+
+
+
+<h2>7. Playground improvements</h2>
+
+
+
+<p>Have you ever been in a situation at a party where you wanted to show your friends some brand new Kotlin feature and suddenly realised that you didn’t bring your laptop? For this and many other cases, such as learning the language, prototyping, and knowledge sharing, we have <a href="https://play.kotlinlang.org/">Kotlin Playground</a>. Since Kotlin Playground has become so popular among all of you, we want to provide you with even more capabilities!</p>
+
+
+
+<p>If you are a new user, we plan to simplify the user experience with more examples and tips. If you are an advanced user, we want to provide you with the ability to synchronize progress between devices, open multiple tabs, export files, and more. We will even make Kotlin Playground mobile friendly, so that the party won’t be ruined if you forget your laptop!</p>
+
+
+
+<p>Explore the roadmap tickets:</p>
+
+
+
+<ul><li><a href="https://youtrack.jetbrains.com/issue/KT-49536">Improve Kotlin Playground</a></li></ul>
+
+
+
+<p>&#8212;&#8212;&#8211;</p>
+
+
+
+<p>The community is what makes Kotlin great. We want to build our plans on your feedback and ideas, so don’t hesitate to share them with us via YouTrack, Slack, or other channels.&nbsp;</p>
+
+
+
+<p>We will continue covering future Kotlin plans in our <a href="https://blog.jetbrains.com/kotlin">blog</a> and <a href="https://youtube.com/kotlin">YouTube channel</a>, so subscribe to both and stay tuned!</p>
+
+
+
+<h3>Learn more</h3>
+
+
+
+<ul><li><a href="https://kotl.in/h4nimn">The Kotlin Roadmap</a></li><li><a href="https://kotlinlang.slack.com/archives/C01AAJSG3V4" class="ek-link">#kotlin-roadmap</a> channel in public Slack (<a href="https://surveys.jetbrains.com/s3/kotlin-slack-sign-up">get an invite</a>)</li><li><a href="https://youtube.com/kotlin">Kotlin YouTube channel</a></li></ul>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>CLion 2021.3 Goes Beta!</title>
+            <link>https://blog.jetbrains.com/clion/2021/11/clion-2021-3-goes-beta/</link>
+
+            <dc:creator><![CDATA[Anastasia Kazakova]]></dc:creator>
+            <pubDate>Thu, 11 Nov 2021 09:13:23 +0000</pubDate>
+            <featuredImage>
+                https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Featured_image_1280x600_CLion-2x.png
+            </featuredImage>
+            <category><![CDATA[eap]]></category>
+            <category><![CDATA[news]]></category>
+            <category><![CDATA[2021-3]]></category>
+            <category><![CDATA[auto-import]]></category>
+            <category><![CDATA[beta]]></category>
+            <category><![CDATA[cmake]]></category>
+            <category><![CDATA[newsletter-cpp]]></category>
+            <category><![CDATA[ninja]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=clion&#038;p=201337</guid>
+
+            <description>
+                <![CDATA[We are fast approaching the release – CLion 2021.3 has now reached Beta! Build 213.5744.5 is available from our website, via the Toolbox App, or as a snap package (for Ubuntu). No license is required, as this build is still free to use. DOWNLOAD CLION 2021.3 Beta CMake generator UI A new UI for setting [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p></p>
+
+
+<p>We are fast approaching the release – CLion 2021.3 has now reached Beta! Build 213.5744.5 is available from our website, via the <a href="https://www.jetbrains.com/toolbox-app/">Toolbox App</a>, or as a snap package (for Ubuntu). No license is required, as this build is still free to use.</p>
+<p><img alt="CLion 2021.3 Beta" width="800" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/Blog_Post_image_1280x600_CLion-2x.png"></p>
+<p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/clion/nextversion"><i class="download-icon"></i>DOWNLOAD CLION 2021.3 Beta</a></p>
+<h2 id="cmake_generator_ui">CMake generator UI</h2>
+<p>A new UI for setting the CMake generator was added to the CMake Profile settings page (<em>Preferences/Settings | Build, Execution, Deployment | CMake</em>). You can use the default value for the toolchain selected or set any generator from the predefined list:<br>
+<img alt="CMake generator UI" width="756" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/ninja_generator.png"></p>
+<p>When the UI field is used, CMake options on the same page are updated automatically and vice versa.</p>
+<p>In the first 2021.3 EAP builds we made Ninja the default generator. However, there were a few annoying issues with Ninja and some concerns about whether this change really improved the user experience. So we limited the number of cases where Ninja is used as the default. Now for local toolchains (excluding Remote, Docker, and WSL) and CMake v3.20 and higher, Ninja is used as the default generator for <em>newly created projects or projects opened in CLion for the first time</em>.</p>
+<h2 id="auto_import_for_header_files_belonging_to_the_project">Auto import for header files belonging to the project</h2>
+<p>Another follow-up to a recently introduced change was added to the Beta build. CLion’s auto import now uses <code>""</code> instead of <code>&lt;&gt;</code> for header files belonging to the project. This default behavior can now be changed by turning off <em>Settings | Editor | General | Auto Import | C/C++ | Auto import local files with quotes</em>.</p>
+<h2 id="other_highlights">Other highlights</h2>
+<ul>
+<li>Attaching to the local process now works with WSL debugger (<a href="https://youtrack.jetbrains.com/issue/CPP-12054">CPP-12054</a>).</li>
+<li>Performance:
+<ul>
+<li>Optimized debugger performance (<a href="https://youtrack.jetbrains.com/issue/CPP-26408">CPP-26408</a>).</li>
+<li>Addressed high CPU usage when working with LLVM sources on Windows 10 (<a href="https://youtrack.jetbrains.com/issue/CPP-26740">CPP-26740</a>).</li>
+</ul>
+</li>
+<li>Fixed parsing for namespaced concepts (<a href="https://youtrack.jetbrains.com/issue/CPP-27040">CPP-27040</a>).</li>
+<li>Fixed several issues with refactorings and intention actions.</li>
+</ul>
+<p>You can find the full release notes <a href="https://confluence.jetbrains.com/pages/viewpage.action?pageId=230097000">here</a>.</p>
+<p align="center"><a class="jb-download-button" href="https://www.jetbrains.com/clion/nextversion"><i class="download-icon"></i>DOWNLOAD CLION 2021.3 Beta</a></p>
+<p>Your CLion team<br>
+JetBrains<br>
+The Drive to Develop</p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>Webinar: &#8220;10 Reasons You&#8217;ll Love PyCharm Even More in 2021&#8221; with Michael Kennedy
+            </title>
+            <link>https://blog.jetbrains.com/pycharm/2021/11/10-reasons-youll-love-pycharm-even-more-in-2021/</link>
+
+            <dc:creator><![CDATA[Roberto Pesce]]></dc:creator>
+            <pubDate>Wed, 10 Nov 2021 16:39:07 +0000</pubDate>
+            <featuredImage>
+                https://blog.jetbrains.com/wp-content/uploads/2021/11/DSGN-12239_10-Reasons-Youll-Love-PyCharm-Even-More-in-2021_1600x800_blog.png
+            </featuredImage>
+            <category><![CDATA[webinars]]></category>
+            <category><![CDATA[newsletter]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=pycharm&#038;p=201011</guid>
+
+            <description>
+                <![CDATA[Want to tap into all the power that PyCharm has as an IDE? Michael Kennedy is in the business of Python videos and recently updated his Effective PyCharm Course to the latest and greatest. In this webinar, Michael will show 5 tips from the course, take questions from the audience, and team with Paul for [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>Want to tap into all the power that PyCharm has as an IDE? Michael Kennedy is in the business of Python videos and recently updated his <a href="https://training.talkpython.fm/courses/explore_pycharm/mastering-pycharm-ide?utm_source=talkpython" target="_blank" rel="noopener">Effective PyCharm Course</a> to the latest and greatest.</p>
+<p>In this webinar, Michael will show 5 tips from the course, take questions from the audience, and team with Paul for 5 new tips using the <a href="https://www.jetbrains.com/pycharm/nextversion/" target="_blank" rel="noopener">upcoming PyCharm 2021.3 release</a>. Join us for a conversational demonstration of serious development tooling power.</p>
+<p><a href="https://info.jetbrains.com/pycharm-webinar-november-2021.html" target="_blank" rel="noopener"><img alt="Textual" width="800" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/DSGN-12239_10-Reasons-Youll-Love-PyCharm-Even-More-in-2021_1600x800_blog.png"></a></p>
+<ul>
+<li>November 23, 2021</li>
+<li>12:00(ET)/18:00(CET)</li>
+</ul>
+<p align="center"><a class="jb-download-button" href="https://info.jetbrains.com/pycharm-webinar-november-2021.html" target="_blank" rel="noopener">Register now!</a></p>
+<h2>Speaking to You</h2>
+<p><a href="https://twitter.com/mkennedy" target="_blank" rel="noopener">Michael Kennedy</a> is the host of Talk Python to Me and co-host of Python Bytes podcasts. He is also the founder of Talk Python Training and a Python Software Foundation fellow.</p>
+<p>Michael has been working in the developer field for more than 20 years, has created multiple courses, spoken at numerous conferences, and is co-author of the book Effective PyCharm.</p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>Gradle JVM Toolchain Support in the Kotlin Plugin</title>
+            <link>https://blog.jetbrains.com/kotlin/2021/11/gradle-jvm-toolchain-support-in-the-kotlin-plugin/</link>
+            <comments>
+                https://blog.jetbrains.com/kotlin/2021/11/gradle-jvm-toolchain-support-in-the-kotlin-plugin/#respond
+            </comments>
+
+            <dc:creator><![CDATA[Yahor Berdnikau]]></dc:creator>
+            <pubDate>Wed, 10 Nov 2021 16:00:07 +0000</pubDate>
+            <featuredImage>https://blog.jetbrains.com/wp-content/uploads/2021/11/Gradle-Toolchain-Support-01.png
+            </featuredImage>
+            <category><![CDATA[news]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=200889</guid>
+
+            <description>
+                <![CDATA[Maintaining Gradle build setups to have a reliable and reproducible build process is not always easy. In this blog post, we’ll tell you about one of the Gradle features that Kotlin has recently added support for – JVM toolchain. This feature provides a simple way to have a reproducible build independent from the user JDK, [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>Maintaining Gradle build setups to have a reliable and reproducible build process is not always easy. In this blog post, we’ll tell you about one of the Gradle features that Kotlin has recently added support for – <a href="https://docs.gradle.org/current/userguide/toolchains.html" class="ek-link">JVM toolchain</a>. This feature provides a simple way to have a reproducible build independent from the user JDK, plus it reduces the complexity of working with multiple JDKs.</p>
+
+
+
+<h2>What is the Gradle JVM toolchain feature and how to use it?&nbsp;</h2>
+
+
+
+<h3>Issues with building Gradle JVM projects</h3>
+
+
+
+<p>Imagine you maintain a Gradle build setup for some JVM library or application. One of the common user mistakes is using the wrong JDK version to compile the project, which leads to strange errors.&nbsp;</p>
+
+
+
+<p>This becomes even more complicated when your project has to support different JDK versions to compile itself or to run the tests against. You need to add extensive documentation on how to set up the build environment, some custom build scripts to pick up the correct JDK version for the specific compile or test task, and a complex CI setup. Even then, errors may slip through and the Gradle remote build cache could be populated with a wrong entry, leading to a hard-to-debug error in later release builds.&nbsp;</p>
+
+
+
+<p>Unfortunately, the Kotlin Gradle plugin did not consider the JDK version as a task input <a href="https://kotlinlang.org/docs/whatsnew1530.html#support-for-java-toolchains" class="ek-link">until the Kotlin 1.5.30 release</a>.</p>
+
+
+
+<h3>Kotlin repository suffered as well</h3>
+
+
+
+<p>As you may have already guessed, this is how it was in the Kotlin repository itself. Kotlin 1.6.0 supports JDK versions from JDK 1.6 through 17 (the latest released version at the moment). Additionally, it uses different JDKs inside the compiler, and the build tool tests to verify that the compiler’s output works correctly with the different JDKs.</p>
+
+
+
+<p>To start working with a Kotlin project, a contributor had to install a variety of JDKs locally. This was already a painful step for several reasons. For example, on newer macOS versions it’s hard to find working JDK 1.6 and JDK 1.7 releases. To overcome this, the Kotlin repository added a flag to substitute these JDKs with JDK 1.8.&nbsp;</p>
+
+
+
+<p>After that, the contributor had to set up all of the environmental variables that needed to correctly correspond to the JDK location. Sometimes contributors made a mistake and provided the wrong JDK version, again leading to strange compilation and test errors.&nbsp;</p>
+
+
+
+<p>Finally, the contributor had to ensure that the build was running on JDK 1.8 (usually by changing the <code>JAVA_HOME</code> environmental variable).&nbsp;</p>
+
+
+
+<h3>Solution: the toolchain feature</h3>
+
+
+
+<p>Fortunately, the Gradle team introduced a new feature called <a href="https://docs.gradle.org/6.7/release-notes.html#toolchain-support-for-jvm-projects" class="ek-link">JVM toolchain</a> in the 6.7 release. Initially, only Java compilation was supported, but with the recent Gradle 7.2 release, Groovy and Scala compilations also work with JVM toolchains. The Kotlin Gradle plugin added support for this feature starting from the <a href="https://kotlinlang.org/docs/whatsnew1530.html#support-for-java-toolchains" class="ek-link">1.5.30</a> release!&nbsp;</p>
+
+
+
+<h3>Building with a toolchain – how does it help?</h3>
+
+
+
+<p>What does the JVM toolchain feature do?&nbsp;</p>
+
+
+
+<p>Based on a specification provided by the user, Gradle detects a locally installed JDK or JRE or downloads a requested one. The default download destination is the <code>GRADLE_USER_HOME/jdks/</code> directory. The specification includes such things as:</p>
+
+
+
+<ul><li>Java major language version</li><li>Optional vendor (for example, <code>Azul</code>)</li><li>Optional implementation (for example, <code>J9</code>)</li></ul>
+
+
+
+<p>After the toolchain becomes available, Gradle provides toolchain tools such as <code>javac</code>, <code>javadoc</code>, and <code>java</code> executables to the related tasks.&nbsp;</p>
+
+
+
+<p>Additionally, if the user hasn’t set a specification explicitly, Gradle configures source and target compatibility values to be equal to the toolchain ones. The Kotlin Gradle plugin does the same for Kotlin tasks.&nbsp;</p>
+
+
+
+<p>Let’s start with an easy case: your library has a requirement to support JDK versions 11 or newer. Just add the following toolchain spec in <code>build.gradle.kts</code>:&nbsp;</p>
+
+
+
+<pre class="kotlin-code" data-highlight-only="true" theme="idea" indent="4" style="visibility: hidden; padding: 36px 0;">
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+</pre>
+
+
+
+<p>This will tell Gradle to locate JDK 11 and use it for compilation, javadoc, and test tasks. If you don’t have JDK 11 installed locally, Gradle will download it automatically.&nbsp;</p>
+
+
+
+<p>Let’s imagine that at some point you’ve decided to run tests against the latest JDK to validate that the project works without problems. With toolchains, it is, again, easy to do – you just add a new task:&nbsp;</p>
+
+
+
+<pre class="kotlin-code" data-highlight-only="true" theme="idea" indent="4" style="visibility: hidden; padding: 36px 0;">
+tasks.register&lt;Test&gt;(&quot;testsOnLatestJDK&quot;) {
+    val javaToolchains  = project.extensions.getByType&lt;JavaToolchainService&gt;()
+    javaLauncher.set(javaToolchains.launcherFor {
+        // 17 is latest at the current moment
+        languageVersion.set(JavaLanguageVersion.of(17))
+    })
+}
+</pre>
+
+
+
+<p>You may also want to support some features introduced in newer JDKs. You’ve learned about Gradle metadata and want users with the latest JDK to be able to use all released features. This is a little more complicated, but still easy to do:&nbsp;</p>
+
+
+
+<pre class="kotlin-code" data-highlight-only="true" theme="idea" indent="4" style="visibility: hidden; padding: 36px 0;">
+val java17SourceSet = sourceSets.create(&quot;java17&quot;)
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+
+    registerFeature(&quot;java17&quot;) {
+        usingSourceSet(java17SourceSet)
+        capability(project.group.toString(), project.name, project.version.toString())
+    }
+}
+
+tasks.named&lt;JavaCompile&gt;(java17SourceSet.compileJavaTaskName) {
+    val javaToolchains  = project.extensions.getByType&lt;JavaToolchainService&gt;()
+    javaCompiler.set(
+        javaToolchains.compilerFor {
+            languageVersion.set(17)
+        }
+    )
+    source = sourceSets.main.get().allJava + java17SourceSet.allJava
+}
+</pre>
+
+
+
+<p>You could go even further and add run tasks that will run your project on JDK 11 and JDK 15.&nbsp;</p>
+
+
+
+<p>After these changes, new developers can start contributing to the project immediately.&nbsp;</p>
+
+
+
+<p>What’s even better, if you have configured the remote build cache before this change – now independent from the JDK version Gradle is running on&nbsp; – the build will hit this remote cache for tasks that use the toolchain. Note that you should also define the toolchain in the <code>buildSrc</code> module to fully utilize the remote build cache.&nbsp;</p>
+
+
+
+<h2>Toolchain support in the Kotlin plugin&nbsp;</h2>
+
+
+
+<p>Similar to Java compilation, the Kotlin compiler also depends on the JDK it’s running on for the Kotlin/JVM target with a default configuration. In such cases, the Kotlin compiler uses the JDK runtime classes it’s executing on. But, at the same time, the Kotlin compiler has the <a href="https://kotlinlang.org/docs/compiler-reference.html#jdk-home-path" class="ek-link">option</a> <code>-jdk-home</code> with the following description: <code>Include a custom JDK from the specified location into the classpath instead of the default JAVA_HOME</code>. Actually, the Kotlin compiler itself always produces the same output independent from the runtime JDK version when <code>-jdk-home</code> (or related <code>-no-jdk</code>) is specified.&nbsp;</p>
+
+
+
+<p><strong>In Kotlin, toolchain support affects only the Kotlin/JVM <code>-jdk-home</code> option’s value and additionally sets the <code>-jvm-target</code> value if it was not set explicitly by the user.</strong> Additionally, the toolchain’s major JDK version is considered as a task input now.&nbsp;</p>
+
+
+
+<p>We’ve added a special DSL in the Kotlin extension to configure a toolchain similarly to the Gradle DSL for Java. It emphasizes a toolchain affecting only Kotlin/JVM and simplifies the build script a bit when you are using only Kotlin. Under the hood, this DSL configures the same default toolchain object both for Java and Kotlin compilations in the same Gradle module. Or, as you’ve already guessed, you can still use the Gradle DSL for the Java toolchain. Both approaches will do the same:&nbsp;</p>
+
+
+
+<pre class="kotlin-code" data-highlight-only="true" theme="idea" indent="4" style="visibility: hidden; padding: 36px 0;">
+kotlin {
+    jvmToolchain {
+        (this as JavaToolchainSpec).languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+</pre>
+
+
+
+<p>The Kotlin Gradle plugin ensures that Kotlin and Java compilation tasks have the same JVM target to avoid hard-to-debug errors. Even if a toolchain is explicitly set for a specific task, Kotlin compilation will still check the related Java compilation JVM target and produce warnings if there is a mismatch. This can be controlled via the <code><a href="https://kotlinlang.org/docs/gradle.html#check-for-jvm-target-compatibility" class="ek-link">kotlin.jvm.target.validation.mode</a></code> property.&nbsp;</p>
+
+
+
+<h2>Conclusion&nbsp;</h2>
+
+
+
+<p>I once asked Gradle developers about their vision regarding the toolchain feature, and they said that it’s <em>to allow users to run the build on any JDK, but still produce the same output.</em>&nbsp;</p>
+
+
+
+<p>Expanding on this answer, any task whose output depends on a JDK/Java version should use the toolchain feature to select a predefined JDK. This will allow a user to have reproducible builds independent from the current user environment.</p>
+
+
+
+<p>Actually, this has been achieved in the Kotlin repo! Now developers can use any JDK to compile Kotlin and, in case a JDK is missing, it will be auto-provisioned by Gradle. You can try it yourself – just clone the <a href="https://github.com/jetbrains/kotlin/" class="ek-link">Kotlin repo</a> and run some Gradle tasks. Unfortunately, the Gradle toolchain feature does not auto-provision JDKs before version 1.8, but the Kotlin repo still needs JDK 1.6 and JDK 1.7 for some modules. You can add <code>kotlin.build.isObsoleteJdkOverrideEnabled=true</code> to <code>local.properties</code> to force the build to use only JDK versions 1.8 and newer.</p>
+
+
+
+<h2>See also</h2>
+
+
+
+<ul><li><a href="https://blog.jetbrains.com/kotlin/2020/09/the-dark-secrets-of-fast-compilation-for-kotlin/" class="ek-link">The Dark Secrets of Fast Compilation for Kotlin</a></li></ul>]]></content:encoded>
+
+            <wfw:commentRss>
+                https://blog.jetbrains.com/kotlin/2021/11/gradle-jvm-toolchain-support-in-the-kotlin-plugin/feed/
+            </wfw:commentRss>
+            <slash:comments>0</slash:comments>
+
+
+        </item>
+        <item>
+            <title>DataGrip 2021.3 EAP 3</title>
+            <link>https://blog.jetbrains.com/datagrip/2021/11/10/datagrip-2021-3-eap-3/</link>
+
+            <dc:creator><![CDATA[Maksim Sobolevskiy]]></dc:creator>
+            <pubDate>Wed, 10 Nov 2021 14:51:00 +0000</pubDate>
+            <category><![CDATA[eap]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=datagrip&#038;p=200879</guid>
+
+            <description>
+                <![CDATA[Hi! This is the third and the last EAP build before the release. Here&#8217;s a brief overview of what you will find: [Oracle] introspection levels One of the major problems with DataGrip for Oracle users was the introspection time if there are lots of databases and schemas. Introspection is the process of getting the metadata [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>Hi! This is the third and the <a href="https://www.jetbrains.com/datagrip/nextversion/" class="ek-link">last EAP build</a> before the release. Here&#8217;s a brief overview of what you will find:</p>
+
+
+
+<h2><br>[Oracle] introspection levels</h2>
+
+
+
+<p>One of the major problems with DataGrip for Oracle users was the introspection time if there are lots of databases and schemas. Introspection is the process of getting the metadata of the database such as object names and source code, and DataGrip needs this information to provide rapid coding assistance, navigation, and search.</p>
+
+
+
+<p>Oracle system catalogs are rather slow and the introspection was even slower if the user had no admin rights. We did our best to optimize the queries to get the metadata, but everything has its limitations.&nbsp;</p>
+
+
+
+<p>Usually, for daily work and coding assistance there is no need to load sources of the objects. In many cases, just having database names will be sufficient to have the proper code completion and navigation. So, we introduced <strong>three levels of introspection for Oracle databases</strong>.</p>
+
+
+
+<ul><li>Level 1: Names of all supported objects and their signatures, except names of index columns and names of private package variables.</li><li>Level 2: Everything except source code.</li><li>Level 3: Everything.</li></ul>
+
+
+
+<p><strong>The lower the level, the faster the introspection.</strong></p>
+
+
+
+<p>To switch the introspection levels, use the context menu:</p>
+
+
+
+<figure class="wp-block-image size-large is-style-editorskit-shadow"><img loading="lazy" width="1585" height="792" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/IntrospectionLevels.png" alt="" class="wp-image-200901"/></figure>
+
+
+
+<p>The introspection level can be set either for the whole database or for a particular schema. Schemas inherit their introspection level from the database, but it also can be set independently.&nbsp;</p>
+
+
+
+<p>There are icons representing the introspection level – the more the pill is filled, the higher the level. Also, color matters: a blue icon means that the introspection level is set directly, grey means that it is inherited.</p>
+
+
+
+<figure class="wp-block-image size-large is-style-editorskit-shadow"><img loading="lazy" width="1585" height="601" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/IntrospectionIcons.png" alt="" class="wp-image-200912"/></figure>
+
+
+
+<h2>New UI for importing data</h2>
+
+
+
+<p>Now, whether you import CSV files or copy tables/result-sets, you will see a couple of improvements:</p>
+
+
+
+<ul><li>You can choose an existing table or create a new one.</li><li>You can change the target schema in the import dialog. The dedicated dialog for the target will not appear if you copy the table or the resultset.</li><li>The target is saved as default per schema. So, if you are constantly copying from one particular schema to another, there will be no need to choose the target each time.&nbsp;</li></ul>
+
+
+
+<figure class="wp-block-image size-large is-style-editorskit-shadow"><img loading="lazy" width="1575" height="1362" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/NewUI.png" alt="" class="wp-image-200923"/></figure>
+
+
+
+<h2>[Snowflake] Support for streams</h2>
+
+
+
+<p>Now, streams are displayed in the database view as well as tables and views.</p>
+
+
+
+<figure class="wp-block-image size-large is-style-editorskit-shadow"><img loading="lazy" width="1270" height="441" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/Streams.png" alt="" class="wp-image-200935"/></figure>
+
+
+
+<p>As usual, we appreciate your feedback about our EAP builds in the <a href="https://youtrack.jetbrains.com/issues/DBE">issue tracker</a>, on <a href="https://twitter.com/datagrip">Twitter, or in the comments below.</a></p>]]></content:encoded>
+
+
+        </item>
+        <item>
+            <title>Live Webinar: Building Themes for IntelliJ-based IDEs</title>
+            <link>https://blog.jetbrains.com/platform/2021/11/live-webinar-building-themes-for-intellij-based-ides/
+            </link>
+
+            <dc:creator><![CDATA[Anna Maltceva]]></dc:creator>
+            <pubDate>Wed, 10 Nov 2021 10:01:01 +0000</pubDate>
+            <featuredImage>
+                https://blog.jetbrains.com/wp-content/uploads/2021/11/DSGN-11796_BPDN_2021_Blog_Featured_image_1280x600-1.png
+            </featuredImage>
+            <category><![CDATA[intellij]]></category>
+            <category><![CDATA[marketplace-2]]></category>
+            <category><![CDATA[webinars]]></category>
+            <category><![CDATA[ide-themes]]></category>
+            <category><![CDATA[newsletter]]></category>
+            <category><![CDATA[plugin-development]]></category>
+            <guid isPermaLink="false">https://blog.jetbrains.com/?post_type=platform&#038;p=200327</guid>
+
+            <description>
+                <![CDATA[Join us for a live webinar on November 22 at 17:00 CET / 16:00 UTC / 11:00 EST. We will air a new episode of the Busy Plugin Developers series that will mainly focus on customizing JetBrains IDEs by building theme plugins. We will be covering: Ways to customize your IDE interface with a theme [&#8230;]]]></description>
+            <content:encoded><![CDATA[<p>Join us for a <a href="https://info.jetbrains.com/ijplatform-webinar-november22-2021" class="ek-link">live webinar</a> on November 22 at 17:00 CET / 16:00 UTC / 11:00 EST. We will air a new episode of the Busy Plugin Developers series that will mainly focus on customizing JetBrains IDEs by building theme plugins.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1280" height="600" src="https://blog.jetbrains.com/wp-content/uploads/2021/11/DSGN-11796_BPDN_2021_Blog_Featured_image_1280x600-1.png" alt="" class="wp-image-200805"/></figure></div>
+
+
+
+<h2>We will be covering:</h2>
+
+
+
+<ul><li>Ways to customize your IDE interface with a theme plugin</li><li>The steps required to create a theme</li><li>The tools used to create IDE themes</li><li>The process of publishing a theme plugin to JetBrains Marketplace</li></ul>
+
+
+
+<p>Additionally, we will share information about the <strong>latest Marketplace updates</strong> and discuss the changes we’ve introduced to improve the plugin vendor experience.&nbsp;</p>
+
+
+
+<p>You will also have a chance to ask questions during the live stream. If you already have some burning questions,&nbsp; feel free to ask them in the comments to this blog post – we’ll cover them during <strong>Q&amp;A at the end of the webinar</strong>.</p>
+
+
+
+<p>Register to get a calendar invite and receive a reminder before the webinar begins:</p>
+
+
+
+<p align="center">
+    <a class="jb-download-button" href="https://info.jetbrains.com/ijplatform-webinar-november22-2021">
+    Register Now
+    </a>
+</p>
+
+
+
+<h2>Speaking to you:</h2>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img src="https://blog.jetbrains.com/wp-content/uploads/2021/07/jakub-1-e1636383414353.png" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Jakub Chrzanowski</h4>
+                                                <p><span style="font-weight: 400;">Former developer of third-party plugins who became a Developer Advocate responsible for the IntelliJ Platform SDK and Marketplace. Jakub tries to build useful stuff, but is known to suffer from severe cases of </span><a href="https://en.wiktionary.org/wiki/yak_shaving"><span style="font-weight: 400;">yak shaving</span></a><span style="font-weight: 400;">.</span></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img src="https://blog.jetbrains.com/wp-content/uploads/2021/11/Yann-Ce-bron.png" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Yann Cébron</h4>
+                                                <p>Yann has been developing plugins for IntelliJ IDEA since 2004. He&#8217;s a Developer Advocate for JetBrains and responsible for helping people building on the IntelliJ Platform.</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                <div class="about-author__box-img">
+                    <img src="https://blog.jetbrains.com/wp-content/uploads/2021/09/anna-200x200.png" width="200" height="200" alt="Anna Maltceva" loading="lazy"  class="avatar avatar-200 wp-user-avatar wp-user-avatar-200 photo avatar-default">
+                </div>
+                <div class="about-author__box-text">
+                    <h4>Anna Maltceva</h4>
+                    <p><span style="font-weight: 400;">As a marketing manager, Anna helps plugin developers benefit from listing on JetBrains Marketplace. Her work also helps improve the Marketplace service itself, both for plugin vendors and end-users.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<p></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

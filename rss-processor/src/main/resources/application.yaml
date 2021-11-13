@@ -1,0 +1,6 @@
+server:
+  port: 8567
+
+spring:
+  main:
+    banner-mode: off

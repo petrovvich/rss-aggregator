@@ -1,0 +1,11 @@
+POST http://localhost:8567/api/v1/rss
+Content-Type: application/json
+
+{
+  "name": "TEST",
+  "url": "URL",
+  "refresh": "100",
+  "type": "ATOM"
+}
+
+###
