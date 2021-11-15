@@ -1,18 +1,26 @@
 package it.petrovich.rssprocessor.service;
 
-import it.petrovich.rssprocessor.dto.FeedResponse;
-import it.petrovich.rssprocessor.dto.FeedSettingsRequest;
+import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rssprocessor.dto.StoreFeedResponse;
+import it.petrovich.rssprocessor.error.NoFeedException;
+import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+import static it.petrovich.rssprocessor.dto.RegistrationStatus.SUCCESS;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class RssService {
+    private final RssStorage storage;
 
-    public FeedResponse save(FeedSettingsRequest settings) {
-
-        return null;
+    public StoreFeedResponse save(StoreFeedRequest settings) {
+        log.debug("Start process feed request {}", settings);
+        return storage
+                .put(settings)
+                .map(feed -> new StoreFeedResponse(feed.id(), SUCCESS, "Subscription has stored successfully"))
+                .orElseThrow(() -> new NoFeedException(settings));
     }
 }

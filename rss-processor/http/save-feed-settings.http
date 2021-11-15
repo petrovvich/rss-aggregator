@@ -3,9 +3,9 @@ Content-Type: application/json
 
 {
   "name": "TEST",
-  "url": "https://test.com/rss",
+  "url": "https://blog.jetbrains.com/feed/",
   "refresh": "100",
-  "type": "ATOM"
+  "type": "RSS20"
 }
 
 ###

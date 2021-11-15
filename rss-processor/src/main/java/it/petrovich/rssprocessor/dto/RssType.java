@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum RssType {
-    RSS_2_0("rss_2_0"),
+    RSS20("rss20"),
     ATOM("atom");
 
     private final String version;

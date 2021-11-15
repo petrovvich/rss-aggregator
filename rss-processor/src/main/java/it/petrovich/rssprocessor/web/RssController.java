@@ -1,7 +1,7 @@
 package it.petrovich.rssprocessor.web;
 
-import it.petrovich.rssprocessor.dto.FeedResponse;
-import it.petrovich.rssprocessor.dto.FeedSettingsRequest;
+import it.petrovich.rssprocessor.dto.StoreFeedResponse;
+import it.petrovich.rssprocessor.dto.StoreFeedRequest;
 import it.petrovich.rssprocessor.service.RssService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +24,7 @@ public class RssController {
     private final RssService service;
 
     @PostMapping
-    public FeedResponse saveSettings(@RequestBody @Valid FeedSettingsRequest settings) {
+    public StoreFeedResponse saveSettings(@RequestBody @Valid StoreFeedRequest settings) {
         log.debug("Start process request {}", settings);
         validate(settings);
 
