@@ -1,8 +1,9 @@
-package it.petrovich.rssprocessor;
+package it.petrovich.rss.xml;
 
-import it.petrovich.rssprocessor.xml.atom.FeedType;
-import it.petrovich.rssprocessor.xml.rss20111.TRss;
 import jakarta.xml.bind.JAXBContext;
+
+import it.petrovich.rss.xml.atom.FeedType;
+import it.petrovich.rss.xml.rss20111.TRss;
 import lombok.SneakyThrows;
 import lombok.val;
 import org.junit.jupiter.api.Test;

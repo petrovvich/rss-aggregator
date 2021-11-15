@@ -24,26 +24,14 @@
             <version>1.7</version>
         </dependency>
         <dependency>
-            <groupId>jakarta.activation</groupId>
-            <artifactId>jakarta.activation-api</artifactId>
-            <version>${jakarta.activation.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.xml.bind</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>${jakarta.xml.bind.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
-            <version>${jaxb.runtime.version}</version>
-            <scope>runtime</scope>
+            <groupId>it.petrovich</groupId>
+            <artifactId>rss-xml</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>${lombok.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -81,40 +69,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.evolvedbinary.maven.mojohaus</groupId>
-                <artifactId>jaxb-maven-plugin</artifactId>
-                <version>${jaxb2-maven-plugin.version}</version>
-                <configuration>
-                    <clearOutputDir>false</clearOutputDir>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>atom_xjc</id>
-                        <goals>
-                            <goal>xjc</goal>
-                        </goals>
-                        <configuration>
-                            <packageName>it.petrovich.rssprocessor.xml.atom</packageName>
-                            <sources>
-                                <source>src/main/resources/xsd/atom.xsd</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>rss20111_xjc</id>
-                        <goals>
-                            <goal>xjc</goal>
-                        </goals>
-                        <configuration>
-                            <packageName>it.petrovich.rssprocessor.xml.rss20111</packageName>
-                            <sources>
-                                <source>src/main/resources/xsd/rss20111.xsd</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
