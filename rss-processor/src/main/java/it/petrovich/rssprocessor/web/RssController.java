@@ -1,5 +1,9 @@
-package it.petrovich.rssprocessor;
+package it.petrovich.rssprocessor.web;
 
+import it.petrovich.rssprocessor.dto.FeedResponse;
+import it.petrovich.rssprocessor.dto.FeedSettingsRequest;
+import it.petrovich.rssprocessor.service.RssService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
@@ -8,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
+import static it.petrovich.rssprocessor.service.ValidationService.validate;
 
 @Slf4j
 @RestController
@@ -20,8 +24,10 @@ public class RssController {
     private final RssService service;
 
     @PostMapping
-    public FeedResponse saveSettings(@RequestBody @Valid FeedSettings settings) {
+    public FeedResponse saveSettings(@RequestBody @Valid FeedSettingsRequest settings) {
         log.debug("Start process request {}", settings);
+        validate(settings);
+
         return service.save(settings);
     }
 }

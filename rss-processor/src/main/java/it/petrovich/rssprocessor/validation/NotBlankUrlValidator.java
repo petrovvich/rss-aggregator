@@ -1,9 +1,10 @@
-package it.petrovich.rssprocessor;
+package it.petrovich.rssprocessor.validation;
 
+import it.petrovich.rssprocessor.dto.FeedSettingsRequest;
 import org.apache.commons.validator.routines.UrlValidator;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 /**
  * Validator for {@link NotBlankUrl} annotation.
@@ -20,8 +21,8 @@ public class NotBlankUrlValidator implements ConstraintValidator<NotBlankUrl, Ob
 
     @Override
     public boolean isValid(Object value, ConstraintValidatorContext context) {
-        if (value instanceof FeedSettings settings) {
-            return URL_VALIDATOR.isValid(settings.url());
+        if (value instanceof String url) {
+            return URL_VALIDATOR.isValid(url);
         }
 
         return true;

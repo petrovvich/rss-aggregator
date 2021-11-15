@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor;
+package it.petrovich.rssprocessor.dto;
 
 import lombok.Getter;
 

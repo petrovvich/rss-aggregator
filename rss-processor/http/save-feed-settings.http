@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
   "name": "TEST",
-  "url": "URL",
+  "url": "https://test.com/rss",
   "refresh": "100",
   "type": "ATOM"
 }

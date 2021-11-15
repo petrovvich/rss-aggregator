@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor;
+package it.petrovich.rssprocessor.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
