@@ -1,10 +1,8 @@
-package it.petrovich.rssprocessor.validation;
-
-import it.petrovich.rssprocessor.dto.FeedSettingsRequest;
-import org.apache.commons.validator.routines.UrlValidator;
+package it.petrovich.rss.validation;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
+import org.apache.commons.validator.routines.UrlValidator;
 
 /**
  * Validator for {@link NotBlankUrl} annotation.

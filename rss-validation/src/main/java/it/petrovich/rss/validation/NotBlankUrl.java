@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor.validation;
+package it.petrovich.rss.validation;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

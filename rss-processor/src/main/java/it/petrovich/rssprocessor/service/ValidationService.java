@@ -1,6 +1,6 @@
 package it.petrovich.rssprocessor.service;
 
-import it.petrovich.rssprocessor.error.ArgumentValidationException;
+import it.petrovich.rss.validation.ArgumentValidationException;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;

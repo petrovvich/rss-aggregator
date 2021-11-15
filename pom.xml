@@ -17,10 +17,15 @@
     <modules>
         <module>rss-processor</module>
         <module>rss-xml</module>
+        <module>rss-validation</module>
     </modules>
     <properties>
         <apache.commons.io.version>2.11.0</apache.commons.io.version>
+        <glassfish.jakarta.el.version>4.0.1</glassfish.jakarta.el.version>
+        <hibernate.validator.version>7.0.1.Final</hibernate.validator.version>
         <jakarta.activation.version>2.0.1</jakarta.activation.version>
+        <jakarta.el.version>4.0.0</jakarta.el.version>
+        <jakarta.validation.version>3.0.1</jakarta.validation.version>
         <jakarta.xml.bind.version>3.0.1</jakarta.xml.bind.version>
         <java.version>17</java.version>
         <jaxb.runtime.version>3.0.2</jaxb.runtime.version>
@@ -30,7 +35,11 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -39,8 +48,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
             <plugin>

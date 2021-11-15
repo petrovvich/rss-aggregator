@@ -1,8 +1,8 @@
 package it.petrovich.rssprocessor.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import it.petrovich.rssprocessor.validation.NotBlankUrl;
 
+import it.petrovich.rss.validation.NotBlankUrl;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;

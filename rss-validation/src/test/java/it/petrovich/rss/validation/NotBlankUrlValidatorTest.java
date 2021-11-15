@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor.validation;
+package it.petrovich.rss.validation;
 
 import org.apache.commons.validator.routines.UrlValidator;
 import org.junit.jupiter.api.Test;
