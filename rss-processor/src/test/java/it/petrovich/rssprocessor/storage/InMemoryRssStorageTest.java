@@ -2,10 +2,12 @@ package it.petrovich.rssprocessor.storage;
 
 import it.petrovich.rssprocessor.dto.RssType;
 import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rssprocessor.service.RssXmlService;
 import lombok.val;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -17,11 +19,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class InMemoryRssStorageTest {
 
     @Autowired
-    private InMemoryRssStorage storage;
+    private InMemoryRssStorage inMemoryRssStorage;
+
+    @MockBean
+    private RssXmlService rssXmlService;
 
     @Test
     void testValidation() {
-        val saved = storage.put(buildRequest());
+        val saved = inMemoryRssStorage.put(buildRequest());
         assertNotNull(saved);
         assertTrue(saved.isPresent());
     }
