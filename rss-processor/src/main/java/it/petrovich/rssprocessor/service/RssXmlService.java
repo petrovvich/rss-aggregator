@@ -81,7 +81,9 @@ public class RssXmlService {
     private JAXBElement unmarshall(@NotNull String source, @Nullable Class<?> targetClass) {
         val unmarshaller = jaxbCtx.createUnmarshaller();
         return Optional.ofNullable(targetClass).isEmpty()
-                ? (JAXBElement) unmarshaller.unmarshal(new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))))
-                : unmarshaller.unmarshal(new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))), targetClass);
+                ? (JAXBElement) unmarshaller.unmarshal(
+                        new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))))
+                : unmarshaller.unmarshal(
+                        new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))), targetClass);
     }
 }

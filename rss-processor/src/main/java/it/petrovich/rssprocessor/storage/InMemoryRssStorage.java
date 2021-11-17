@@ -40,7 +40,8 @@ public final class InMemoryRssStorage implements RssStorage {
         log.debug("Start save feed {}", request);
         return Optional
                 .ofNullable(request)
-                .map(req -> new Feed(UUID.randomUUID(), req.name(), getUrl(req.url()), req.refreshInterval(), getType(req)))
+                .map(req -> new Feed(UUID.randomUUID(), req.name(), getUrl(req.url()), req.refreshInterval(),
+                        getType(req)))
                 .map(this::putToStorage);
     }
 

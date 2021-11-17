@@ -2,6 +2,7 @@ package it.petrovich.rssprocessor.storage;
 
 import it.petrovich.rssprocessor.dto.RssType;
 import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import lombok.val;
 import org.junit.jupiter.api.Test;
@@ -23,6 +24,8 @@ class InMemoryRssStorageTest {
 
     @MockBean
     private RssXmlService rssXmlService;
+    @MockBean
+    private RequestService requestService;
 
     @Test
     void testValidation() {

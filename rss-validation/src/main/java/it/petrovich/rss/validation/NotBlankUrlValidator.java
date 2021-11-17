@@ -6,6 +6,7 @@ import org.apache.commons.validator.routines.UrlValidator;
 
 /**
  * Validator for {@link NotBlankUrl} annotation.
+ * Validation based on the UrlValidator from the apache validation library.
  */
 public class NotBlankUrlValidator implements ConstraintValidator<NotBlankUrl, Object> {
 
