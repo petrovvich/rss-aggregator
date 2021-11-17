@@ -4,11 +4,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import it.petrovich.rss.validation.NotBlankUrl;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
+
+import javax.annotation.Nullable;
 
 public record StoreFeedRequest(@NotEmpty String name,
                                @NotBlankUrl String url,
                                @Min(100) @JsonProperty("refresh") long refreshInterval,
-                               @NotNull RssType type) {
+                               @Nullable RssType type) {
 
 }

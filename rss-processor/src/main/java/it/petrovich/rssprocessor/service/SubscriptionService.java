@@ -13,7 +13,7 @@ import static it.petrovich.rssprocessor.dto.RegistrationStatus.SUCCESS;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class RssService {
+public class SubscriptionService {
     private final RssStorage storage;
 
     public StoreFeedResponse save(StoreFeedRequest settings) {

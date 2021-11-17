@@ -5,7 +5,9 @@ import com.google.common.cache.CacheBuilder;
 import it.petrovich.rssprocessor.dto.Feed;
 import it.petrovich.rssprocessor.dto.FeedSubscription;
 import it.petrovich.rssprocessor.dto.Pair;
+import it.petrovich.rssprocessor.dto.RssType;
 import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +22,8 @@ import java.util.Collection;
 import java.util.Optional;
 import java.util.UUID;
 
+import static it.petrovich.rssprocessor.XmlUtils.parse;
+
 @Slf4j
 @Component
 @Profile(value = "!prod")
@@ -29,14 +33,22 @@ public final class InMemoryRssStorage implements RssStorage {
     private final Cache<UUID, FeedSubscription> SUBSCRIPTIONS = CacheBuilder.newBuilder().maximumSize(1000).build();
 
     private final RssXmlService xmlService;
+    private final RequestService requestService;
 
     @Override
     public Optional<Feed> put(@NotNull StoreFeedRequest request) {
         log.debug("Start save feed {}", request);
         return Optional
                 .ofNullable(request)
-                .map(req -> new Feed(UUID.randomUUID(), req.name(), getUrl(req.url()), req.refreshInterval(), req.type()))
+                .map(req -> new Feed(UUID.randomUUID(), req.name(), getUrl(req.url()), req.refreshInterval(), getType(req)))
                 .map(this::putToStorage);
+    }
+
+    @SneakyThrows
+    private RssType getType(StoreFeedRequest req) {
+        return Optional
+                .ofNullable(req.type())
+                .orElseGet(() -> xmlService.resolve(requestService.getRss(parse(req.url()))));
     }
 
     @Override

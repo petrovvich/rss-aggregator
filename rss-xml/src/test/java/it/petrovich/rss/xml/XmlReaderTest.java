@@ -85,4 +85,11 @@ class XmlReaderTest {
         val localDateTime = FORMATTER.parse((CharSequence) dateString);
         assertNotNull(localDateTime);
     }
+
+    @Test
+    @SneakyThrows
+    void testUnmarshallAny() {
+        val feed = unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)));
+        assertNotNull(feed);
+    }
 }

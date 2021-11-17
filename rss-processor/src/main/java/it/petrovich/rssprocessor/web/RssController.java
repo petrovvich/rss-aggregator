@@ -2,7 +2,7 @@ package it.petrovich.rssprocessor.web;
 
 import it.petrovich.rssprocessor.dto.StoreFeedResponse;
 import it.petrovich.rssprocessor.dto.StoreFeedRequest;
-import it.petrovich.rssprocessor.service.RssService;
+import it.petrovich.rssprocessor.service.SubscriptionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +21,7 @@ import static it.petrovich.rssprocessor.service.ValidationService.validate;
         consumes = MediaType.APPLICATION_JSON_VALUE,
         produces = MediaType.APPLICATION_JSON_VALUE)
 public class RssController {
-    private final RssService service;
+    private final SubscriptionService service;
 
     @PostMapping
     public StoreFeedResponse saveSettings(@RequestBody @Valid StoreFeedRequest settings) {

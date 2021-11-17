@@ -4,10 +4,12 @@ import it.petrovich.rss.xml.atom.DateTimeType;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
 import jakarta.xml.bind.JAXBElement;
+import lombok.SneakyThrows;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -68,5 +70,10 @@ public class XmlUtils {
                 .filter(elem -> elem.getDeclaredType().getSimpleName().equalsIgnoreCase(className))
                 .findFirst()
                 .map(JAXBElement::getValue);
+    }
+
+    @SneakyThrows
+    public static URL parse(String source) {
+        return new URL(source);
     }
 }

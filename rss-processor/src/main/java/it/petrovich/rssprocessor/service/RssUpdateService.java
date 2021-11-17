@@ -16,7 +16,7 @@ import java.net.URL;
 @Service
 @RequiredArgsConstructor
 public class RssUpdateService {
-    private final RestTemplate restTemplate;
+    private final RequestService requestService;
     private final RssStorage storage;
 
     @Scheduled(fixedRate = 15000)
@@ -24,14 +24,9 @@ public class RssUpdateService {
         storage
                 .getAll()
                 .forEach(feed -> {
-                    var response = getRss(feed.url());
+                    var response = requestService.getRss(feed.url());
                     log.debug("Response with length {} has received", response.length());
                     storage.put(new Pair<>(feed, response));
                 });
-    }
-
-    @SneakyThrows(value = {URISyntaxException.class})
-    private String getRss(URL url) {
-        return restTemplate.getForObject(url.toURI(), String.class);
     }
 }
