@@ -10,20 +10,32 @@ import org.apache.commons.validator.routines.UrlValidator;
  */
 public class NotBlankUrlValidator implements ConstraintValidator<NotBlankUrl, Object> {
 
+    /**
+     * Schemes supports by the validator.
+     * Only http and the https, because at the moment rss can not be load by the another scheme.
+     */
     private static final String[] SCHEMES = {"http", "https"};
+    /**
+     * @see UrlValidator
+     */
     private static final UrlValidator URL_VALIDATOR = new UrlValidator(SCHEMES);
 
+    /**
+     * @see ConstraintValidator
+     */
     @Override
-    public void initialize(NotBlankUrl constraintAnnotation) {
-        ConstraintValidator.super.initialize(constraintAnnotation);
+    public void initialize(final NotBlankUrl constraintAnnotation) {
+
     }
 
+    /**
+     * @see ConstraintValidator
+     */
     @Override
-    public boolean isValid(Object value, ConstraintValidatorContext context) {
+    public boolean isValid(final Object value, final ConstraintValidatorContext context) {
         if (value instanceof String url) {
             return URL_VALIDATOR.isValid(url);
         }
-
         return true;
     }
 }
