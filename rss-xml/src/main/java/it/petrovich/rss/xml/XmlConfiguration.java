@@ -10,7 +10,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class XmlConfiguration {
-
+    /**
+     * Creates {@link JAXBContext} conyains all RSS objects.
+     * At the moment supports only RSS 2.0 and Atom.
+     *
+     * @return {@link JAXBContext}
+     */
     @Bean
     @SneakyThrows(value = {JAXBException.class})
     public JAXBContext jaxbContext() {

@@ -11,5 +11,4 @@ public record StoreFeedRequest(@NotEmpty String name,
                                @NotBlankUrl String url,
                                @Min(100) @JsonProperty("refresh") long refreshInterval,
                                @Nullable RssType type) {
-
 }
