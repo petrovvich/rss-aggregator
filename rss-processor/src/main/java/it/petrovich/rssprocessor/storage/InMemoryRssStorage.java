@@ -2,11 +2,7 @@ package it.petrovich.rssprocessor.storage;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import it.petrovich.rssprocessor.dto.Feed;
-import it.petrovich.rssprocessor.dto.FeedSubscription;
-import it.petrovich.rssprocessor.dto.Pair;
-import it.petrovich.rssprocessor.dto.RssType;
-import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rssprocessor.dto.*;
 import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import jakarta.validation.constraints.NotNull;
@@ -23,6 +19,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 import static it.petrovich.rssprocessor.XmlUtils.parse;
+import static java.util.Optional.ofNullable;
 
 @Slf4j
 @Component
@@ -36,19 +33,17 @@ public final class InMemoryRssStorage implements RssStorage {
     private final RequestService requestService;
 
     @Override
-    public Optional<Feed> put(@NotNull StoreFeedRequest request) {
-        log.debug("Start save feed {}", request);
-        return Optional
-                .ofNullable(request)
-                .map(req -> new Feed(UUID.randomUUID(), req.name(), getUrl(req.url()), req.refreshInterval(),
-                        getType(req)))
+    public Optional<Feed> put(@NotNull StoreFeedRequest storeFeedRequest) {
+        log.debug("Start save feed {}", storeFeedRequest);
+        return ofNullable(storeFeedRequest)
+                .map(request -> new Feed(UUID.randomUUID(), request.name(), getUrl(request.url()), request.refreshInterval(),
+                        getType(request)))
                 .map(this::putToStorage);
     }
 
     @SneakyThrows
     private RssType getType(StoreFeedRequest req) {
-        return Optional
-                .ofNullable(req.type())
+        return ofNullable(req.type())
                 .orElseGet(() -> xmlService.resolve(requestService.getRss(parse(req.url()))));
     }
 
@@ -70,8 +65,7 @@ public final class InMemoryRssStorage implements RssStorage {
     @Override
     public Optional<Feed> get(UUID feedId) {
         log.debug("Start search feed with id {}", feedId);
-        return Optional
-                .ofNullable(REQUESTS.getIfPresent(feedId));
+        return ofNullable(REQUESTS.getIfPresent(feedId));
     }
 
     @Override

@@ -20,8 +20,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {RssXmlService.class, XmlConfiguration.class})
@@ -32,19 +31,41 @@ class RssXmlServiceTest {
     private RssXmlService service;
 
     @Test
-    void testConvertAtom() {
-        val convert = service.convert(buildPair(ATOM));
+    void testConvert_shouldReturnAtom() {
+        val actual = service.convert(buildPair(ATOM));
 
-        assertNotNull(convert);
-        assertEquals(FeedType.class.getSimpleName(), convert.rssEntry().getClass().getSimpleName());
+        assertAll(
+                () -> assertNotNull(actual),
+                () -> assertEquals(FeedType.class.getSimpleName(), actual.rssEntry().getClass().getSimpleName())
+        );
     }
 
     @Test
     void testConvertRss20() {
-        val convert = service.convert(buildPair(RSS_20));
+        val actual = service.convert(buildPair(RSS_20));
 
-        assertNotNull(convert);
-        assertEquals(TRss.class.getSimpleName(), convert.rssEntry().getClass().getSimpleName());
+        assertAll(
+                () -> assertNotNull(actual),
+                () -> assertEquals(TRss.class.getSimpleName(), actual.rssEntry().getClass().getSimpleName())
+        );
+    }
+
+    @Test
+    void testResolve_shouldReturnAtom() {
+        // when
+        val actual = service.resolve(readXml(ATOM));
+
+        // then
+        assertEquals(RssType.ATOM, actual);
+    }
+
+    @Test
+    void testResolve_shouldReturnRss20() {
+        // when
+        val actual = service.resolve(readXml(RSS_20));
+
+        // then
+        assertEquals(RssType.RSS20, actual);
     }
 
     private Pair<Feed, String> buildPair(String path) {

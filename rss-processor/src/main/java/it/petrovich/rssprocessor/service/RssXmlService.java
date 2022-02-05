@@ -22,24 +22,22 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Nullable;
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
-import java.util.Optional;
 
 import static it.petrovich.rssprocessor.XmlUtils.DATE_TIME_ELEM_CLASS;
 import static it.petrovich.rssprocessor.XmlUtils.extractEntry;
 import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.util.Optional.ofNullable;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class RssXmlService {
+public record RssXmlService(JAXBContext jaxbCtx) {
     private static final String LAST_BUILD_DATE = "lastBuildDate";
     private static final String T_RSS = "TRss";
     private static final String FEED_TYPE = "FeedType";
-    private final JAXBContext jaxbCtx;
 
     public FeedSubscription convert(Pair<Feed, String> response) {
-        val type = Optional
-                .ofNullable(response.left().type())
+        val type = ofNullable(response.left().type())
                 .orElse(resolve(response.right()));
 
         return switch (type) {
@@ -78,12 +76,12 @@ public class RssXmlService {
     }
 
     @SneakyThrows(value = {JAXBException.class})
-    private JAXBElement unmarshall(@NotNull String source, @Nullable Class<?> targetClass) {
+    private JAXBElement<?> unmarshall(@NotNull String source, @Nullable Class<?> targetClass) {
         val unmarshaller = jaxbCtx.createUnmarshaller();
-        return Optional.ofNullable(targetClass).isEmpty()
-                ? (JAXBElement) unmarshaller.unmarshal(
-                        new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))))
+        return ofNullable(targetClass).isEmpty()
+                ? (JAXBElement<?>) unmarshaller.unmarshal(
+                new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))))
                 : unmarshaller.unmarshal(
-                        new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))), targetClass);
+                new StreamSource(new ByteArrayInputStream(source.getBytes(UTF_8))), targetClass);
     }
 }
