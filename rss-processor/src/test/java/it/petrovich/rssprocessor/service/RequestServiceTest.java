@@ -17,7 +17,6 @@ import java.io.ByteArrayInputStream;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 import static it.petrovich.rssprocessor.XmlUtils.extractEntry;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -25,8 +24,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {SyncHttpRequestService.class})
 class RequestServiceTest {
-
-    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, dd MMM yyyy HH:mm:ss zzz");
 
     @Autowired
     private RequestService requestService;
@@ -44,9 +41,11 @@ class RequestServiceTest {
         val lastBuildDate = extractEntry(rssObject, "lastBuildDate")
                 .map(XmlUtils::parseDate)
                 .orElse(LocalDateTime.now());
+        val entries = rssObject.getChannel().getItem();
 
         assertNotNull(rssObject);
         assertNotNull(lastBuildDate);
+        assertNotNull(entries);
     }
 
 

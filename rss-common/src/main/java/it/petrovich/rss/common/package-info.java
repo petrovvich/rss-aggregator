@@ -6,4 +6,4 @@
  * @version 1.0
  * @since 1.0
  */
-package it.petrovich.rssprocessor.dto;
+package it.petrovich.rss.common;

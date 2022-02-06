@@ -1,14 +1,14 @@
 package it.petrovich.rssprocessor.service;
 
-import it.petrovich.rssprocessor.dto.StoreFeedRequest;
-import it.petrovich.rssprocessor.dto.StoreFeedResponse;
+import it.petrovich.rss.common.StoreFeedRequest;
+import it.petrovich.rss.common.StoreFeedResponse;
 import it.petrovich.rssprocessor.error.NoFeedException;
 import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import static it.petrovich.rssprocessor.dto.RegistrationStatus.SUCCESS;
+import static it.petrovich.rss.common.RegistrationStatus.SUCCESS;
 
 @Slf4j
 @Service

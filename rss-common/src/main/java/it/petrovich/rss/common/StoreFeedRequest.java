@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor.dto;
+package it.petrovich.rss.common;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import it.petrovich.rss.validation.NotBlankUrl;
@@ -10,5 +10,6 @@ import javax.annotation.Nullable;
 public record StoreFeedRequest(@NotEmpty String name,
                                @NotBlankUrl String url,
                                @Min(100) @JsonProperty("refresh") long refreshInterval,
-                               @Nullable RssType type) {
+                               @Nullable
+                               RssType type) {
 }

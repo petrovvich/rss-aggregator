@@ -1,12 +1,12 @@
 package it.petrovich.rssprocessor.service;
 
+import it.petrovich.rss.common.Feed;
+import it.petrovich.rss.common.FeedSubscription;
+import it.petrovich.rss.common.Pair;
+import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
 import it.petrovich.rssprocessor.XmlUtils;
-import it.petrovich.rssprocessor.dto.Feed;
-import it.petrovich.rssprocessor.dto.FeedSubscription;
-import it.petrovich.rssprocessor.dto.Pair;
-import it.petrovich.rssprocessor.dto.RssType;
 import it.petrovich.rssprocessor.error.ElementNotFoundException;
 import it.petrovich.rssprocessor.error.UnknownRssTypeException;
 import jakarta.validation.constraints.NotNull;

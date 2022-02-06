@@ -1,9 +1,9 @@
 package it.petrovich.rssprocessor.storage;
 
-import it.petrovich.rssprocessor.dto.FeedEntry;
-import it.petrovich.rssprocessor.dto.Pair;
-import it.petrovich.rssprocessor.dto.RssType;
-import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rss.common.FeedEntry;
+import it.petrovich.rss.common.Pair;
+import it.petrovich.rss.common.RssType;
+import it.petrovich.rss.common.StoreFeedRequest;
 import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import lombok.val;
@@ -60,6 +60,22 @@ class InMemoryRssStorageTest {
         assertAll(
                 () -> assertTrue(actual),
                 () -> assertEquals(expectedEntries, storage.getEntries(expectedUuid))
+        );
+    }
+
+    @Test
+    void testContainsEntry_shouldReturnTrue() {
+        // given
+        val expectedUuid = UUID.randomUUID();
+        val expectedEntries = buildEntries(1);
+        storage.putEntry(new Pair<>(expectedUuid, expectedEntries));
+
+        // when
+        boolean actual = storage.containsEntry(new Pair<>(expectedUuid, expectedEntries.stream().findAny().get()));
+
+        // then
+        assertAll(
+                () -> assertTrue(actual)
         );
     }
 

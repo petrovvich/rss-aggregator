@@ -1,11 +1,11 @@
 package it.petrovich.rssprocessor.service;
 
+import it.petrovich.rss.common.Feed;
+import it.petrovich.rss.common.Pair;
+import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.xml.XmlConfiguration;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
-import it.petrovich.rssprocessor.dto.Feed;
-import it.petrovich.rssprocessor.dto.Pair;
-import it.petrovich.rssprocessor.dto.RssType;
 import lombok.SneakyThrows;
 import lombok.val;
 import org.apache.commons.io.IOUtils;
@@ -20,7 +20,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {RssXmlService.class, XmlConfiguration.class})

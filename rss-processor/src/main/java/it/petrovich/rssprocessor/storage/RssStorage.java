@@ -1,10 +1,10 @@
 package it.petrovich.rssprocessor.storage;
 
-import it.petrovich.rssprocessor.dto.Feed;
-import it.petrovich.rssprocessor.dto.FeedEntry;
-import it.petrovich.rssprocessor.dto.FeedSubscription;
-import it.petrovich.rssprocessor.dto.Pair;
-import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rss.common.Feed;
+import it.petrovich.rss.common.FeedEntry;
+import it.petrovich.rss.common.FeedSubscription;
+import it.petrovich.rss.common.Pair;
+import it.petrovich.rss.common.StoreFeedRequest;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.Collection;

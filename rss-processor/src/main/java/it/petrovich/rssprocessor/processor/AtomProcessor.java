@@ -1,13 +1,13 @@
-package it.petrovich.rssprocessor.service.processor;
+package it.petrovich.rssprocessor.processor;
 
-import it.petrovich.rssprocessor.dto.FeedSubscription;
-import it.petrovich.rssprocessor.dto.ProcessingResult;
-import it.petrovich.rssprocessor.dto.RssType;
+import it.petrovich.rss.common.FeedSubscription;
+import it.petrovich.rss.common.ProcessingResult;
+import it.petrovich.rss.common.RssType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import static it.petrovich.rssprocessor.dto.RssType.ATOM;
+import static it.petrovich.rss.common.RssType.ATOM;
 
 @Slf4j
 @Component

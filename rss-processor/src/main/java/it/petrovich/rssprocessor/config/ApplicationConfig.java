@@ -1,8 +1,8 @@
 package it.petrovich.rssprocessor.config;
 
+import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.xml.XmlConfiguration;
-import it.petrovich.rssprocessor.dto.RssType;
-import it.petrovich.rssprocessor.service.processor.FeedProcessor;
+import it.petrovich.rssprocessor.processor.FeedProcessor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

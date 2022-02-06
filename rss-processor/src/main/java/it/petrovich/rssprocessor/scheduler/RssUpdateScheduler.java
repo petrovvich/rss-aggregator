@@ -1,10 +1,11 @@
-package it.petrovich.rssprocessor.service;
+package it.petrovich.rssprocessor.scheduler;
 
-import it.petrovich.rssprocessor.dto.FeedSubscription;
-import it.petrovich.rssprocessor.dto.Pair;
-import it.petrovich.rssprocessor.dto.ProcessingResult;
-import it.petrovich.rssprocessor.dto.RssType;
-import it.petrovich.rssprocessor.service.processor.FeedProcessor;
+import it.petrovich.rss.common.FeedSubscription;
+import it.petrovich.rss.common.Pair;
+import it.petrovich.rss.common.ProcessingResult;
+import it.petrovich.rss.common.RssType;
+import it.petrovich.rssprocessor.processor.FeedProcessor;
+import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

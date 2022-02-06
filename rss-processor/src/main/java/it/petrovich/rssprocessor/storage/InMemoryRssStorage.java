@@ -2,12 +2,12 @@ package it.petrovich.rssprocessor.storage;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import it.petrovich.rssprocessor.dto.Feed;
-import it.petrovich.rssprocessor.dto.FeedEntry;
-import it.petrovich.rssprocessor.dto.FeedSubscription;
-import it.petrovich.rssprocessor.dto.Pair;
-import it.petrovich.rssprocessor.dto.RssType;
-import it.petrovich.rssprocessor.dto.StoreFeedRequest;
+import it.petrovich.rss.common.Feed;
+import it.petrovich.rss.common.FeedEntry;
+import it.petrovich.rss.common.FeedSubscription;
+import it.petrovich.rss.common.Pair;
+import it.petrovich.rss.common.RssType;
+import it.petrovich.rss.common.StoreFeedRequest;
 import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import jakarta.validation.constraints.NotNull;
@@ -35,6 +35,7 @@ import static java.util.Optional.ofNullable;
 public final class InMemoryRssStorage implements RssStorage {
     private static final List<FeedEntry> EMPTY_LIST = Collections.emptyList();
     private static final int CACHE_CAPACITY = 1000;
+    private static final double VALUE_SIZE = 100.0;
 
     private final Cache<UUID, Feed> requestsCache = CacheBuilder.newBuilder().maximumSize(CACHE_CAPACITY).build();
     private final Cache<UUID, FeedSubscription> subscriptionsCache = CacheBuilder.newBuilder()
@@ -47,7 +48,7 @@ public final class InMemoryRssStorage implements RssStorage {
             .averageValue(Collections.emptyList())
             .constantKeySizeBySample(UUID.randomUUID())
             .constantValueSizeBySample(Collections.emptyList())
-            .averageValueSize(20.0)
+            .averageValueSize(VALUE_SIZE)
             .create();
 
     private final RssXmlService xmlService;
