@@ -13,7 +13,6 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.JAXBException;
-import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
@@ -30,13 +29,12 @@ import static java.util.Optional.ofNullable;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
 public record RssXmlService(JAXBContext jaxbCtx) {
     private static final String LAST_BUILD_DATE = "lastBuildDate";
     private static final String T_RSS = "TRss";
     private static final String FEED_TYPE = "FeedType";
 
-    public FeedSubscription convert(Pair<Feed, String> response) {
+    public FeedSubscription convert(final Pair<Feed, String> response) {
         val type = ofNullable(response.left().type())
                 .orElse(resolve(response.right()));
 
@@ -46,7 +44,7 @@ public record RssXmlService(JAXBContext jaxbCtx) {
         };
     }
 
-    private FeedSubscription convertRss20(Pair<Feed, String> response) {
+    private FeedSubscription convertRss20(final Pair<Feed, String> response) {
         val feed = (TRss) unmarshall(response.right(), TRss.class).getValue();
 
         val lastUpdateDate = extractEntry(feed, LAST_BUILD_DATE)
@@ -55,7 +53,7 @@ public record RssXmlService(JAXBContext jaxbCtx) {
         return new FeedSubscription(lastUpdateDate, response.left(), feed);
     }
 
-    private FeedSubscription convertAtom(Pair<Feed, String> response) {
+    private FeedSubscription convertAtom(final Pair<Feed, String> response) {
         val feed = (FeedType) unmarshall(response.right(), FeedType.class).getValue();
 
         val lastUpdateDate = extractEntry(feed, DATE_TIME_ELEM_CLASS)
@@ -64,7 +62,7 @@ public record RssXmlService(JAXBContext jaxbCtx) {
         return new FeedSubscription(lastUpdateDate, response.left(), feed);
     }
 
-    public RssType resolve(String sourceXml) {
+    public RssType resolve(final String sourceXml) {
         val feed = unmarshall(sourceXml, null);
         val targetClass = feed.getValue().getClass().getSimpleName();
 
@@ -76,7 +74,7 @@ public record RssXmlService(JAXBContext jaxbCtx) {
     }
 
     @SneakyThrows(value = {JAXBException.class})
-    private JAXBElement<?> unmarshall(@NotNull String source, @Nullable Class<?> targetClass) {
+    private JAXBElement<?> unmarshall(@NotNull final String source, @Nullable final Class<?> targetClass) {
         val unmarshaller = jaxbCtx.createUnmarshaller();
         return ofNullable(targetClass).isEmpty()
                 ? (JAXBElement<?>) unmarshaller.unmarshal(

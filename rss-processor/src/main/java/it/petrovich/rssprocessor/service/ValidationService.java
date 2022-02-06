@@ -15,15 +15,16 @@ import java.util.stream.Collectors;
 public class ValidationService {
     private static final ValidatorFactory FACTORY = Validation.buildDefaultValidatorFactory();
     private static final Validator VALIDATOR = FACTORY.getValidator();
+    private static final int EMPTY_SIZE = 0;
 
-    public static void validate(Object source) {
+    public static void validate(final Object source) {
         val violations = VALIDATOR.validate(source);
-        if (violations.size() > 0) {
+        if (violations.size() > EMPTY_SIZE) {
             throw new ArgumentValidationException(source, extractMessage(violations));
         }
     }
 
-    private static String extractMessage(Set<ConstraintViolation<Object>> violations) {
+    private static String extractMessage(final Set<ConstraintViolation<Object>> violations) {
         return violations
                 .stream()
                 .map(violation -> String.format("\t%s - %s", violation.getPropertyPath(), violation.getMessage()))

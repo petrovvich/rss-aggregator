@@ -17,7 +17,7 @@ public class SyncHttpRequestService implements RequestService {
 
     @Override
     @SneakyThrows(value = {URISyntaxException.class})
-    public String getRss(URL url) {
+    public String getRss(final URL url) {
         return restTemplate.getForObject(url.toURI(), String.class);
     }
 }

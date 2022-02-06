@@ -25,7 +25,7 @@ public class XmlUtils {
     public static final String STRING_CLASS = "String";
     public static final String CALENDAR_CLASS = "DateTimeType";
 
-    public static Optional<Object> extractEntry(TRss feed, String fieldName) {
+    public static Optional<Object> extractEntry(final TRss feed, final String fieldName) {
         return feed
                 .getChannel()
                 .getTitleOrLinkOrDescription()
@@ -37,7 +37,7 @@ public class XmlUtils {
                 .map(JAXBElement::getValue);
     }
 
-    public static LocalDateTime parseDate(Object source) {
+    public static LocalDateTime parseDate(final Object source) {
         return switch (source.getClass().getSimpleName()) {
             case STRING_CLASS -> stringToDate((String) source);
             case CALENDAR_CLASS -> calendarToDate((DateTimeType) source);
@@ -45,14 +45,14 @@ public class XmlUtils {
         };
     }
 
-    public static LocalDateTime stringToDate(String source) {
+    public static LocalDateTime stringToDate(final String source) {
         return Optional
                 .ofNullable(source)
                 .map(str -> LocalDateTime.parse(str, FORMATTER))
                 .orElse(LocalDateTime.now());
     }
 
-    private static LocalDateTime calendarToDate(DateTimeType source) {
+    private static LocalDateTime calendarToDate(final DateTimeType source) {
         return Optional
                 .ofNullable(source)
                 .map(DateTimeType::getValue)
@@ -62,7 +62,7 @@ public class XmlUtils {
                 .orElse(LocalDateTime.now());
     }
 
-    public static Optional<Object> extractEntry(FeedType feed, String className) {
+    public static Optional<Object> extractEntry(final FeedType feed, final String className) {
         return feed
                 .getAuthorOrCategoryOrContributor()
                 .stream()
@@ -73,7 +73,7 @@ public class XmlUtils {
     }
 
     @SneakyThrows
-    public static URL parse(String source) {
+    public static URL parse(final String source) {
         return new URL(source);
     }
 }

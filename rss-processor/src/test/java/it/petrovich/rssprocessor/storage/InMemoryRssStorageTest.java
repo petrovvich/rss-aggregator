@@ -29,7 +29,7 @@ class InMemoryRssStorageTest {
 
     @Test
     void testValidation() {
-        val saved = inMemoryRssStorage.put(buildRequest());
+        val saved = inMemoryRssStorage.putRequest(buildRequest());
         assertNotNull(saved);
         assertTrue(saved.isPresent());
     }

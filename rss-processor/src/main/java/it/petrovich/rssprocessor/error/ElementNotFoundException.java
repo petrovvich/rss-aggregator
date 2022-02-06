@@ -7,7 +7,7 @@ public class ElementNotFoundException extends RuntimeException {
 
     public static final String TEMPLATE = "Can not find element in response for uuid [{0}]";
 
-    public ElementNotFoundException(UUID messageUuid) {
+    public ElementNotFoundException(final UUID messageUuid) {
         super(MessageFormat.format(TEMPLATE, messageUuid));
     }
 }

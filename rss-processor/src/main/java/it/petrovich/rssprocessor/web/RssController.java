@@ -24,7 +24,7 @@ public class RssController {
     private final SubscriptionService service;
 
     @PostMapping
-    public StoreFeedResponse saveSettings(@RequestBody @Valid StoreFeedRequest settings) {
+    public StoreFeedResponse saveSettings(@RequestBody @Valid final StoreFeedRequest settings) {
         log.debug("Start process request {}", settings);
         validate(settings);
 

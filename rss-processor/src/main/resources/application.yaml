@@ -4,3 +4,7 @@ server:
 spring:
   main:
     banner-mode: off
+
+rss:
+  update:
+    cron: ${APP_SYNC_CRON:0 * * * * *} # (second) (minute) (hour) (day of the month) (month) (day of the week)

@@ -16,10 +16,10 @@ import static it.petrovich.rssprocessor.dto.RegistrationStatus.SUCCESS;
 public class SubscriptionService {
     private final RssStorage storage;
 
-    public StoreFeedResponse save(StoreFeedRequest settings) {
+    public StoreFeedResponse save(final StoreFeedRequest settings) {
         log.debug("Start process feed request {}", settings);
         return storage
-                .put(settings)
+                .putRequest(settings)
                 .map(feed -> new StoreFeedResponse(feed.id(), SUCCESS, "Subscription has stored successfully"))
                 .orElseThrow(() -> new NoFeedException(settings));
     }
