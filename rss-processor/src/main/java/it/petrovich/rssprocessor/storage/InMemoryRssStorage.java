@@ -11,13 +11,10 @@ import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Collection;
 import java.util.Optional;
 import java.util.UUID;
@@ -42,7 +39,7 @@ public final class InMemoryRssStorage implements RssStorage {
     public Optional<Feed> putRequest(@NotNull final StoreFeedRequest storeFeedRequest) {
         log.debug("Start save feed {}", storeFeedRequest);
         return ofNullable(storeFeedRequest)
-                .map(request -> new Feed(UUID.randomUUID(), request.name(), getUrl(request.url()),
+                .map(request -> new Feed(UUID.randomUUID(), request.name(), parse(request.url()),
                         request.refreshInterval(), getType(request)))
                 .map(request -> {
                     requests.put(request.id(), request);
@@ -55,11 +52,6 @@ public final class InMemoryRssStorage implements RssStorage {
                 .orElseGet(() -> xmlService.resolve(requestService.getRss(parse(req.url()))));
     }
 
-    @SneakyThrows(value = {MalformedURLException.class})
-    private URL getUrl(final String source) {
-        return new URL(source);
-    }
-
     @Override
     public Optional<Feed> getRequest(final UUID feedId) {
         log.debug("Start search feed with id {}", feedId);
@@ -67,20 +59,27 @@ public final class InMemoryRssStorage implements RssStorage {
     }
 
     @Override
-    public void putSubscription(final Pair<Feed, String> response) {
-        subscriptions.put(response.left().id(), xmlService.convert(response));
-    }
-
-    @Override
-    public Optional<FeedSubscription> getSubscription(final UUID id) {
-        return Optional.empty();
-    }
-
-    @Override
-    public Collection<Feed> getAll() {
+    public Collection<Feed> getAllRequests() {
         log.debug("Start get all subscriptions");
         return requests
                 .asMap()
                 .values();
+    }
+
+    @Override
+    public Optional<FeedSubscription> putSubscription(final Pair<Feed, String> response) {
+        subscriptions.put(response.left().id(), xmlService.convert(response));
+        requests.invalidate(response.left().id());
+        return ofNullable(subscriptions.getIfPresent(response.left().id()));
+    }
+
+    @Override
+    public Optional<FeedSubscription> getSubscription(final UUID id) {
+        return ofNullable(subscriptions.getIfPresent(id));
+    }
+
+    @Override
+    public Collection<FeedSubscription> getAllSubscriptions() {
+        return subscriptions.asMap().values();
     }
 }

@@ -1,11 +1,14 @@
 package it.petrovich.rssprocessor.service;
 
+import it.petrovich.rssprocessor.dto.FeedSubscription;
 import it.petrovich.rssprocessor.dto.Pair;
+import it.petrovich.rssprocessor.dto.ProcessingResult;
 import it.petrovich.rssprocessor.dto.RssType;
 import it.petrovich.rssprocessor.service.processor.FeedProcessor;
 import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
@@ -24,19 +27,31 @@ public class RssUpdateScheduler {
 
     @Scheduled(cron = "${rss.update.cron}")
     public void updateRss() {
-        storage
-                .getAll()
+        val subscriptions = storage
+                .getAllRequests()
                 .stream()
-                .map(feed -> {
-                    var response = requestService.getRss(feed.url());
-                    log.debug("Response with length {} has received", response.length());
-                    storage.putSubscription(new Pair<>(feed, response));
-                    return storage.getSubscription(feed.id());
-                })
-                .flatMap(Optional::stream)
-                .map(feedSubscription -> ofNullable(processors.get(feedSubscription))
-                        .map(processor -> processor.process(feedSubscription))
-                        )
+                .map(feed -> new Pair<>(feed, requestService.getRss(feed.url())))
+                .map(storage::putSubscription)
+                .filter(Optional::isPresent)
+                .map(Optional::get)
                 .toList();
+        log.debug("Entries have added {} entries is {}", subscriptions.size(), subscriptions);
+    }
+
+    @Scheduled(cron = "${rss.process.cron}")
+    public void processRss() {
+        val processed = storage.getAllSubscriptions()
+                .stream()
+                .map(this::process)
+                .filter(Optional::isPresent)
+                .map(Optional::get)
+                .toList();
+        log.debug("Entries have processed {} entries is {}", processed.size(), processed);
+    }
+
+    private Optional<ProcessingResult> process(final FeedSubscription feedSubscription) {
+        log.debug("Try to proceed subscription {}", feedSubscription.settings());
+        return ofNullable(processors.get(feedSubscription))
+                .map(processor -> processor.process(feedSubscription));
     }
 }

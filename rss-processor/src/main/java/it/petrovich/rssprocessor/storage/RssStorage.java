@@ -15,9 +15,11 @@ public sealed interface RssStorage permits InMemoryRssStorage {
 
     Optional<Feed> getRequest(@NotNull UUID id);
 
-    void putSubscription(@NotNull Pair<Feed, String> response);
+    Collection<Feed> getAllRequests();
+
+    Optional<FeedSubscription> putSubscription(@NotNull Pair<Feed, String> response);
 
     Optional<FeedSubscription> getSubscription(@NotNull UUID id);
 
-    Collection<Feed> getAll();
+    Collection<FeedSubscription> getAllSubscriptions();
 }

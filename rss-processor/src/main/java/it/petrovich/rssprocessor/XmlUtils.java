@@ -3,6 +3,7 @@ package it.petrovich.rssprocessor;
 import it.petrovich.rss.xml.atom.DateTimeType;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
+import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.JAXBElement;
 import lombok.SneakyThrows;
 import lombok.experimental.UtilityClass;
@@ -62,12 +63,12 @@ public class XmlUtils {
                 .orElse(LocalDateTime.now());
     }
 
-    public static Optional<Object> extractEntry(final FeedType feed, final String className) {
+    public static Optional<Object> extractEntry(final FeedType feed, @NotNull final String className) {
         return feed
                 .getAuthorOrCategoryOrContributor()
                 .stream()
                 .map(JAXBElement.class::cast)
-                .filter(elem -> elem.getDeclaredType().getSimpleName().equalsIgnoreCase(className))
+                .filter(elem -> className.equalsIgnoreCase(elem.getDeclaredType().getSimpleName()))
                 .findFirst()
                 .map(JAXBElement::getValue);
     }
