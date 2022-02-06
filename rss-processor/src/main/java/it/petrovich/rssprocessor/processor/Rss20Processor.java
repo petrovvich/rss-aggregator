@@ -14,6 +14,8 @@ import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.stereotype.Component;
 
+import java.util.Objects;
+
 import static it.petrovich.rss.common.RssType.RSS20;
 
 @Slf4j
@@ -31,13 +33,21 @@ public final class Rss20Processor implements FeedProcessor {
     @Override
     public ProcessingResult process(final FeedSubscription feed) {
         val feedObject = (TRss) feed.rssEntry();
+        val storedEntries = storage.getEntries(feed.settings().id());
         val feedEntries = feedObject.getChannel()
                 .getItem()
                 .stream()
-                .map(item -> new FeedEntry(item, notificationService.sendEvent(new Rss20NotificationEvent(item))))
+                .map(item -> {
+                    val entry = new FeedEntry(item, true);
+                    if (!storedEntries.contains(entry)) {
+                        return new FeedEntry(item, notificationService.sendEvent(new Rss20NotificationEvent(item)));
+                    }
+                    return null;
+                })
+                .filter(Objects::nonNull)
                 .toList();
         log.debug("Extracted {} entries", feedEntries.size());
-        val storeResult = storage.putEntry(new Pair<>(feed.settings().id(), feedEntries));
+        val storeResult = storage.putOrReplaceEntry(new Pair<>(feed.settings().id(), feedEntries));
         return new ProcessingResult(storeResult, feed.settings().id(), feedEntries.size());
     }
 }

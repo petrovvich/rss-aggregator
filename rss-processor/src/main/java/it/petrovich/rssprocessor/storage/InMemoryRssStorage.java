@@ -103,11 +103,16 @@ public final class InMemoryRssStorage implements RssStorage {
     }
 
     @Override
-    public boolean putEntry(final Pair<UUID, Collection<FeedEntry>> entries) {
+    public boolean putOrReplaceEntry(final Pair<UUID, Collection<FeedEntry>> entries) {
         if (CollectionUtils.isEmpty(entries.right())) {
             return false;
         }
-        entriesCache.put(entries.left(), entries.right());
+        if (entriesCache.containsKey(entries.left())) {
+            entriesCache.replace(entries.left(), entries.right());
+        } else {
+            entriesCache.put(entries.left(), entries.right());
+        }
+
         return !CollectionUtils.isEmpty(entriesCache.get(entries.left()));
     }
 

@@ -26,13 +26,14 @@ public class TelegramAutoConfigurer {
     }
 
     @Bean
-    public Map<String, NotificationProcessor> notificationProcessorMap(Collection<NotificationProcessor> processors) {
+    public Map<String, NotificationProcessor> notificationProcessorMap(
+            final Collection<NotificationProcessor> processors) {
         return processors.stream()
                 .collect(Collectors.toMap(NotificationProcessor::getType, Function.identity()));
     }
 
     @Bean
-    public NotificationService tgNotificationService(Map<String, NotificationProcessor> map) {
+    public NotificationService tgNotificationService(final Map<String, NotificationProcessor> map) {
         return new TelegramNotificationService(map);
     }
 }

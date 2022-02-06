@@ -10,7 +10,7 @@ public class Rss20NotificationProcessor implements NotificationProcessor {
     }
 
     @Override
-    public boolean process(NotificationEvent<?> event) {
+    public boolean process(final NotificationEvent<?> event) {
         return false;
     }
 }

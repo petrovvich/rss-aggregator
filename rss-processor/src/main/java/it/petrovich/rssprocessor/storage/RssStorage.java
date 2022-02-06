@@ -24,7 +24,7 @@ public sealed interface RssStorage permits InMemoryRssStorage {
 
     Collection<FeedSubscription> getAllSubscriptions();
 
-    boolean putEntry(@NotNull Pair<UUID, Collection<FeedEntry>> entries);
+    boolean putOrReplaceEntry(@NotNull Pair<UUID, Collection<FeedEntry>> entries);
 
     boolean containsEntry(Pair<UUID, FeedEntry> entry);
 

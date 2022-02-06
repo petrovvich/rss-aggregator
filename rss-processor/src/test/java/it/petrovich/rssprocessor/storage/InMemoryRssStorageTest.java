@@ -54,7 +54,7 @@ class InMemoryRssStorageTest {
         val expectedEntries = buildEntries(1);
 
         // when
-        boolean actual = storage.putEntry(new Pair<>(expectedUuid, expectedEntries));
+        boolean actual = storage.putOrReplaceEntry(new Pair<>(expectedUuid, expectedEntries));
 
         // then
         assertAll(
@@ -68,7 +68,7 @@ class InMemoryRssStorageTest {
         // given
         val expectedUuid = UUID.randomUUID();
         val expectedEntries = buildEntries(1);
-        storage.putEntry(new Pair<>(expectedUuid, expectedEntries));
+        storage.putOrReplaceEntry(new Pair<>(expectedUuid, expectedEntries));
 
         // when
         boolean actual = storage.containsEntry(new Pair<>(expectedUuid, expectedEntries.stream().findAny().get()));
@@ -76,6 +76,31 @@ class InMemoryRssStorageTest {
         // then
         assertAll(
                 () -> assertTrue(actual)
+        );
+    }
+
+    @Test
+    void testPutOrReplace_shouldReturn2elements() {
+        // given
+        val expectedUuid = UUID.randomUUID();
+        val expectedEntries = buildEntries(1);
+        boolean expectedFirst = storage.putOrReplaceEntry(new Pair<>(expectedUuid, expectedEntries));
+
+        assertAll(
+                () -> assertTrue(expectedFirst),
+                () -> assertEquals(1, storage.getEntries(expectedUuid).size()),
+                () -> assertEquals(expectedEntries, storage.getEntries(expectedUuid))
+        );
+
+        val expectedEntriesSecond = new Pair<>(expectedUuid, buildEntries(4));
+
+        boolean expectedSecond = storage.putOrReplaceEntry(expectedEntriesSecond);
+
+        // then
+        assertAll(
+                () -> assertTrue(expectedSecond),
+                () -> assertEquals(4, storage.getEntries(expectedUuid).size()),
+                () -> assertEquals(expectedEntriesSecond.right(), storage.getEntries(expectedUuid))
         );
     }
 
