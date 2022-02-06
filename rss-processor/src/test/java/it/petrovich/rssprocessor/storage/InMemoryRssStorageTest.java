@@ -1,5 +1,7 @@
 package it.petrovich.rssprocessor.storage;
 
+import it.petrovich.rssprocessor.dto.FeedEntry;
+import it.petrovich.rssprocessor.dto.Pair;
 import it.petrovich.rssprocessor.dto.RssType;
 import it.petrovich.rssprocessor.dto.StoreFeedRequest;
 import it.petrovich.rssprocessor.service.RequestService;
@@ -12,6 +14,12 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.util.Collection;
+import java.util.UUID;
+import java.util.stream.IntStream;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -20,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class InMemoryRssStorageTest {
 
     @Autowired
-    private InMemoryRssStorage inMemoryRssStorage;
+    private RssStorage storage;
 
     @MockBean
     private RssXmlService rssXmlService;
@@ -29,12 +37,42 @@ class InMemoryRssStorageTest {
 
     @Test
     void testValidation() {
-        val saved = inMemoryRssStorage.putRequest(buildRequest());
-        assertNotNull(saved);
-        assertTrue(saved.isPresent());
+        // when
+        val saved = storage.putRequest(buildRequest());
+
+        // then
+        assertAll(
+                () -> assertNotNull(saved),
+                () -> assertTrue(saved.isPresent())
+        );
+    }
+
+    @Test
+    void testPutEntry_shouldReturnTrue() {
+        // given
+        val expectedUuid = UUID.randomUUID();
+        val expectedEntries = buildEntries(1);
+
+        // when
+        boolean actual = storage.putEntry(new Pair<>(expectedUuid, expectedEntries));
+
+        // then
+        assertAll(
+                () -> assertTrue(actual),
+                () -> assertEquals(expectedEntries, storage.getEntries(expectedUuid))
+        );
+    }
+
+    private Collection<FeedEntry> buildEntries(int count) {
+        return IntStream
+                .range(0, count)
+                .mapToObj(num -> new FeedEntry(num, true))
+                .toList();
     }
 
     private StoreFeedRequest buildRequest() {
         return new StoreFeedRequest("TEST_NAME", "http://test.not/", 1, RssType.ATOM);
     }
+
+
 }

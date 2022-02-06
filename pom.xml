@@ -22,6 +22,7 @@
     </modules>
     <properties>
         <apache.commons.io.version>2.11.0</apache.commons.io.version>
+        <chronicle.map.version>3.22ea6</chronicle.map.version>
         <glassfish.jakarta.el.version>4.0.1</glassfish.jakarta.el.version>
         <guava.version>31.0.1-jre</guava.version>
         <hibernate.validator.version>7.0.1.Final</hibernate.validator.version>
@@ -111,6 +112,17 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <compilerArgs>
+                        <compilerArg>--add-exports=java.base/jdk.internal.ref=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=java.base/sun.nio.ch=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=jdk.compiler/com.sun.tools.javac=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.lang=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.lang.reflect=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.io=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.util=ALL-UNNAMED</compilerArg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
@@ -132,6 +144,22 @@
                         <phase>verify</phase>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <argLine>--add-exports=java.base/jdk.internal.ref=ALL-UNNAMED
+                        --add-exports=java.base/sun.nio.ch=ALL-UNNAMED 
+                        --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED
+                        --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+                        --add-opens=jdk.compiler/com.sun.tools.javac=ALL-UNNAMED
+                        --add-opens=java.base/java.lang=ALL-UNNAMED
+                        --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+                        --add-opens=java.base/java.io=ALL-UNNAMED
+                        --add-opens=java.base/java.util=ALL-UNNAMED</argLine>
+                </configuration>
             </plugin>
         </plugins>
     </build>

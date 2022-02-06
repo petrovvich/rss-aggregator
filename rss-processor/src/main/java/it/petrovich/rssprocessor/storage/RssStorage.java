@@ -1,6 +1,7 @@
 package it.petrovich.rssprocessor.storage;
 
 import it.petrovich.rssprocessor.dto.Feed;
+import it.petrovich.rssprocessor.dto.FeedEntry;
 import it.petrovich.rssprocessor.dto.FeedSubscription;
 import it.petrovich.rssprocessor.dto.Pair;
 import it.petrovich.rssprocessor.dto.StoreFeedRequest;
@@ -22,4 +23,10 @@ public sealed interface RssStorage permits InMemoryRssStorage {
     Optional<FeedSubscription> getSubscription(@NotNull UUID id);
 
     Collection<FeedSubscription> getAllSubscriptions();
+
+    boolean putEntry(@NotNull Pair<UUID, Collection<FeedEntry>> entries);
+
+    boolean containsEntry(Pair<UUID, FeedEntry> entry);
+
+    Collection<FeedEntry> getEntries(UUID id);
 }

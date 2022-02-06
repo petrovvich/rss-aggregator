@@ -65,6 +65,17 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <compilerArgs>
+                        <compilerArg>--add-exports=java.base/jdk.internal.ref=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=java.base/sun.nio.ch=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=jdk.compiler/com.sun.tools.javac=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.lang=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.lang.reflect=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.io=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.util=ALL-UNNAMED</compilerArg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
         </plugins>
