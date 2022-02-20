@@ -1,0 +1,6 @@
+<article>\n" +
+                "\t<section class=\"page\">\n" +
+                "<p>Java garbage collection – the reallocation of memory through deletion of unused objects – would be improved through a proposal being considered by the developers of standard Java.</p><aside class=\"fakesidebar\">\n" +
+                "<h4>[ <u><a href=\"https://www.infoworld.com/article/3630510/jdk-18-the-new-features-in-java-18.html\">Also on InfoWorld: JDK 18: What’s new in Java 18</a></u> ]</h4>\n" +
+                "</aside>\n" +
+                "<p>A <a href=\"https://openjdk.java.net/jeps/423\" rel=\"nofollow\">JDK Enhancement Proposal (JEP)</a> being floated in the OpenJDK Java community calls for reducing latency by implementing region pinning to the G1 (Garbage-First) garbage collector, so collection would not have to be disabled during Java Native Interface (JNI) critical regions. Goals of this plan include:</p><p class=\"jumpTag\"><a href=\"/article/3649194/java-proposal-would-lower-gc-latency.html#jump\">To read this article in full, please click here</a></p></section></article>

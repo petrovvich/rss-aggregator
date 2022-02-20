@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 import static it.petrovich.rss.xml.XmlUtils.extractOrElse;
-import static it.petrovich.rss.xml.XmlUtils.html2text;
+import static it.petrovich.rss.xml.XmlUtils.extractParagraphs;
 import static java.text.MessageFormat.format;
 
 @Slf4j
@@ -37,14 +37,14 @@ public class Rss20NotificationProcessor implements NotificationProcessor {
     private String prepareMessage(final NotificationEvent<?> event) {
         val body = ((Rss20NotificationEvent) event).getBody();
         val title = extractOrElse(body, "title", "").toString();
-        val description = formatDescription(html2text(extractOrElse(body, "description", "").toString()));
+        val description = formatDescription(extractParagraphs(extractOrElse(body, "description", "").toString()));
         val link = extractOrElse(body, "link", "").toString();
         return format(MSG_TEMPLATE, title, description, link);
     }
 
     private String formatDescription(String rawDescription) {
         return Arrays.stream(rawDescription.split("\\. "))
-                .limit(3)
+                .limit(2)
                 .collect(Collectors.joining(".\n"))
                 .concat(".");
     }

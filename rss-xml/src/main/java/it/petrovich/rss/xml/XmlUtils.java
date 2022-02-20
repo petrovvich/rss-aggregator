@@ -17,6 +17,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.GregorianCalendar;
 import java.util.Optional;
+import java.util.regex.Pattern;
 
 @UtilityClass
 public class XmlUtils {
@@ -25,6 +26,8 @@ public class XmlUtils {
     public static final String JAXB_ELEM_CLASS = JAXBElement.class.getSimpleName();
     public static final String STRING_CLASS = "String";
     public static final String CALENDAR_CLASS = "DateTimeType";
+    public static final String HTML_TAG_PATTERN = "<(\"[^\"]*\"|'[^']*'|[^'\">])*>";
+    public static final Pattern pattern = Pattern.compile(HTML_TAG_PATTERN);
 
     public static Optional<Object> extractEntry(final TRss feed, final String fieldName) {
         return feed
@@ -100,7 +103,14 @@ public class XmlUtils {
         return new URL(source);
     }
 
-    public static String html2text(final String html) {
-        return Jsoup.parse(html).text();
+    public static String extractParagraphs(final String sourceText) {
+        if (!isHtml(sourceText)) {
+            return sourceText;
+        }
+        return Jsoup.parse(sourceText).select("p").text();
+    }
+
+    private static boolean isHtml(String sourceText) {
+        return pattern.matcher(sourceText).find();
     }
 }
