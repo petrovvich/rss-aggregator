@@ -7,7 +7,7 @@ import it.petrovich.rss.common.ProcessingResult;
 import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.notification.NotificationService;
 import it.petrovich.rss.xml.rss20111.TRss;
-import it.petrovich.rssprocessor.events.Rss20NotificationEvent;
+import it.petrovich.rss.notification.events.Rss20NotificationEvent;
 import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

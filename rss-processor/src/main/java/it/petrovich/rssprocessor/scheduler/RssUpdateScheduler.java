@@ -52,7 +52,7 @@ public class RssUpdateScheduler {
 
     private Optional<ProcessingResult> process(final FeedSubscription feedSubscription) {
         log.debug("Try to proceed subscription {}", feedSubscription.settings());
-        return ofNullable(processors.get(feedSubscription))
+        return ofNullable(processors.get(feedSubscription.settings().type()))
                 .map(processor -> processor.process(feedSubscription));
     }
 }

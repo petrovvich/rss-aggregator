@@ -8,8 +8,11 @@ import java.util.Collection;
 
 @Getter
 @Setter
-@ConfigurationProperties(prefix = "app.notification")
+@ConfigurationProperties(prefix = "app.notification.telegram")
 public class NotificationProperties {
 
-    private Collection<String> channels;
+    private String token;
+    private String username;
+    private Collection<String> chats;
+
 }
