@@ -3,7 +3,6 @@ package it.petrovich.rss.notification.telegram;
 import it.petrovich.rss.notification.NotificationProcessor;
 import it.petrovich.rss.notification.events.AtomNotificationEvent;
 import it.petrovich.rss.notification.events.NotificationEvent;
-import it.petrovich.rss.xml.XmlUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
