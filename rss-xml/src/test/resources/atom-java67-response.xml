@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/atom10full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/"
+      xmlns:blogger="http://schemas.google.com/blogger/2008" xmlns:georss="http://www.georss.org/georss"
+      xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>tag:blogger.com,1999:blog-694855878384792308</id>
+    <updated>2022-02-20T05:54:41.686-08:00</updated>
+    <category term="core java"/>
+    <category term="courses"/>
+    <category term="programming"/>
+    <category term="core java interview question answer"/>
+    <category term="Java collection tutorial"/>
+    <category term="free resources"/>
+    <category term="Coding Problems"/>
+    <category term="data structure and algorithm"/>
+    <category term="interview questions"/>
+    <category term="Java 8"/>
+    <category term="String"/>
+    <category term="best of java67"/>
+    <category term="error and exception"/>
+    <category term="books"/>
+    <category term="object oriented programming"/>
+    <category term="array"/>
+    <category term="spring framework"/>
+    <category term="web development"/>
+    <category term="JavaScript"/>
+    <category term="ArrayList"/>
+    <category term="Java Multithreading Tutorial"/>
+    <category term="coding"/>
+    <category term="sql"/>
+    <category term="database"/>
+    <category term="date and time"/>
+    <category term="Cloud Computing"/>
+    <category term="Linux"/>
+    <category term="SQL interview Question"/>
+    <category term="java"/>
+    <category term="java io tutorial"/>
+    <category term="HashMap"/>
+    <category term="JDBC"/>
+    <category term="Java Certification"/>
+    <category term="J2EE"/>
+    <category term="JSP"/>
+    <category term="Eclipse"/>
+    <category term="Java programming Tutorial"/>
+    <category term="Sorting Algorithm"/>
+    <category term="IT Certification"/>
+    <category term="SQL SERVER"/>
+    <category term="Servlet"/>
+    <category term="binary tree"/>
+    <category term="spring boot"/>
+    <category term="thread interview questions"/>
+    <category term="Python"/>
+    <category term="cloud certification"/>
+    <category term="spring mvc"/>
+    <category term="JVM"/>
+    <category term="Unix"/>
+    <category term="data science"/>
+    <category term="machine learning"/>
+    <category term="OCAJP"/>
+    <category term="React"/>
+    <category term="aws"/>
+    <category term="design pattern"/>
+    <category term="linked list"/>
+    <category term="spring interview question"/>
+    <category term="enum"/>
+    <category term="Google Cloud Platform"/>
+    <category term="Spring Certification"/>
+    <category term="Stream"/>
+    <category term="coding exercise"/>
+    <category term="java concurrency tutorial"/>
+    <category term="JSON"/>
+    <category term="Java Interview Question"/>
+    <category term="JavaScript Tutorial"/>
+    <category term="OCPJP"/>
+    <category term="REST tutorials"/>
+    <category term="jQuery"/>
+    <category term="Google Cloud Certification"/>
+    <category term="JSP Interview Question"/>
+    <category term="Java file tutorials"/>
+    <category term="JavaScript Interview Question"/>
+    <category term="MySQL tutorial example"/>
+    <category term="Serialization"/>
+    <category term="best practices"/>
+    <category term="troubleshooting"/>
+    <category term="Angular"/>
+    <category term="CSS"/>
+    <category term="Coursera"/>
+    <category term="Hibernate"/>
+    <category term="Java interview questions"/>
+    <category term="Java networking tutorial"/>
+    <category term="Servlet Interview Questions"/>
+    <category term="docker"/>
+    <category term="homework"/>
+    <category term="java basics"/>
+    <category term="programmers"/>
+    <category term="tools"/>
+    <category term="Artificial Intelligence"/>
+    <category term="C++"/>
+    <category term="DevOps"/>
+    <category term="Java String tutorial"/>
+    <category term="Maven"/>
+    <category term="Microservices"/>
+    <category term="Microsoft Azure Platform"/>
+    <category term="Oracle"/>
+    <category term="Set"/>
+    <category term="Web Service"/>
+    <category term="general"/>
+    <category term="testing"/>
+    <category term="Agile"/>
+    <category term="Azure Certifications"/>
+    <category term="Big Data"/>
+    <category term="Blockchain"/>
+    <category term="HTTP"/>
+    <category term="Hibernate interview Question"/>
+    <category term="Java 5 tutorial"/>
+    <category term="Queue"/>
+    <category term="Scrum"/>
+    <category term="Struts"/>
+    <category term="aws certification"/>
+    <category term="debugging"/>
+    <category term="java 7"/>
+    <category term="java design pattern"/>
+    <category term="ssl"/>
+    <category term="thread"/>
+    <category term="web design"/>
+    <category term="Amazon Web Service"/>
+    <category term="Cyber Security"/>
+    <category term="Data Analysis"/>
+    <category term="Django"/>
+    <category term="Ethical hacking"/>
+    <category term="HTML"/>
+    <category term="Hadoop"/>
+    <category term="Java Enum"/>
+    <category term="Java IO interview question"/>
+    <category term="Log4j"/>
+    <category term="Microsoft Power BI"/>
+    <category term="PHP"/>
+    <category term="Redux"/>
+    <category term="SQL Joins"/>
+    <category term="Scala"/>
+    <category term="Tips"/>
+    <category term="android"/>
+    <category term="automation"/>
+    <category term="basics"/>
+    <category term="bit manipulation"/>
+    <category term="deep learning"/>
+    <category term="default methods"/>
+    <category term="exception"/>
+    <category term="garbage collection"/>
+    <category term="grep"/>
+    <category term="logging"/>
+    <category term="pluralsight"/>
+    <category term="regular expression example"/>
+    <category term="spring cloud"/>
+    <category term="spring data jpa"/>
+    <category term="swing"/>
+    <category term="web scrapping"/>
+    <category term="xml"/>
+    <category term=".NET"/>
+    <category term="After Effects"/>
+    <category term="BlockingDeque"/>
+    <category term="C programming"/>
+    <category term="Code Example"/>
+    <category term="Comparator"/>
+    <category term="Computer Vision"/>
+    <category term="ConcurrentHashMap"/>
+    <category term="Data Visualization"/>
+    <category term="Drawing"/>
+    <category term="EJB"/>
+    <category term="Excel"/>
+    <category term="Flutter"/>
+    <category term="Fundamental"/>
+    <category term="Game development"/>
+    <category term="Generics"/>
+    <category term="Groovy"/>
+    <category term="HashSet"/>
+    <category term="Internet of Things (IoT)"/>
+    <category term="JEE Interview Questions"/>
+    <category term="JMS"/>
+    <category term="JSTL"/>
+    <category term="JUnit"/>
+    <category term="Jackson"/>
+    <category term="Java Installation Guide"/>
+    <category term="Java Operator tutorial"/>
+    <category term="Java7"/>
+    <category term="Keras"/>
+    <category term="Kotlin"/>
+    <category term="Laraval"/>
+    <category term="MERN stack"/>
+    <category term="Mac OS X"/>
+    <category term="Messaging"/>
+    <category term="Microsoft Excel"/>
+    <category term="MongoDB"/>
+    <category term="MysQL"/>
+    <category term="NLP"/>
+    <category term="Next.js"/>
+    <category term="Node.js"/>
+    <category term="OCMJEA"/>
+    <category term="Perl"/>
+    <category term="Photoshop"/>
+    <category term="PostgerSQL"/>
+    <category term="Pytorch"/>
+    <category term="Quarkus"/>
+    <category term="R programming"/>
+    <category term="Record"/>
+    <category term="Recursion"/>
+    <category term="Ruby"/>
+    <category term="Salesforce"/>
+    <category term="Scala Interview Questions"/>
+    <category term="Scrum Master Certification"/>
+    <category term="Selenium"/>
+    <category term="Solaris"/>
+    <category term="Spark"/>
+    <category term="Static"/>
+    <category term="Swift"/>
+    <category term="Tableau"/>
+    <category term="TreeMap"/>
+    <category term="TypeScript"/>
+    <category term="UML"/>
+    <category term="Unity 3D"/>
+    <category term="Video Editing"/>
+    <category term="Vuejs"/>
+    <category term="apache camel"/>
+    <category term="beginners"/>
+    <category term="concurrency tutorial"/>
+    <category term="course review"/>
+    <category term="double"/>
+    <category term="dyanmic programming"/>
+    <category term="equals"/>
+    <category term="float"/>
+    <category term="fun"/>
+    <category term="fundamentals"/>
+    <category term="gifts"/>
+    <category term="git and github"/>
+    <category term="golang"/>
+    <category term="grails"/>
+    <category term="graphic design"/>
+    <category term="haskell"/>
+    <category term="interview"/>
+    <category term="interview Question"/>
+    <category term="java 9"/>
+    <category term="java map tutorials"/>
+    <category term="keystore"/>
+    <category term="kubernetes"/>
+    <category term="lambda expression"/>
+    <category term="neural network"/>
+    <category term="personal development"/>
+    <category term="programming problems"/>
+    <category term="questions"/>
+    <category term="react native"/>
+    <category term="soft link"/>
+    <category term="soft skills"/>
+    <category term="software architecture"/>
+    <category term="spring security"/>
+    <category term="system design"/>
+    <category term="tomcat"/>
+    <title type="text">Java67</title>
+    <subtitle type="html">Java Programming tutorials and Interview Questions, book and course recommendations from
+        Udemy, Pluarlsight etc
+    </subtitle>
+    <link rel="alternate" type="text/html" href="http://www.java67.com/"/>
+    <link rel="next" type="application/atom+xml"
+          href="http://www.blogger.com/feeds/694855878384792308/posts/default?start-index=26&amp;max-results=25&amp;redirect=false"/>
+    <author>
+        <name>javin paul</name>
+        <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+        <email>noreply@blogger.com</email>
+        <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                  src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+    </author>
+    <generator version="7.00" uri="http://www.blogger.com">Blogger</generator>
+    <openSearch:totalResults>977</openSearch:totalResults>
+    <openSearch:startIndex>1</openSearch:startIndex>
+    <openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/atom+xml"
+                 href="http://feeds.feedburner.com/Java67"/>
+    <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="java67"/>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/"/>
+    <feedburner:emailServiceId xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">Java67
+    </feedburner:emailServiceId>
+    <feedburner:feedburnerHostname xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">
+        https://feedburner.google.com
+    </feedburner:feedburnerHostname>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-7074601383164470644</id>
+        <published>2022-02-20T02:27:00.005-08:00</published>
+        <updated>2022-02-20T02:27:55.761-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="data structure and algorithm"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="String"/>
+        <title type="text">How to find the Longest common prefix in Given Array of String in Java? [Solved]</title>
+        <content type="html">Hello friends, we are here today again on the journey of java. But, today we are not gonna
+            see any usual Java class or any method. Today we are gonna put our minds to use and write some code in
+            java...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=OBoB03kOZXY:SHM3voLNsEg:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=OBoB03kOZXY:SHM3voLNsEg:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=OBoB03kOZXY:SHM3voLNsEg:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=OBoB03kOZXY:SHM3voLNsEg:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=OBoB03kOZXY:SHM3voLNsEg:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=OBoB03kOZXY:SHM3voLNsEg:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=OBoB03kOZXY:SHM3voLNsEg:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=OBoB03kOZXY:SHM3voLNsEg:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=OBoB03kOZXY:SHM3voLNsEg:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=OBoB03kOZXY:SHM3voLNsEg:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/7074601383164470644/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/how-to-find-longest-common-prefix-in.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7074601383164470644"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7074601383164470644"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/how-to-find-longest-common-prefix-in.html"
+              title="How to find the Longest common prefix in Given Array of String in Java? [Solved]"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEgtvGlNPBZ29drqp8cBYH5boG7EmxH4r_31h_ngeCT2pE6vJjdTDlh-i-jmyc3XPZV9LnXdohDqVthcWmzfkQQsixMZR8SThkG0oBX1odalIgscD661a3jzFnQ47msq4JgzanBQuiqaboX-EfRBv2RnjqC7V6MzGE_0WMnV_4fFPUCFyuxahZHT2kqIyg=s72-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-4493628843902711956</id>
+        <published>2022-02-19T04:30:00.008-08:00</published>
+        <updated>2022-02-19T19:25:42.392-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="haskell"/>
+        <title type="text">5 Best Haskell Programming Courses for Beginners in 2022</title>
+        <content type="html">Hello friends! Today we are gonna review some of the best courses available for learning
+            Haskell. So, are you guys wondering what is Haskell or where is it used. Do not worry, let&amp;#39;s have a
+            brief...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=8u1F-AbCVeY:HOzeoDUfOO4:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=8u1F-AbCVeY:HOzeoDUfOO4:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=8u1F-AbCVeY:HOzeoDUfOO4:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=8u1F-AbCVeY:HOzeoDUfOO4:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=8u1F-AbCVeY:HOzeoDUfOO4:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=8u1F-AbCVeY:HOzeoDUfOO4:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=8u1F-AbCVeY:HOzeoDUfOO4:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=8u1F-AbCVeY:HOzeoDUfOO4:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=8u1F-AbCVeY:HOzeoDUfOO4:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=8u1F-AbCVeY:HOzeoDUfOO4:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/4493628843902711956/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/op-5-courses-to-learn-haskell-for-beginners.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4493628843902711956"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4493628843902711956"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/op-5-courses-to-learn-haskell-for-beginners.html"
+              title="5 Best Haskell Programming Courses for Beginners in 2022"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEiAFJqIoblVkjbq5ijJMtejh8A3wcszS_E7Zzv4JAQVZfUUMwRSN6gycB7fM3g9xCM-icXoS5zn9GAlGeBPff5uFmXs5gznDOQPb5noB-D7DdQ9sXTT0uoLH9ejoyHiLABD2jrE3G_fbbWXdoCPyn8aLlwmpWtvtld2MbY3rIyuQZz2HyY468xCjC44=s72-w573-h264-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-83028458506710837</id>
+        <published>2022-02-18T20:58:00.004-08:00</published>
+        <updated>2022-02-19T19:08:43.666-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="apache camel"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="java"/>
+        <title type="text">5 Best Apache Camel Courses for Java Developers in 2022</title>
+        <content type="html">If you are looking to learn something new and awesome, like camel, you have come to the
+            right place. Here, we will discuss some of the best courses available in the market currently which can
+            really...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=HoQ9-k95DUM:o5AmnRPvmtY:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=HoQ9-k95DUM:o5AmnRPvmtY:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=HoQ9-k95DUM:o5AmnRPvmtY:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=HoQ9-k95DUM:o5AmnRPvmtY:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=HoQ9-k95DUM:o5AmnRPvmtY:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=HoQ9-k95DUM:o5AmnRPvmtY:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=HoQ9-k95DUM:o5AmnRPvmtY:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=HoQ9-k95DUM:o5AmnRPvmtY:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=HoQ9-k95DUM:o5AmnRPvmtY:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=HoQ9-k95DUM:o5AmnRPvmtY:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/83028458506710837/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/5-best-apache-camel-courses-for-java.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/83028458506710837"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/83028458506710837"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/5-best-apache-camel-courses-for-java.html"
+              title="5 Best Apache Camel Courses for Java Developers in 2022"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-7447150791792088610</id>
+        <published>2022-02-18T19:00:00.000-08:00</published>
+        <updated>2022-02-18T19:24:49.582-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="object oriented programming"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="tools"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="UML"/>
+        <title type="text">Top 5 Courses to learn UML for Software Design and Development in 2022 - Best of Lot</title>
+        <content type="html">Hello friends, we are here again today for another exciting topic to discuss. But, today we
+            are not gonna discuss something which is related to Java or any other language or spring boot....&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=AVtzUrU3WvY:T0QVQhsJFZY:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=AVtzUrU3WvY:T0QVQhsJFZY:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=AVtzUrU3WvY:T0QVQhsJFZY:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=AVtzUrU3WvY:T0QVQhsJFZY:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=AVtzUrU3WvY:T0QVQhsJFZY:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=AVtzUrU3WvY:T0QVQhsJFZY:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=AVtzUrU3WvY:T0QVQhsJFZY:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=AVtzUrU3WvY:T0QVQhsJFZY:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=AVtzUrU3WvY:T0QVQhsJFZY:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=AVtzUrU3WvY:T0QVQhsJFZY:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/7447150791792088610/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2021/11/top-5-courses-to-learn-uml-for-software.html#comment-form"
+              title="1 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7447150791792088610"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7447150791792088610"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2021/11/top-5-courses-to-learn-uml-for-software.html"
+              title="Top 5 Courses to learn UML for Software Design and Development in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEh-xbCUE1jpP1xEn3lK4ZgJs0DlQ97CcD6Yid7__POOG6By6453kRB90jiz8xi5k4ENpXKpZQeM5s5nQdqlHz30Swbb5p7r4PNCT6Si0N6eJlwVEPE9gO8vlN9LLEelZHG4tBNlfmj9I-iq3CGuRN0aKEzf_c5KQcctgAxcL0JU08GFnCcnVqq6ijGt6A=s72-c"
+                         height="72" width="72"/>
+        <thr:total>1</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-4901600763073635414</id>
+        <published>2022-02-18T02:30:00.000-08:00</published>
+        <updated>2022-02-18T02:55:50.373-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Cyber Security"/>
+        <title type="text">Top 5 Courses to Learn Cyber Security Online in 2022 - Best of Lot</title>
+        <content type="html">Hello folks, if you want to learn Cyber Security in 2022 and looking for the best online
+            courses to learn Cyber Security to start your career then you have come to the right place. Earlier, I...&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=nMr849Nzkyk:4dha98rGPYY:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=nMr849Nzkyk:4dha98rGPYY:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=nMr849Nzkyk:4dha98rGPYY:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=nMr849Nzkyk:4dha98rGPYY:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=nMr849Nzkyk:4dha98rGPYY:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=nMr849Nzkyk:4dha98rGPYY:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=nMr849Nzkyk:4dha98rGPYY:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=nMr849Nzkyk:4dha98rGPYY:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=nMr849Nzkyk:4dha98rGPYY:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=nMr849Nzkyk:4dha98rGPYY:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/4901600763073635414/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2021/11/5-best-courses-to-learn-cyber-security.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4901600763073635414"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4901600763073635414"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2021/11/5-best-courses-to-learn-cyber-security.html"
+              title="Top 5 Courses to Learn Cyber Security Online in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh3.googleusercontent.com/-rrU1xsz4ZMg/YZoiAGTIMUI/AAAAAAAAqQQ/iyfhKnRno8U3ZAR5KvARiiSruqdryKgTACLcBGAsYHQ/s72-w394-h222-c/2484206_e4a5_3-768x432-1.jpg"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-7725893213386433044</id>
+        <published>2022-02-17T19:52:00.001-08:00</published>
+        <updated>2022-02-17T19:52:07.204-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="BlockingDeque"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Java collection tutorial"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="java concurrency tutorial"/>
+        <title type="text">How to use Blocking Deque in Java? Example Tutorial</title>
+        <content type="html">Hello friends, we meet again here today on our journey to Java. Before we continue forward,
+            let me inform you guys that today&amp;#39;s topic is in continuation of our Java Deque topic. If any of
+            you...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Zi4-cR_Mfm0:RasMCDd5Wfk:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Zi4-cR_Mfm0:RasMCDd5Wfk:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Zi4-cR_Mfm0:RasMCDd5Wfk:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Zi4-cR_Mfm0:RasMCDd5Wfk:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Zi4-cR_Mfm0:RasMCDd5Wfk:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Zi4-cR_Mfm0:RasMCDd5Wfk:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Zi4-cR_Mfm0:RasMCDd5Wfk:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Zi4-cR_Mfm0:RasMCDd5Wfk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Zi4-cR_Mfm0:RasMCDd5Wfk:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Zi4-cR_Mfm0:RasMCDd5Wfk:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/7725893213386433044/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/how-to-use-blocking-deque-in-java.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7725893213386433044"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7725893213386433044"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/how-to-use-blocking-deque-in-java.html"
+              title="How to use Blocking Deque in Java? Example Tutorial "/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEiXNMvO7AI0M_7jsy3TVbLVOy5RNJ459xQF4Oz7ppRPNfB52vXVOKATCe7y8Pvct_nR9H8pJfde03zTKsvaHGO6h7liykhM9guU4M_OpMn2POZJ5gYM3urnK9-v45wfVuVi2wuHazQU6DFyPlgdGqYKkTWTtDQiDkUiHEcHrFOH2nh8DSo3BWN6m6ox=s72-w453-h246-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-1619052647528431388</id>
+        <published>2022-02-17T07:28:00.007-08:00</published>
+        <updated>2022-02-17T07:32:43.704-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Microservices"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring boot"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring framework"/>
+        <title type="text">Top 5 Microservice courses for Java Developers to Learn Online in 2022 - Best of Lot</title>
+        <content type="html">Hello guys, if you want to learn about Microservices and how to create Microservices in
+            Java using Spring Boot and Spring cloud and looking for the best online courses then you have come to...&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Rse_PQ3ZPWc:ELKs_EDgE34:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Rse_PQ3ZPWc:ELKs_EDgE34:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Rse_PQ3ZPWc:ELKs_EDgE34:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Rse_PQ3ZPWc:ELKs_EDgE34:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Rse_PQ3ZPWc:ELKs_EDgE34:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Rse_PQ3ZPWc:ELKs_EDgE34:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Rse_PQ3ZPWc:ELKs_EDgE34:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Rse_PQ3ZPWc:ELKs_EDgE34:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Rse_PQ3ZPWc:ELKs_EDgE34:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Rse_PQ3ZPWc:ELKs_EDgE34:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/1619052647528431388/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/top-5-microservice-courses-for-java.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/1619052647528431388"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/1619052647528431388"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/top-5-microservice-courses-for-java.html"
+              title="Top 5 Microservice courses for Java Developers to Learn Online in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEiXkISyjLtZdbVSQHk1Km-Xx6PjV2ojvpmKRhphLvSAVX1qN2P7on_sy82T1nkXB4_l6cOgODYYCQ5UBq_a1rbO3JUKyHo1mNKy9bkb80lxaNCgLx4nr3vDIoCfmwMHpEKWnDMGEfNHwR3aabIN4RZedhglh14NX9dqCJWhzBZluXTKB02r9L81riMQ=s72-w474-h258-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-8499117587776921773</id>
+        <published>2022-02-16T19:00:00.000-08:00</published>
+        <updated>2022-02-16T19:07:33.247-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="deep learning"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="neural network"/>
+        <title type="text">Top 6 Courses to Learn Neural Networks and Deep Learning in 2022 - Best of Lot</title>
+        <content type="html">Hello guys, if you are looking for the best online courses to learn Deep Learning and
+            Neural networks in 2022 then you have come to the right place.  In the past, I have shared the best Data...&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=jD9bc4MHHj0:eGq7UgMFeg8:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=jD9bc4MHHj0:eGq7UgMFeg8:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=jD9bc4MHHj0:eGq7UgMFeg8:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=jD9bc4MHHj0:eGq7UgMFeg8:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=jD9bc4MHHj0:eGq7UgMFeg8:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=jD9bc4MHHj0:eGq7UgMFeg8:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=jD9bc4MHHj0:eGq7UgMFeg8:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=jD9bc4MHHj0:eGq7UgMFeg8:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=jD9bc4MHHj0:eGq7UgMFeg8:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=jD9bc4MHHj0:eGq7UgMFeg8:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/8499117587776921773/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/01/top-6-deep-learning-and-neural-networks.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8499117587776921773"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8499117587776921773"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/01/top-6-deep-learning-and-neural-networks.html"
+              title="Top 6 Courses to Learn Neural Networks and Deep Learning in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh3.googleusercontent.com/-habYFW_blnM/Yd0JsrAUd0I/AAAAAAAAqv4/-68KnOId9vo5TX7pO1Dkz4Ub6osYB4bmACNcBGAsYHQ/s72-w423-h222-c/XDP%257ESPECIALIZATION%2521%257Edeep-learning.jpeg"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-2059170916201066007</id>
+        <published>2022-02-15T20:57:00.000-08:00</published>
+        <updated>2022-02-15T20:57:04.219-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Microservices"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Quarkus"/>
+        <title type="text">Top 5 Courses to learn Quarkus Framework in 2022 - Best of Lot</title>
+        <content type="html">Hello guys, If you are looking for a Spring Boot alternative for Microservice development
+            in 2022 and if you&amp;#39;re interested in learning more about frameworks like DropWizard, MicroNaut,
+            and...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=BKl9-jCNMAo:RNSRLgrPjVA:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=BKl9-jCNMAo:RNSRLgrPjVA:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=BKl9-jCNMAo:RNSRLgrPjVA:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=BKl9-jCNMAo:RNSRLgrPjVA:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=BKl9-jCNMAo:RNSRLgrPjVA:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=BKl9-jCNMAo:RNSRLgrPjVA:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=BKl9-jCNMAo:RNSRLgrPjVA:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=BKl9-jCNMAo:RNSRLgrPjVA:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=BKl9-jCNMAo:RNSRLgrPjVA:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=BKl9-jCNMAo:RNSRLgrPjVA:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/2059170916201066007/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/top-5-courses-to-learn-quarkus.html#comment-form" title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/2059170916201066007"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/2059170916201066007"/>
+        <link rel="alternate" type="text/html" href="http://www.java67.com/2022/02/top-5-courses-to-learn-quarkus.html"
+              title="Top 5 Courses to learn Quarkus Framework in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://1.bp.blogspot.com/-VPeEo1hV9bU/YP4-5e3-BdI/AAAAAAAAo6M/J9fPhSTeJMcIalXmN7x8m0FbXAReBbCrwCLcBGAsYHQ/s72-w497-h249-c/2020_SSL_HTTPS_Quarkus_Term_Featured_Article__A-01.png"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-659857685755139178</id>
+        <published>2022-02-14T20:59:00.002-08:00</published>
+        <updated>2022-02-14T20:59:15.846-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="core java"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="programming"/>
+        <title type="text">Top 5 Courses to learn Java Online for Beginners in 2022 - Best of Lot</title>
+        <content type="html">Hello everyone! today we are gonna go through some of the best courses for learning java.
+            Java is one of the most popular, most used programming languages in the world.  Java is a widely-used ...&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=636weydNe1U:QDNLQoiEfrc:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=636weydNe1U:QDNLQoiEfrc:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=636weydNe1U:QDNLQoiEfrc:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=636weydNe1U:QDNLQoiEfrc:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=636weydNe1U:QDNLQoiEfrc:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=636weydNe1U:QDNLQoiEfrc:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=636weydNe1U:QDNLQoiEfrc:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=636weydNe1U:QDNLQoiEfrc:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=636weydNe1U:QDNLQoiEfrc:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=636weydNe1U:QDNLQoiEfrc:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/659857685755139178/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/top-5-courses-to-learn-java-online-for.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/659857685755139178"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/659857685755139178"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/top-5-courses-to-learn-java-online-for.html"
+              title="Top 5 Courses to learn Java Online for Beginners in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEg8U2d3mvZfUifP8gjQNfKB6692uvLvVcLs2d8N7ex5tJm3D5AzTYY9Bayrv2TJ31akzhk24uA0LrawLQDHlglOOU_edqRHiUVk8TW7tGTCRYr5Eh6iaTeMWhkIH5dtZH6ububw98iE4J0zG_wPwstKvI7bsvOLkWY-R_3lpPoHpYcvUPwXm08ttL4bcQ=s72-w438-h246-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-592963131560687957</id>
+        <published>2022-02-14T19:30:00.000-08:00</published>
+        <updated>2022-02-14T19:45:51.384-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Hibernate"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring data jpa"/>
+        <title type="text">Top 5 Online Courses to Learn Hibernate and Spring Data JPA in 2022 - Best of Lot</title>
+        <content type="html">Hello Java programmers, if you want to learn Hibernate and Spring Data JPA, two of the
+            leading persistence framework for enterprise Java development, and need the best resources like books,...&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Nlvt5TGJcnE:AqyeknHm4hw:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Nlvt5TGJcnE:AqyeknHm4hw:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Nlvt5TGJcnE:AqyeknHm4hw:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Nlvt5TGJcnE:AqyeknHm4hw:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Nlvt5TGJcnE:AqyeknHm4hw:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Nlvt5TGJcnE:AqyeknHm4hw:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Nlvt5TGJcnE:AqyeknHm4hw:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Nlvt5TGJcnE:AqyeknHm4hw:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Nlvt5TGJcnE:AqyeknHm4hw:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Nlvt5TGJcnE:AqyeknHm4hw:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/592963131560687957/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2021/11/best-hibernate-and-spring-data-jpa-courses.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/592963131560687957"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/592963131560687957"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2021/11/best-hibernate-and-spring-data-jpa-courses.html"
+              title="Top 5 Online Courses to Learn Hibernate and Spring Data JPA in 2022  - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh3.googleusercontent.com/-UaF-zkJGLmI/YaTerTikHaI/AAAAAAAAqYA/MXNs0gJxtioVSBNKKBI3-2dIBx359RsdgCLcBGAsYHQ/s72-w441-h329-c/image.png"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-8567552249349251484</id>
+        <published>2022-02-14T03:00:00.007-08:00</published>
+        <updated>2022-02-14T03:27:09.756-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="design pattern"/>
+        <title type="text">Top 5 Design Pattern Courses for Experienced Java Programmers - Best of Lot</title>
+        <content type="html">Hello Java programmers, if you want to learn Design patterns in 2022 and looking for the
+            best resources like books, tutorials, and online courses then you have come to the right place. Earlier,
+            I...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=A4RgYFrGgRo:uFoleVq4Y1A:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=A4RgYFrGgRo:uFoleVq4Y1A:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=A4RgYFrGgRo:uFoleVq4Y1A:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=A4RgYFrGgRo:uFoleVq4Y1A:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=A4RgYFrGgRo:uFoleVq4Y1A:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=A4RgYFrGgRo:uFoleVq4Y1A:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=A4RgYFrGgRo:uFoleVq4Y1A:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=A4RgYFrGgRo:uFoleVq4Y1A:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=A4RgYFrGgRo:uFoleVq4Y1A:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=A4RgYFrGgRo:uFoleVq4Y1A:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/8567552249349251484/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/01/top-5-courses-to-learn-design-patterns.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8567552249349251484"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8567552249349251484"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/01/top-5-courses-to-learn-design-patterns.html"
+              title="Top 5 Design Pattern Courses for Experienced Java Programmers - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh3.googleusercontent.com/-u_hWR46Zh9A/YbU5KHDp03I/AAAAAAAAAH8/dvPGxHkM6TIHMzECJ3OjQEyCcYeNIZiyQCNcBGAsYHQ/s72-w400-h225-c/1639266598367546-0.png"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-4179230147940846964</id>
+        <published>2022-02-14T03:00:00.006-08:00</published>
+        <updated>2022-02-14T03:25:36.092-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Blockchain"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <title type="text">Top 5 Blockchain Courses and Certifications for Beginners in 2022 - Best of Lot</title>
+        <content type="html">Hello guys, If you&amp;#39;re involved in the cryptocurrency space, then you&amp;#39;ve
+            probably heard about Blockchain. Unless you&amp;#39;re living under a rock… 
+
+            I&amp;#39;m talking about this new technology...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=2H08d1rjQ04:AJCHjpvyPIk:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=2H08d1rjQ04:AJCHjpvyPIk:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=2H08d1rjQ04:AJCHjpvyPIk:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=2H08d1rjQ04:AJCHjpvyPIk:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=2H08d1rjQ04:AJCHjpvyPIk:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=2H08d1rjQ04:AJCHjpvyPIk:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=2H08d1rjQ04:AJCHjpvyPIk:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=2H08d1rjQ04:AJCHjpvyPIk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=2H08d1rjQ04:AJCHjpvyPIk:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=2H08d1rjQ04:AJCHjpvyPIk:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/4179230147940846964/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2021/12/top-5-courses-to-learn-blockchain.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4179230147940846964"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4179230147940846964"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2021/12/top-5-courses-to-learn-blockchain.html"
+              title="Top 5 Blockchain Courses and Certifications for Beginners in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh3.googleusercontent.com/-8gjv2XGlyfA/YbXWTAJAY4I/AAAAAAAAqg8/6q6yjOuSe8Ul6w2kFpe-i_hbxl9tAnFFgCNcBGAsYHQ/s72-w471-h228-c/image.png"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-3780011356807485536</id>
+        <published>2022-02-14T03:00:00.004-08:00</published>
+        <updated>2022-02-14T03:14:55.295-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="database"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="MysQL"/>
+        <title type="text">Top 5 Courses to Learn MySQL Database in 2022 - Best of Lot</title>
+        <content type="html">Hello guys, if you want to learn MySQL and SQL in 2022 and looking for the best resources
+            like online courses, tutorials, and books then you have come to the right place. Earlier, I have shared...&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=c4LQr4n9NI4:Jw3FU3J5elw:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=c4LQr4n9NI4:Jw3FU3J5elw:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=c4LQr4n9NI4:Jw3FU3J5elw:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=c4LQr4n9NI4:Jw3FU3J5elw:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=c4LQr4n9NI4:Jw3FU3J5elw:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=c4LQr4n9NI4:Jw3FU3J5elw:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=c4LQr4n9NI4:Jw3FU3J5elw:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=c4LQr4n9NI4:Jw3FU3J5elw:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=c4LQr4n9NI4:Jw3FU3J5elw:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=c4LQr4n9NI4:Jw3FU3J5elw:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/3780011356807485536/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2021/11/top-5-courses-to-learn-mysql-database.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/3780011356807485536"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/3780011356807485536"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2021/11/top-5-courses-to-learn-mysql-database.html"
+              title="Top 5 Courses to Learn MySQL Database in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh3.googleusercontent.com/-jvKhvll8HG8/YaYpj0X73pI/AAAAAAAAqY4/FVO_4S6rjmgPnHxjb_K5-rixezKcNZP3gCLcBGAsYHQ/s72-w411-h232-c/khVykVq.jpg"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-8215873186387702101</id>
+        <published>2022-02-14T03:00:00.001-08:00</published>
+        <updated>2022-02-14T03:10:42.295-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring framework"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring mvc"/>
+        <title type="text">Top 6 Online Courses to Learn Spring Framework in 2022 - Best of Lot</title>
+        <content type="html">Hello Java developers, if you want to learn Spring Framework and look for the best
+            resources like books, online courses, and tutorials, you have come to the right place. Earlier, I have
+            shared...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=0ssxqqP0k8I:FLc071y5MmM:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=0ssxqqP0k8I:FLc071y5MmM:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=0ssxqqP0k8I:FLc071y5MmM:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=0ssxqqP0k8I:FLc071y5MmM:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=0ssxqqP0k8I:FLc071y5MmM:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=0ssxqqP0k8I:FLc071y5MmM:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=0ssxqqP0k8I:FLc071y5MmM:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=0ssxqqP0k8I:FLc071y5MmM:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=0ssxqqP0k8I:FLc071y5MmM:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=0ssxqqP0k8I:FLc071y5MmM:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/8215873186387702101/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2021/11/5-best-spring-framework-courses-for.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8215873186387702101"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8215873186387702101"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2021/11/5-best-spring-framework-courses-for.html"
+              title="Top 6 Online Courses to Learn Spring Framework in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://1.bp.blogspot.com/-SgsMmzr4NgY/YaJRykIWQUI/AAAAAAAAqVE/iSsqy5aOIeU89GVr5U6sha5QOQpd2ButwCLcBGAsYHQ/s72-w449-h258-c/difference%2Bbetween%2BController%2Bvs%2BService%2Bvs%2BRepository%2Bin%2BSpring.png"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-6575763277179044030</id>
+        <published>2022-02-13T20:30:00.003-08:00</published>
+        <updated>2022-02-13T20:35:31.498-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Hibernate"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Hibernate interview Question"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Java Interview Question"/>
+        <title type="text">Top 20 Hibernate Interview Questions with Answers for Java Programmers</title>
+        <content type="html">Hibernate is one of the most popular persistent frameworks in the Java world. Hibernate
+            offers an object to relational (ORM) solution which frees Java developers from writing tedious, hard to
+            read,...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=NASw_MK_Dgs:9KjBZRZQClQ:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=NASw_MK_Dgs:9KjBZRZQClQ:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=NASw_MK_Dgs:9KjBZRZQClQ:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=NASw_MK_Dgs:9KjBZRZQClQ:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=NASw_MK_Dgs:9KjBZRZQClQ:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=NASw_MK_Dgs:9KjBZRZQClQ:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=NASw_MK_Dgs:9KjBZRZQClQ:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=NASw_MK_Dgs:9KjBZRZQClQ:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=NASw_MK_Dgs:9KjBZRZQClQ:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=NASw_MK_Dgs:9KjBZRZQClQ:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/6575763277179044030/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2016/02/top-20-hibernate-interview-questions.html#comment-form"
+              title="7 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/6575763277179044030"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/6575763277179044030"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2016/02/top-20-hibernate-interview-questions.html"
+              title="Top 20 Hibernate Interview Questions with Answers for Java Programmers"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://4.bp.blogspot.com/-qJHxIl9HQbQ/Vrm6gs_npaI/AAAAAAAAEu8/Hr6gDegpae4/s72-c/Hibernate%2Bload.jpg"
+                         height="72" width="72"/>
+        <thr:total>7</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-3864373491147493998</id>
+        <published>2022-02-13T02:26:00.002-08:00</published>
+        <updated>2022-02-13T02:26:27.940-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="core java"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="java concurrency tutorial"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Java Multithreading Tutorial"/>
+        <title type="text">CompletableFuture in Java with Example - Tutorial</title>
+        <content type="html">Hello friends, we meet again today on our journey to Java. So I hope you guys are excited
+            about our lesson. Let me ask you guys one thing before we proceed. Do you guys ever wonder about the
+            future?...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Gnzpyl0JhzA:ARGcPRISots:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Gnzpyl0JhzA:ARGcPRISots:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Gnzpyl0JhzA:ARGcPRISots:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Gnzpyl0JhzA:ARGcPRISots:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Gnzpyl0JhzA:ARGcPRISots:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Gnzpyl0JhzA:ARGcPRISots:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Gnzpyl0JhzA:ARGcPRISots:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Gnzpyl0JhzA:ARGcPRISots:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Gnzpyl0JhzA:ARGcPRISots:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Gnzpyl0JhzA:ARGcPRISots:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/3864373491147493998/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/completablefuture-in-java-with-example.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/3864373491147493998"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/3864373491147493998"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/completablefuture-in-java-with-example.html"
+              title="CompletableFuture in Java with Example - Tutorial"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEjU2Q3Q_eXx0BKw__sUwINU8VfneJ1rKgM5CD6zRHNmGIbYy_3UK-JL4k_nQvf4iga5qdy1Jz70t3Ii8SBzIXYrcEmjCt3a5FxNKbTGD1ywdhn8y84s6MLs7-ufFrWD51JumBU3Ywgqwr5qNVT4s_7b9gcbR273rFHetTIIEQ96Q1I6VvmRu8YWbCNW=s72-w443-h241-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-3131007272818885834</id>
+        <published>2022-02-12T20:30:00.000-08:00</published>
+        <updated>2022-02-12T20:43:41.774-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="database"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="error and exception"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Oracle"/>
+        <title type="text">[Solved] Caused by: java.sql.SQLSyntaxErrorException: ORA-01722: invalid number in Java and
+            Oracle
+        </title>
+        <content type="html">Hello guys, if you are getting below error in your Java program and wondering how to solve
+            this or just stuck then you have come to the right place. In this article, I will explain to you what
+            causes...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=RTF-q7fRHmE:1WFG3bbgOiA:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=RTF-q7fRHmE:1WFG3bbgOiA:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=RTF-q7fRHmE:1WFG3bbgOiA:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=RTF-q7fRHmE:1WFG3bbgOiA:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=RTF-q7fRHmE:1WFG3bbgOiA:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=RTF-q7fRHmE:1WFG3bbgOiA:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=RTF-q7fRHmE:1WFG3bbgOiA:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=RTF-q7fRHmE:1WFG3bbgOiA:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=RTF-q7fRHmE:1WFG3bbgOiA:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=RTF-q7fRHmE:1WFG3bbgOiA:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/3131007272818885834/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2021/06/caused-by-java-01722-invalisqlsqlsyntaxerrorexception-ORA-01722-invalid-number.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/3131007272818885834"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/3131007272818885834"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2021/06/caused-by-java-01722-invalisqlsqlsyntaxerrorexception-ORA-01722-invalid-number.html"
+              title="[Solved] Caused by: java.sql.SQLSyntaxErrorException: ORA-01722: invalid number in Java and Oracle"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh3.googleusercontent.com/-usESiZ4W-Uk/YMMNYo6A7YI/AAAAAAAAoMk/QWkFsRFhEGIQsiuE0FBoS6qBpu2k62mAACLcBGAsYHQ/s72-w538-h304-c/image.png"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-6586976969782762834</id>
+        <published>2022-02-12T04:30:00.001-08:00</published>
+        <updated>2022-02-12T05:00:02.820-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="core java"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="JSON"/>
+        <title type="text">How to Parse JSON in Java Object using Jackson - Example Tutorial</title>
+        <content type="html">Hello guys, if you are wondering how to parse JSON in Java then don&amp;#39;t worry, there
+            are many options. In the last article, I have shown you 3 ways to parse JSON in Java in this example, You
+            will...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=zcbXPvzR4lQ:ON3tdYUA214:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=zcbXPvzR4lQ:ON3tdYUA214:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=zcbXPvzR4lQ:ON3tdYUA214:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=zcbXPvzR4lQ:ON3tdYUA214:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=zcbXPvzR4lQ:ON3tdYUA214:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=zcbXPvzR4lQ:ON3tdYUA214:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=zcbXPvzR4lQ:ON3tdYUA214:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=zcbXPvzR4lQ:ON3tdYUA214:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=zcbXPvzR4lQ:ON3tdYUA214:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=zcbXPvzR4lQ:ON3tdYUA214:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/6586976969782762834/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2015/02/how-to-parse-json-tofrom-java-object.html#comment-form"
+              title="5 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/6586976969782762834"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/6586976969782762834"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2015/02/how-to-parse-json-tofrom-java-object.html"
+              title="How to Parse JSON in Java Object using Jackson -  Example Tutorial"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://2.bp.blogspot.com/-u-cIhBZvcRw/VOCJnkolgFI/AAAAAAAACf0/_JJi4tf9dOM/s72-w457-h275-c/How%2Bto%2Bparse%2BJSON%2BIn%2BJava.png"
+                         height="72" width="72"/>
+        <thr:total>5</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-4104204555428458500</id>
+        <published>2022-02-11T07:27:00.006-08:00</published>
+        <updated>2022-02-13T02:08:21.600-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="JavaScript"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="React"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="web development"/>
+        <title type="text">How to use useReducer in React.js and JavaScript? Example Tutorial</title>
+        <content type="html">IntroductionBefore the React hooks were introduced, it was not possible to use state in
+            functional components. The React hooks transformed stateless functional components into stateful components
+            in...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Bv-XzhmTH90:TT7Qk3XuK2w:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Bv-XzhmTH90:TT7Qk3XuK2w:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Bv-XzhmTH90:TT7Qk3XuK2w:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Bv-XzhmTH90:TT7Qk3XuK2w:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Bv-XzhmTH90:TT7Qk3XuK2w:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Bv-XzhmTH90:TT7Qk3XuK2w:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Bv-XzhmTH90:TT7Qk3XuK2w:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Bv-XzhmTH90:TT7Qk3XuK2w:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Bv-XzhmTH90:TT7Qk3XuK2w:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Bv-XzhmTH90:TT7Qk3XuK2w:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/4104204555428458500/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2022/02/how-to-use-usereducer-in-reactjs-and.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4104204555428458500"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4104204555428458500"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2022/02/how-to-use-usereducer-in-reactjs-and.html"
+              title="How to use useReducer in React.js and JavaScript? Example Tutorial"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://lh6.googleusercontent.com/4_W08lNXS1AkfGXyuMQi0OGCbchMyEaMAxKVgipCMdeX_P4DtHFrR8A9vjOSI5m-mRESNnCAWmnWcNYSA50HqzDS_qFZtJz6Px_s6hf7_9i6Src518_O1X1Qg_DPqL7TiYE9XIYT=s72-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-7919219041016138467</id>
+        <published>2022-02-10T20:30:00.000-08:00</published>
+        <updated>2022-02-10T20:57:42.163-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="core java"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="JSON"/>
+        <title type="text">3 ways to convert String to JSON object in Java? Examples</title>
+        <content type="html">It&amp;#39;s very common nowadays to receive JSON String from a Java web service instead of
+            XML, but unfortunately, JDK doesn&amp;#39;t yet support conversion between JSON String to JSON object.
+            Keeping JSON...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=3v6SWJKHE5Q:2emOsmtMw8E:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=3v6SWJKHE5Q:2emOsmtMw8E:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=3v6SWJKHE5Q:2emOsmtMw8E:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=3v6SWJKHE5Q:2emOsmtMw8E:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=3v6SWJKHE5Q:2emOsmtMw8E:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=3v6SWJKHE5Q:2emOsmtMw8E:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=3v6SWJKHE5Q:2emOsmtMw8E:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=3v6SWJKHE5Q:2emOsmtMw8E:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=3v6SWJKHE5Q:2emOsmtMw8E:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=3v6SWJKHE5Q:2emOsmtMw8E:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/7919219041016138467/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2016/10/3-ways-to-convert-string-to-json-object-in-java.html#comment-form"
+              title="23 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7919219041016138467"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/7919219041016138467"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2016/10/3-ways-to-convert-string-to-json-object-in-java.html"
+              title="3 ways to convert String to JSON object in Java? Examples"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://4.bp.blogspot.com/-5ZA_tHFr4-U/V_O-BmfJLCI/AAAAAAAAHL0/2apHJ1E2CtIgiFVzbEqVyfviU0ami4NzgCLcB/s72-c/How%2Bto%2Bparse%2BJSON%2BIn%2BJava.png"
+                         height="72" width="72"/>
+        <thr:total>23</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-4587334085117246348</id>
+        <published>2022-02-10T05:30:00.000-08:00</published>
+        <updated>2022-02-10T05:38:44.857-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="android"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="interview questions"/>
+        <title type="text">Top 10 Android Interview Questions Answers for Java Programmers</title>
+        <content type="html">Hello guys, if you are preparing for an Android app developer interview and looking for
+            some Android interview questions then you have come to the right place. Earlier, I have shared free...&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=H3VCN_jYZIU:eMGGz9x7FP8:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=H3VCN_jYZIU:eMGGz9x7FP8:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=H3VCN_jYZIU:eMGGz9x7FP8:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=H3VCN_jYZIU:eMGGz9x7FP8:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=H3VCN_jYZIU:eMGGz9x7FP8:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=H3VCN_jYZIU:eMGGz9x7FP8:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=H3VCN_jYZIU:eMGGz9x7FP8:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=H3VCN_jYZIU:eMGGz9x7FP8:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=H3VCN_jYZIU:eMGGz9x7FP8:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=H3VCN_jYZIU:eMGGz9x7FP8:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/4587334085117246348/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2012/10/top-10-android-interview-questions-and.html#comment-form"
+              title="5 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4587334085117246348"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/4587334085117246348"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2012/10/top-10-android-interview-questions-and.html"
+              title="Top 10 Android Interview Questions Answers for Java Programmers"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://2.bp.blogspot.com/-NQ_BDk8TWM8/WiAJE5lUN4I/AAAAAAAAJnI/gGJNmr_sGfw-duztpz-nktwUbRzkMm3cwCLcBGAs/s72-c/Android%2BOnResume%2Bmethod%2B-%2BAndroid%2BInterview%2Bquestions.png"
+                         height="72" width="72"/>
+        <thr:total>5</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-5096082177975147054</id>
+        <published>2022-02-09T20:00:00.004-08:00</published>
+        <updated>2022-02-09T20:19:55.075-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="error and exception"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring framework"/>
+        <title type="text">[Solved] java.lang.ClassNotFoundException:
+            org.Springframework.Web.Context.ContextLoaderListener in Java and Spring
+        </title>
+        <content type="html">Problem : You are getting java.lang.ClassNotFoundException : org.Springframework.Web.
+            Context.ContextLoaderListener in your Spring-based Java Web application.
+            Cause: This error comes when you are...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Jgi_aby1MgA:9NR_E7gg-68:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Jgi_aby1MgA:9NR_E7gg-68:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Jgi_aby1MgA:9NR_E7gg-68:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Jgi_aby1MgA:9NR_E7gg-68:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Jgi_aby1MgA:9NR_E7gg-68:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Jgi_aby1MgA:9NR_E7gg-68:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=Jgi_aby1MgA:9NR_E7gg-68:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Jgi_aby1MgA:9NR_E7gg-68:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=Jgi_aby1MgA:9NR_E7gg-68:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=Jgi_aby1MgA:9NR_E7gg-68:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/5096082177975147054/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2015/06/org.Springframework.Web.Context.ContextLoaderListener.html#comment-form"
+              title="7 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/5096082177975147054"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/5096082177975147054"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2015/06/org.Springframework.Web.Context.ContextLoaderListener.html"
+              title="[Solved] java.lang.ClassNotFoundException: org.Springframework.Web.Context.ContextLoaderListener in Java and Spring"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://2.bp.blogspot.com/-5pm_1e0V3ek/VXxAszbjrFI/AAAAAAAADC0/ebR2GAQV3PQ/s72-w537-h298-c/Spring%2BContext%2BClass%2BLoader%2BListener%2Bnot%2Bfound%2Berror.png"
+                         height="72" width="72"/>
+        <thr:total>7</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-129825697600205281</id>
+        <published>2022-02-09T20:00:00.002-08:00</published>
+        <updated>2022-02-09T20:17:14.832-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Coding Problems"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="data structure and algorithm"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="String"/>
+        <title type="text">3 ways to Count words in Java String - Google Interview Questions with Solution</title>
+        <content type="html">Today, I am going to share with you Java interview questions from Google, which were asked
+            to one of my readers during the telephonic round. How do you count the number of words in a given String
+            in...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=e44gNLXquXI:l2IwlHpEnhY:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=e44gNLXquXI:l2IwlHpEnhY:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=e44gNLXquXI:l2IwlHpEnhY:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=e44gNLXquXI:l2IwlHpEnhY:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=e44gNLXquXI:l2IwlHpEnhY:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=e44gNLXquXI:l2IwlHpEnhY:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=e44gNLXquXI:l2IwlHpEnhY:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=e44gNLXquXI:l2IwlHpEnhY:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=e44gNLXquXI:l2IwlHpEnhY:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=e44gNLXquXI:l2IwlHpEnhY:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/129825697600205281/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2016/09/3-ways-to-count-words-in-java-string.html#comment-form"
+              title="12 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/129825697600205281"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/129825697600205281"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2016/09/3-ways-to-count-words-in-java-string.html"
+              title="3 ways to Count words in Java String - Google Interview Questions with Solution"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://1.bp.blogspot.com/-zfh8Dum0euI/XqJ5Noct2OI/AAAAAAAAeck/fWAFl7ZmNpcsCJPi9tS5rgKjPEcmrvCMACLcBGAsYHQ/s72-c/3%2Bways%2Bto%2Bcount%2Bwords%2Bin%2Bgiven%2BString%2Bin%2BJava.png"
+                         height="72" width="72"/>
+        <thr:total>12</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-694855878384792308.post-8186470452609934245</id>
+        <published>2022-02-09T05:00:00.000-08:00</published>
+        <updated>2022-02-09T05:04:21.924-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Hibernate"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Hibernate interview Question"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Java interview questions"/>
+        <title type="text">Difference between save(), saveOrUpdate() and persist() in Hibernate Session</title>
+        <content type="html">The Session interface in Hibernate provides a couple of methods to move an object from a
+            new or transient state to a persistent state like save(), saveOrUpdate(), and persist() is used to store
+            an...&lt;div class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=S-M0zDWitJA:lLXNXgcw4S4:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=S-M0zDWitJA:lLXNXgcw4S4:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=S-M0zDWitJA:lLXNXgcw4S4:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=S-M0zDWitJA:lLXNXgcw4S4:7Q72WNTAKBA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=S-M0zDWitJA:lLXNXgcw4S4:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=S-M0zDWitJA:lLXNXgcw4S4:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Java67?a=S-M0zDWitJA:lLXNXgcw4S4:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=S-M0zDWitJA:lLXNXgcw4S4:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Java67?a=S-M0zDWitJA:lLXNXgcw4S4:4cEx4HpKnUU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Java67?i=S-M0zDWitJA:lLXNXgcw4S4:4cEx4HpKnUU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://www.java67.com/feeds/8186470452609934245/comments/default" title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://www.java67.com/2016/01/difference-between-save-saveorupdate-and-persist-in-Hibernate.html#comment-form"
+              title="4 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8186470452609934245"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/694855878384792308/posts/default/8186470452609934245"/>
+        <link rel="alternate" type="text/html"
+              href="http://www.java67.com/2016/01/difference-between-save-saveorupdate-and-persist-in-Hibernate.html"
+              title="Difference between save(), saveOrUpdate() and persist() in Hibernate Session"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://4.bp.blogspot.com/-BpYW2JZfuGI/VoZKoepMjWI/AAAAAAAAEdA/9zYEbkgrW8A/s72-c/Difference%2Bbetween%2Bsave%2Bvs%2Bpersist%2Bin%2BHibernate.png"
+                         height="72" width="72"/>
+        <thr:total>4</thr:total>
+    </entry>
+</feed>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>it.petrovich</groupId>
+        <artifactId>rss-aggregator</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>rss-validation</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.el</groupId>
+            <artifactId>jakarta.el-api</artifactId>
+            <version>${jakarta.el.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <compilerArgs>
+                        <compilerArg>--add-exports=java.base/jdk.internal.ref=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=java.base/sun.nio.ch=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=jdk.compiler/com.sun.tools.javac=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.lang=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.lang.reflect=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.io=ALL-UNNAMED</compilerArg>
+                        <compilerArg>--add-opens=java.base/java.util=ALL-UNNAMED</compilerArg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
