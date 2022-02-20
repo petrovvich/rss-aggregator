@@ -1,13 +1,14 @@
-package it.petrovich.rssprocessor;
+package it.petrovich.rss.xml;
 
 import it.petrovich.rss.xml.atom.DateTimeType;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
+import it.petrovich.rss.xml.rss20111.TRssItem;
 import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.JAXBElement;
 import lombok.SneakyThrows;
 import lombok.experimental.UtilityClass;
-import lombok.extern.slf4j.Slf4j;
+import org.jsoup.Jsoup;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.net.URL;
@@ -17,7 +18,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.GregorianCalendar;
 import java.util.Optional;
 
-@Slf4j
 @UtilityClass
 public class XmlUtils {
     public static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("EEE, d MMM yyyy HH:mm:ss Z");
@@ -36,6 +36,28 @@ public class XmlUtils {
                 .filter(item -> item.getName().getLocalPart().equals(fieldName))
                 .findFirst()
                 .map(JAXBElement::getValue);
+    }
+
+    public static Object extractOrElse(final TRssItem tRssItem,
+                                       @NotNull final String fieldName,
+                                       @NotNull final Object orElse) {
+        return extractEntry(tRssItem, fieldName)
+                .orElse(orElse);
+    }
+
+    public static Optional<Object> extractEntry(final TRssItem tRssItem, @NotNull final String fieldName) {
+        return tRssItem
+                .getTitleOrDescriptionOrLink()
+                .stream()
+                .filter(item -> item.getClass().getSimpleName().equalsIgnoreCase(JAXB_ELEM_CLASS))
+                .map(JAXBElement.class::cast)
+                .filter(item -> item.getName().getLocalPart().equals(fieldName))
+                .findFirst()
+                .map(JAXBElement::getValue);
+    }
+
+    public static String castToString(Object source) {
+        return source.getClass().isAssignableFrom(String.class) ? (String) source : "";
     }
 
     public static LocalDateTime parseDate(final Object source) {
@@ -76,5 +98,9 @@ public class XmlUtils {
     @SneakyThrows
     public static URL parse(final String source) {
         return new URL(source);
+    }
+
+    public static String html2text(final String html) {
+        return Jsoup.parse(html).text();
     }
 }

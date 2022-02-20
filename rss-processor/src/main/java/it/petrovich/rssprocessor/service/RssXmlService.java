@@ -6,7 +6,7 @@ import it.petrovich.rss.common.Pair;
 import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
-import it.petrovich.rssprocessor.XmlUtils;
+import it.petrovich.rss.xml.XmlUtils;
 import it.petrovich.rssprocessor.error.ElementNotFoundException;
 import it.petrovich.rssprocessor.error.UnknownRssTypeException;
 import jakarta.validation.constraints.NotNull;
@@ -22,8 +22,8 @@ import javax.annotation.Nullable;
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
 
-import static it.petrovich.rssprocessor.XmlUtils.DATE_TIME_ELEM_CLASS;
-import static it.petrovich.rssprocessor.XmlUtils.extractEntry;
+import static it.petrovich.rss.xml.XmlUtils.DATE_TIME_ELEM_CLASS;
+import static it.petrovich.rss.xml.XmlUtils.extractEntry;
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static java.util.Optional.ofNullable;
 

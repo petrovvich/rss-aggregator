@@ -35,7 +35,7 @@ public class TelegramAutoConfigurer {
 
     @Bean
     public Collection<NotificationProcessor> notificationProcessors(final Collection<NotificationBot> bots) {
-        return List.of(new Rss20NotificationProcessor(bots, notificationProperties));
+        return List.of(new Rss20NotificationProcessor(notificationProperties, bots));
     }
 
     @Bean

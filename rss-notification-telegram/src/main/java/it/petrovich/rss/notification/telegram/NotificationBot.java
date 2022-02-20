@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.val;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.MessageEntity;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -38,11 +39,10 @@ public final class NotificationBot extends TelegramLongPollingBot {
 
     @SneakyThrows
     public void sendMessage(final String messageBody, final String chatId) {
-        val message = new MessageEntity();
-        message.setText(messageBody);
         execute(SendMessage.builder()
                 .chatId(chatId)
-                .entities(List.of(message))
+                .text(messageBody)
+                .parseMode(ParseMode.HTML)
                 .build());
     }
 }

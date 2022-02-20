@@ -2,7 +2,7 @@ package it.petrovich.rssprocessor.service;
 
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
-import it.petrovich.rssprocessor.XmlUtils;
+import it.petrovich.rss.xml.XmlUtils;
 import jakarta.xml.bind.JAXBContext;
 import lombok.SneakyThrows;
 import lombok.val;
@@ -18,7 +18,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 
-import static it.petrovich.rssprocessor.XmlUtils.extractEntry;
+import static it.petrovich.rss.xml.XmlUtils.extractEntry;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(SpringExtension.class)

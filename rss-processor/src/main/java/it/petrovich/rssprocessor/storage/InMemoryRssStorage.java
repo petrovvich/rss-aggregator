@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static it.petrovich.rssprocessor.XmlUtils.parse;
+import static it.petrovich.rss.xml.XmlUtils.parse;
 import static java.util.Optional.ofNullable;
 
 @Slf4j
