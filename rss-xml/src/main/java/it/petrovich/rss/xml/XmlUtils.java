@@ -27,7 +27,7 @@ public class XmlUtils {
     public static final String STRING_CLASS = "String";
     public static final String CALENDAR_CLASS = "DateTimeType";
     public static final String HTML_TAG_PATTERN = "<(\"[^\"]*\"|'[^']*'|[^'\">])*>";
-    public static final Pattern pattern = Pattern.compile(HTML_TAG_PATTERN);
+    public static final Pattern PATTERN = Pattern.compile(HTML_TAG_PATTERN);
 
     public static Optional<Object> extractEntry(final TRss feed, final String fieldName) {
         return feed
@@ -59,7 +59,7 @@ public class XmlUtils {
                 .map(JAXBElement::getValue);
     }
 
-    public static String castToString(Object source) {
+    public static String castToString(final Object source) {
         return source.getClass().isAssignableFrom(String.class) ? (String) source : "";
     }
 
@@ -110,7 +110,7 @@ public class XmlUtils {
         return Jsoup.parse(sourceText).select("p").text();
     }
 
-    private static boolean isHtml(String sourceText) {
-        return pattern.matcher(sourceText).find();
+    private static boolean isHtml(final String sourceText) {
+        return PATTERN.matcher(sourceText).find();
     }
 }

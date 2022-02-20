@@ -23,8 +23,9 @@ import static it.petrovich.rss.common.RssType.RSS20;
 @Component
 @RequiredArgsConstructor
 public final class Rss20Processor implements FeedProcessor {
-    private final RssStorage storage;
+    private static final int ZERO_PROCESSED = 0;
     private final NotificationService notificationService;
+    private final RssStorage storage;
 
     @Override
     public RssType getType() {
@@ -52,6 +53,6 @@ public final class Rss20Processor implements FeedProcessor {
             val storeResult = storage.putOrReplaceEntry(new Pair<>(feed.settings().id(), feedEntries));
             return new ProcessingResult(storeResult, feed.settings().id(), feedEntries.size());
         }
-        return new ProcessingResult(true, feed.settings().id(), 0);
+        return new ProcessingResult(true, feed.settings().id(), ZERO_PROCESSED);
     }
 }

@@ -2,14 +2,10 @@ package it.petrovich.rss.notification.telegram;
 
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.val;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.objects.MessageEntity;
 import org.telegram.telegrambots.meta.api.objects.Update;
-
-import java.util.List;
 
 @AllArgsConstructor
 public final class NotificationBot extends TelegramLongPollingBot {
