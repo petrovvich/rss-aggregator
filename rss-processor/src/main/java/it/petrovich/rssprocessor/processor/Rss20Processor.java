@@ -6,13 +6,14 @@ import it.petrovich.rss.common.Pair;
 import it.petrovich.rss.common.ProcessingResult;
 import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.notification.NotificationService;
-import it.petrovich.rss.xml.rss20111.TRss;
 import it.petrovich.rss.notification.events.Rss20NotificationEvent;
+import it.petrovich.rss.xml.rss20111.TRss;
 import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Objects;
 
@@ -47,7 +48,10 @@ public final class Rss20Processor implements FeedProcessor {
                 .filter(Objects::nonNull)
                 .toList();
         log.debug("Extracted {} entries", feedEntries.size());
-        val storeResult = storage.putOrReplaceEntry(new Pair<>(feed.settings().id(), feedEntries));
-        return new ProcessingResult(storeResult, feed.settings().id(), feedEntries.size());
+        if (!CollectionUtils.isEmpty(feedEntries)) {
+            val storeResult = storage.putOrReplaceEntry(new Pair<>(feed.settings().id(), feedEntries));
+            return new ProcessingResult(storeResult, feed.settings().id(), feedEntries.size());
+        }
+        return new ProcessingResult(true, feed.settings().id(), 0);
     }
 }

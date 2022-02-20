@@ -37,6 +37,7 @@
                 <version>${jaxb2-maven-plugin.version}</version>
                 <configuration>
                     <clearOutputDir>false</clearOutputDir>
+                    <
                 </configuration>
                 <executions>
                     <execution>

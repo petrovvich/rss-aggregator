@@ -14,7 +14,6 @@ import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
-import net.openhft.chronicle.map.ChronicleMap;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -35,21 +34,12 @@ import static java.util.Optional.ofNullable;
 public final class InMemoryRssStorage implements RssStorage {
     private static final List<FeedEntry> EMPTY_LIST = Collections.emptyList();
     private static final int CACHE_CAPACITY = 1000;
-    private static final double VALUE_SIZE = 100.0;
 
     private final Cache<UUID, Feed> requestsCache = CacheBuilder.newBuilder().maximumSize(CACHE_CAPACITY).build();
     private final Cache<UUID, FeedSubscription> subscriptionsCache = CacheBuilder.newBuilder()
             .maximumSize(CACHE_CAPACITY).build();
-    private final ChronicleMap<UUID, Collection<FeedEntry>> entriesCache = ChronicleMap
-            .of(UUID.class, (Class<Collection<FeedEntry>>) (Class) Collection.class)
-            .name("feed-notifiers-storage")
-            .entries(CACHE_CAPACITY)
-            .averageKey(UUID.randomUUID())
-            .averageValue(Collections.emptyList())
-            .constantKeySizeBySample(UUID.randomUUID())
-            .constantValueSizeBySample(Collections.emptyList())
-            .averageValueSize(VALUE_SIZE)
-            .create();
+    private final Cache<UUID, Collection<FeedEntry>> entriesCache = CacheBuilder.newBuilder()
+            .maximumSize(CACHE_CAPACITY).build();
 
     private final RssXmlService xmlService;
     private final RequestService requestService;
@@ -107,24 +97,20 @@ public final class InMemoryRssStorage implements RssStorage {
         if (CollectionUtils.isEmpty(entries.right())) {
             return false;
         }
-        if (entriesCache.containsKey(entries.left())) {
-            entriesCache.replace(entries.left(), entries.right());
-        } else {
-            entriesCache.put(entries.left(), entries.right());
-        }
+        entriesCache.put(entries.left(), entries.right());
 
-        return !CollectionUtils.isEmpty(entriesCache.get(entries.left()));
+        return !CollectionUtils.isEmpty(entriesCache.getIfPresent(entries.left()));
     }
 
     @Override
     public boolean containsEntry(final Pair<UUID, FeedEntry> entry) {
-        val storedEntries = entriesCache.get(entry.left());
+        val storedEntries = entriesCache.getIfPresent(entry.left());
         return !CollectionUtils.isEmpty(storedEntries) && storedEntries.contains(entry.right());
     }
 
     @Override
     public Collection<FeedEntry> getEntries(final UUID id) {
-        return ofNullable(entriesCache.get(id))
+        return ofNullable(entriesCache.getIfPresent(id))
                 .orElse(EMPTY_LIST);
     }
 }
