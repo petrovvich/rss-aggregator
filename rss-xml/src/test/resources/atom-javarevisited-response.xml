@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/atom10full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/"
+      xmlns:blogger="http://schemas.google.com/blogger/2008" xmlns:georss="http://www.georss.org/georss"
+      xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id>tag:blogger.com,1999:blog-8712770457197348465</id>
+    <updated>2022-02-20T04:28:40.116-08:00</updated>
+    <category term="core java"/>
+    <category term="courses"/>
+    <category term="programming"/>
+    <category term="online resources"/>
+    <category term="best of javarevisited"/>
+    <category term="core java interview question"/>
+    <category term="spring"/>
+    <category term="data structure and algorithm"/>
+    <category term="error and exception"/>
+    <category term="books"/>
+    <category term="java collection tutorial"/>
+    <category term="Coding Interview Question"/>
+    <category term="interview questions"/>
+    <category term="SQL"/>
+    <category term="coding"/>
+    <category term="IT Certifications"/>
+    <category term="Java multithreading Tutorials"/>
+    <category term="Java 8"/>
+    <category term="web development"/>
+    <category term="database"/>
+    <category term="python"/>
+    <category term="linux"/>
+    <category term="jsp-servlet"/>
+    <category term="best practices"/>
+    <category term="Array"/>
+    <category term="design patterns"/>
+    <category term="object oriented programming"/>
+    <category term="JDBC"/>
+    <category term="SQL Interview Questions"/>
+    <category term="coursera"/>
+    <category term="unix"/>
+    <category term="Cloud Certifications"/>
+    <category term="Java Certification OCPJP SCJP"/>
+    <category term="Java String"/>
+    <category term="programmers"/>
+    <category term="Eclipse"/>
+    <category term="thread interview questions"/>
+    <category term="Data Science"/>
+    <category term="Microsoft SQL Server"/>
+    <category term="java IO tutorial"/>
+    <category term="Amazon Web Service or AWS"/>
+    <category term="spring interview questions"/>
+    <category term="cloud computing"/>
+    <category term="course review"/>
+    <category term="tools"/>
+    <category term="HTML and JavaScript"/>
+    <category term="JavaScript"/>
+    <category term="spring boot"/>
+    <category term="collections interview questions"/>
+    <category term="JVM Internals"/>
+    <category term="date and time tutorial"/>
+    <category term="J2EE"/>
+    <category term="REST"/>
+    <category term="java"/>
+    <category term="JQuery"/>
+    <category term="mysql"/>
+    <category term="Java Programming Tutorials"/>
+    <category term="spring mvc"/>
+    <category term="Coding problems"/>
+    <category term="DevOps"/>
+    <category term="React JS"/>
+    <category term="AWS Certifications"/>
+    <category term="general"/>
+    <category term="Java xml tutorial"/>
+    <category term="Testing"/>
+    <category term="database interview questions"/>
+    <category term="free resources"/>
+    <category term="FIX protocol tutorial"/>
+    <category term="Maven"/>
+    <category term="machine learning"/>
+    <category term="servlet interview questions"/>
+    <category term="Microsoft Azure"/>
+    <category term="java 5 tutorial"/>
+    <category term="JUnit"/>
+    <category term="Stream API examples"/>
+    <category term="String"/>
+    <category term="hibernate"/>
+    <category term="Java JSON tutorial"/>
+    <category term="tibco"/>
+    <category term="xml"/>
+    <category term="Google Cloud Platform"/>
+    <category term="Sybase and SQL Server"/>
+    <category term="spring security"/>
+    <category term="HashMap"/>
+    <category term="Oracle"/>
+    <category term="Pluralsight"/>
+    <category term="Java File Tutorial"/>
+    <category term="Scala"/>
+    <category term="Udemy"/>
+    <category term="debugging"/>
+    <category term="tips"/>
+    <category term="troubleshooting"/>
+    <category term="CompTIA Certifications"/>
+    <category term="Spring certification"/>
+    <category term="android"/>
+    <category term="logging"/>
+    <category term="Cyber Security"/>
+    <category term="Java Regular Expression tutorials"/>
+    <category term="Java Security Tutorial"/>
+    <category term="Java Web Service Tutorial"/>
+    <category term="java networking tutorial"/>
+    <category term="online course creation"/>
+    <category term="Angular"/>
+    <category term="ArrayList"/>
+    <category term="Blockchain"/>
+    <category term="C++"/>
+    <category term="Docker"/>
+    <category term="JSTL"/>
+    <category term="Java Serialization Tutorial"/>
+    <category term="Kubernetes"/>
+    <category term="Programming interview question"/>
+    <category term="binary tree"/>
+    <category term="black friday deal"/>
+    <category term="game development"/>
+    <category term="groovy"/>
+    <category term="hibernate interview questions"/>
+    <category term="java interview questions"/>
+    <category term="linked list"/>
+    <category term="security"/>
+    <category term="Big Data"/>
+    <category term="JSON"/>
+    <category term="Jackson"/>
+    <category term="Java 7"/>
+    <category term="Java Generics Tutorial"/>
+    <category term="Java basics"/>
+    <category term="OCAJP"/>
+    <category term="Sorting algorithm"/>
+    <category term="Swing"/>
+    <category term="artificial intelligence"/>
+    <category term="concurrency"/>
+    <category term="java tips"/>
+    <category term="microservices"/>
+    <category term="spring data jpa"/>
+    <category term="web design"/>
+    <category term="Computer Science"/>
+    <category term="Data visualization"/>
+    <category term="Datacamp"/>
+    <category term="Eclipse Tips"/>
+    <category term="JSP"/>
+    <category term="Java Excel Tutorial"/>
+    <category term="Lambda expression"/>
+    <category term="ant tutorials"/>
+    <category term="iOS development"/>
+    <category term="java enum"/>
+    <category term="performance"/>
+    <category term="roadmap"/>
+    <category term="soft skills"/>
+    <category term="API"/>
+    <category term="Apache Kafka"/>
+    <category term="FIX Protocol interview questions"/>
+    <category term="Gradle"/>
+    <category term="How to examples"/>
+    <category term="Java NIO Tutorial"/>
+    <category term="Java bit manipulation tutorial"/>
+    <category term="Microsoft Excel"/>
+    <category term="SSL"/>
+    <category term="Salesforce"/>
+    <category term="Tomcat"/>
+    <category term="css"/>
+    <category term="digital marketing"/>
+    <category term="educative"/>
+    <category term="equals and hashcode"/>
+    <category term="final modifier"/>
+    <category term="functional programming"/>
+    <category term="garbage collection"/>
+    <category term="gift"/>
+    <category term="homework"/>
+    <category term="kotlin"/>
+    <category term="mobile"/>
+    <category term="project management"/>
+    <category term="recursion"/>
+    <category term="scripting"/>
+    <category term="struts"/>
+    <category term="windows"/>
+    <category term=".NET"/>
+    <category term="Agile"/>
+    <category term="Apache Spark"/>
+    <category term="Codecademy"/>
+    <category term="Computer Vision"/>
+    <category term="Dynamic Programming"/>
+    <category term="ElasticSearch"/>
+    <category term="Ethereum"/>
+    <category term="Firebase"/>
+    <category term="Golang"/>
+    <category term="Hadoop"/>
+    <category term="HashSet"/>
+    <category term="Java 10"/>
+    <category term="Java HTTP Tutorial"/>
+    <category term="Java Performance"/>
+    <category term="Java Reflection"/>
+    <category term="Jersey"/>
+    <category term="Job and Careers"/>
+    <category term="Kubernetes Certifications"/>
+    <category term="Linked Learning"/>
+    <category term="Log4j"/>
+    <category term="MQ Series"/>
+    <category term="NoSQL"/>
+    <category term="OCEJWCD"/>
+    <category term="React Native"/>
+    <category term="React hooks"/>
+    <category term="Salesforce Certification"/>
+    <category term="Tableau"/>
+    <category term="Tensorflow"/>
+    <category term="Vue.js"/>
+    <category term="binary search tree"/>
+    <category term="blogging"/>
+    <category term="core java;"/>
+    <category term="design"/>
+    <category term="display tag example"/>
+    <category term="flutter"/>
+    <category term="git"/>
+    <category term="interface"/>
+    <category term="java 9"/>
+    <category term="method reference"/>
+    <category term="node js"/>
+    <category term="software architecture"/>
+    <category term="software tools"/>
+    <category term="static modifier"/>
+    <category term="thread"/>
+    <category term="windows 8"/>
+    <category term="3D modeling"/>
+    <category term="AZ 220"/>
+    <category term="Ansible"/>
+    <category term="Apache Camel"/>
+    <category term="Apache Cassandra"/>
+    <category term="Apache Web Server"/>
+    <category term="Appium"/>
+    <category term="Automation"/>
+    <category term="Autosys"/>
+    <category term="Bash"/>
+    <category term="Blender"/>
+    <category term="Bootstrap"/>
+    <category term="Business Stragey"/>
+    <category term="Cisco CCNA"/>
+    <category term="Clojure"/>
+    <category term="Comparable and Comparator"/>
+    <category term="Computer Netowrks"/>
+    <category term="CouchDB"/>
+    <category term="Cryptocurrency"/>
+    <category term="Cursor"/>
+    <category term="D3"/>
+    <category term="Design Thinking"/>
+    <category term="Django"/>
+    <category term="Docker Certification"/>
+    <category term="Edureka"/>
+    <category term="Elixir"/>
+    <category term="Email"/>
+    <category term="Enum"/>
+    <category term="Erlang"/>
+    <category term="F#"/>
+    <category term="FIX protocol"/>
+    <category term="Facebook"/>
+    <category term="Figma"/>
+    <category term="Flask"/>
+    <category term="GCP Certifications"/>
+    <category term="Gatsby"/>
+    <category term="GitLab"/>
+    <category term="Google Dart"/>
+    <category term="Google Sheet"/>
+    <category term="Grammarly"/>
+    <category term="GraphQL"/>
+    <category term="Growth hacking"/>
+    <category term="IELTS"/>
+    <category term="IT professional"/>
+    <category term="ITIL"/>
+    <category term="Instagram"/>
+    <category term="JDK 7"/>
+    <category term="JIRA"/>
+    <category term="JMS"/>
+    <category term="JPA"/>
+    <category term="JSP and Servlet"/>
+    <category term="Java Annotation Tutorial"/>
+    <category term="Java Assertion"/>
+    <category term="Java Encoding"/>
+    <category term="Java FX"/>
+    <category term="Java Messaging Service"/>
+    <category term="Java PDF tutorial"/>
+    <category term="Java and HTML"/>
+    <category term="Java web tutorial"/>
+    <category term="Jenkins"/>
+    <category term="Jsoup"/>
+    <category term="Kali Linux"/>
+    <category term="Kibana"/>
+    <category term="Leetcode solution"/>
+    <category term="Lombok"/>
+    <category term="Matrix"/>
+    <category term="Microsoft"/>
+    <category term="Microsoft Outlook"/>
+    <category term="Microsoft Power BI"/>
+    <category term="Microsoft PowerPoint"/>
+    <category term="Microsoft Project"/>
+    <category term="Microsoft Word"/>
+    <category term="Minecraft"/>
+    <category term="Mockito"/>
+    <category term="MongoDB"/>
+    <category term="Mybatis"/>
+    <category term="NFT"/>
+    <category term="Nginex"/>
+    <category term="NumPy"/>
+    <category term="Open source library"/>
+    <category term="OpenCV"/>
+    <category term="Openshift"/>
+    <category term="Operating System"/>
+    <category term="PHP"/>
+    <category term="PMP"/>
+    <category term="Pandas"/>
+    <category term="Perl"/>
+    <category term="PostgreSQL"/>
+    <category term="Quantum computing"/>
+    <category term="R programming"/>
+    <category term="RESTassured"/>
+    <category term="Redux"/>
+    <category term="Review"/>
+    <category term="Ruby"/>
+    <category term="Ruby on Rails"/>
+    <category term="Rust"/>
+    <category term="ScikitLearn"/>
+    <category term="Scrum"/>
+    <category term="Selenium"/>
+    <category term="Serialization"/>
+    <category term="Serverless"/>
+    <category term="ShellShock"/>
+    <category term="Solidity"/>
+    <category term="Splunk"/>
+    <category term="T-SQL"/>
+    <category term="Tableau Certification"/>
+    <category term="Teachable"/>
+    <category term="Terraform"/>
+    <category term="TreeMap"/>
+    <category term="Trobleshooting"/>
+    <category term="Tutorials and examples"/>
+    <category term="Twitter"/>
+    <category term="TypeScript"/>
+    <category term="UML"/>
+    <category term="UX and UI design"/>
+    <category term="Unreal engine"/>
+    <category term="VScode"/>
+    <category term="Windows 10"/>
+    <category term="WordPress"/>
+    <category term="Yaml"/>
+    <category term="abstract modifier"/>
+    <category term="advance java tutorial"/>
+    <category term="batch file"/>
+    <category term="build process"/>
+    <category term="classloader"/>
+    <category term="computer security"/>
+    <category term="deals"/>
+    <category term="deep learning"/>
+    <category term="edx"/>
+    <category term="fun"/>
+    <category term="functional interface"/>
+    <category term="haskell"/>
+    <category term="iText"/>
+    <category term="infographics"/>
+    <category term="jQuery UI"/>
+    <category term="java beginners tutorial"/>
+    <category term="julia"/>
+    <category term="messaging"/>
+    <category term="networking interview question"/>
+    <category term="news"/>
+    <category term="openapi"/>
+    <category term="perogramming"/>
+    <category term="postman"/>
+    <category term="public speaking"/>
+    <category term="puppet"/>
+    <category term="puzzles"/>
+    <category term="queue"/>
+    <category term="stack"/>
+    <category term="sveltejs"/>
+    <category term="svn"/>
+    <category term="swagger"/>
+    <category term="tricks"/>
+    <category term="virtual box"/>
+    <category term="wait notify"/>
+    <category term="xslt"/>
+    <title type="text">Javarevisited</title>
+    <subtitle type="html">Blog about Java, Programming, Spring, Hibernate, Interview Questions, Books and Online Course
+        Recommendations from Udemy, Pluralsight, Coursera, etc
+    </subtitle>
+    <link rel="alternate" type="text/html" href="http://javarevisited.blogspot.com/"/>
+    <link rel="next" type="application/atom+xml"
+          href="http://www.blogger.com/feeds/8712770457197348465/posts/default?start-index=12&amp;max-results=11&amp;redirect=false"/>
+    <author>
+        <name>javin paul</name>
+        <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+        <email>noreply@blogger.com</email>
+        <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                  src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+    </author>
+    <generator version="7.00" uri="http://www.blogger.com">Blogger</generator>
+    <openSearch:totalResults>1602</openSearch:totalResults>
+    <openSearch:startIndex>1</openSearch:startIndex>
+    <openSearch:itemsPerPage>11</openSearch:itemsPerPage>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/atom+xml"
+                 href="http://feeds.feedburner.com/Javarevisited"/>
+    <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="javarevisited"/>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/"/>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"/>
+    <feedburner:emailServiceId xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">Javarevisited
+    </feedburner:emailServiceId>
+    <feedburner:feedburnerHostname xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">
+        https://feedburner.google.com
+    </feedburner:feedburnerHostname>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-2348362300718607110</id>
+        <published>2022-02-20T03:50:00.005-08:00</published>
+        <updated>2022-02-20T03:55:20.893-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="spring boot"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="SQL"/>
+        <title type="text">How to log SQL statements in Spring Boot? Example Tutorial</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"
+            &gt; &lt;span style="font-size: medium;" &gt;When developing Spring Boot applications, you may need to have
+            proper knowledge of various kinds of errors and also how to overcome those. We use &lt;/span &gt;&lt;a
+            href="https://javarevisited.blogspot.com/2018/01/top-5-hibernate-and-jpa-courses-for-java-programmers-learn-online.html"
+            style="font-size: medium;" target="_blank" &gt;JPA &lt;/a &gt;&lt;span style="font-size: medium;" &gt;in
+            spring boot to make our work easy when managing databases. If you get an error like an internal server error
+            (504 error), you need to go through your backend system and find the error. So if you log those errors in
+            your backend system, then it will be easy for anyone to find exact errors and make solutions to them. In
+            this article, we are going to discuss how to log SQL statements in Spring boot which will help you to log
+            the Hibernate/JPA statements.&lt;/span &gt;&lt;span style="font-size: medium;"&gt;&lt;/span&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/how-to-log-sql-statements-in-spring.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=YRULwnPaiCs:C6toHatCCBo:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=YRULwnPaiCs:C6toHatCCBo:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=YRULwnPaiCs:C6toHatCCBo:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=YRULwnPaiCs:C6toHatCCBo:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=YRULwnPaiCs:C6toHatCCBo:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=YRULwnPaiCs:C6toHatCCBo:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=YRULwnPaiCs:C6toHatCCBo:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=YRULwnPaiCs:C6toHatCCBo:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=YRULwnPaiCs:C6toHatCCBo:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=YRULwnPaiCs:C6toHatCCBo:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/2348362300718607110/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/how-to-log-sql-statements-in-spring.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/2348362300718607110"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/2348362300718607110"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/how-to-log-sql-statements-in-spring.html"
+              title="How to log SQL statements in Spring Boot? Example Tutorial"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://1.bp.blogspot.com/-sw5tgJAweHc/YV1BdfwdgnI/AAAAAAAAC_I/llo585LEuAA69bpSBFYmHFm9Z3mVdqF4gCLcBGAsYHQ/s72-w563-h301-c/888888.jpg"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-5751468681531574832</id>
+        <published>2022-02-20T03:40:00.002-08:00</published>
+        <updated>2022-02-20T03:40:22.321-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="AWS Certifications"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Cloud Certifications"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="IT Certifications"/>
+        <title type="text">Top 5 Courses to Crack AWS Certified Security Specialty Certification Exam (SCS-C01) in 2022
+            - Best of Lot
+        </title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;First
+            things first. What exactly is the AWS Certified Security Specialty Exam? It is basically a credential that
+            helps organizations identify and develop talent with critical skills for implementing cloud initiatives. If
+            you earn an AWS Certified Security Specialty, it means that you are an expert in securing data and workloads
+            in the AWS Cloud. The AWS Certified Security Specialty exam is meant for individuals who perform a security
+            role and have at least two years of hands-on experience securing AWS workloads. You should have five years
+            of IT security experience in designing and implementing security solutions and at least two years of hands-o
+            experience in securing AWS workloads.&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-crack-aws-certified.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kGPmjS4EVO8:MLbKI3l6QZo:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=kGPmjS4EVO8:MLbKI3l6QZo:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=kGPmjS4EVO8:MLbKI3l6QZo:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kGPmjS4EVO8:MLbKI3l6QZo:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=kGPmjS4EVO8:MLbKI3l6QZo:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kGPmjS4EVO8:MLbKI3l6QZo:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=kGPmjS4EVO8:MLbKI3l6QZo:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=kGPmjS4EVO8:MLbKI3l6QZo:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=kGPmjS4EVO8:MLbKI3l6QZo:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kGPmjS4EVO8:MLbKI3l6QZo:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/5751468681531574832/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-crack-aws-certified.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/5751468681531574832"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/5751468681531574832"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-crack-aws-certified.html"
+              title="Top 5 Courses to Crack AWS Certified Security Specialty Certification Exam (SCS-C01) in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEiy1GmKU8x-QGRgLEUiofPdazTbslRQFKzj9ao2iWK3PHJbRmQ3AM_kOcFTrrJaxI6rzZRohG4lesN27FMDTLyQAPXd4eb0FfFJP4yXdfYsiqt-cZBy2wivAgmyCVlPRp0ZiVwAV55ZlcEvvatbXgY06DV0gfbceFhU17Xokl15Qx5tDPiHBr-HkHGI=s72-w427-h224-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-5259030600951524988</id>
+        <published>2022-02-20T03:36:00.002-08:00</published>
+        <updated>2022-02-20T03:36:27.118-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Microsoft PowerPoint"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="tools"/>
+        <title type="text">Top 5 Courses to Learn Microsoft PowerPoint in Depth in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p&gt;For
+            those of you who don&amp;#39;t know, Microsoft PowerPoint is the wonderful presentation software that is
+            developed and maintained by Microsoft. It is a part of the broader Microsoft Office ecosystem and comes
+            bundled with MS Word, Excel, and other productivity software. The greatest advantage of PowerPoint is that
+            it can be used to create complex business presentations as well as simple educational outlines. It is made
+            up of multiple slides that contain information and multimedia like pictures and videos. &lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=8dwsgb-768o:7BpqLitv4RY:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=8dwsgb-768o:7BpqLitv4RY:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=8dwsgb-768o:7BpqLitv4RY:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=8dwsgb-768o:7BpqLitv4RY:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=8dwsgb-768o:7BpqLitv4RY:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=8dwsgb-768o:7BpqLitv4RY:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=8dwsgb-768o:7BpqLitv4RY:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=8dwsgb-768o:7BpqLitv4RY:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=8dwsgb-768o:7BpqLitv4RY:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=8dwsgb-768o:7BpqLitv4RY:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/5259030600951524988/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/5259030600951524988"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/5259030600951524988"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft.html"
+              title="Top 5 Courses to Learn Microsoft PowerPoint  in Depth in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEhIq9-IrESUXHLVrSednFCfSrIY0hJvxN0whcAjZQpuxCIYnIDQ-4tq2yTlRSj-KYECDAskAuviEKyRiPRPd0rpazTSw9hieyYj4MZg8SWDFwTIf2qBrIGysuuVttwDP0UILKpyf2MvAFzxpW1pG_mMxpU13EqfE4HyqqIuwbgsL7C1fm-0qn2vwvQZ=s72-w403-h227-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-7769361621027114167</id>
+        <published>2022-02-20T03:33:00.001-08:00</published>
+        <updated>2022-02-20T03:33:20.237-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="SSL"/>
+        <title type="text">Top 5 Courses to Learn SSL and TLS in Depth in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p&gt;For
+            those who are new to this, SSL and TLS are protocols that encrypt internet traffic and make sure that all
+            the communications through the internet are secure and safe. TLS can actually be seen as a descendant of SSL
+            which provides encryption and makes internet commerce possible. Both the protocols receive continuous
+            updates so that it is ready to fight against sophisticated attacks from malicious hackers. SSL stands for
+            Secure Sockets Layers and was developed in the mid-1990s by the company Netscape, which also made the most
+            popular web browser of that time. The major version of SSL was SSL 3.0, which was released in 1996, and
+            provided a strong level of encryption. &lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-ssl-and-tls-in.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=xCMtMYMHN_g:uIQPnVdVQ7Y:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=xCMtMYMHN_g:uIQPnVdVQ7Y:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=xCMtMYMHN_g:uIQPnVdVQ7Y:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=xCMtMYMHN_g:uIQPnVdVQ7Y:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=xCMtMYMHN_g:uIQPnVdVQ7Y:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=xCMtMYMHN_g:uIQPnVdVQ7Y:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=xCMtMYMHN_g:uIQPnVdVQ7Y:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=xCMtMYMHN_g:uIQPnVdVQ7Y:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=xCMtMYMHN_g:uIQPnVdVQ7Y:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=xCMtMYMHN_g:uIQPnVdVQ7Y:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/7769361621027114167/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-ssl-and-tls-in.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/7769361621027114167"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/7769361621027114167"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-ssl-and-tls-in.html"
+              title="Top 5 Courses to Learn SSL and TLS in Depth in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEgDJ1C4flh256RmoOJULvW_OEvYWatqEWjCYijhTlneMSxq8QjPtHnxxtlu_ENkv6QoiKcsSkKI0_fWx0lwZXPDq1W-HnATZBAhymSThcsC0MJXqZqheDfR1Rz15t0KK22obMe5uoKu4J39Jh-TrOmxjS3yULYkhvF0xMGnszibD1vEb545IeZHWXFB=s72-w385-h215-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-1212674943182084499</id>
+        <published>2022-02-20T03:29:00.003-08:00</published>
+        <updated>2022-02-20T03:29:34.322-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Microsoft Outlook"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="tools"/>
+        <title type="text">Top 5 Courses to Learn Microsoft Outlook in Depth in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p
+            style="font-size: medium;"&gt;Most of you may have the question: what exactly is Microsoft Outlook? Don&amp;#39;t
+            worry, I have got you covered. MS Outlook is basically a personal information manager that is part of the
+            much bigger MS Office suite of productivity applications. The first version of Outlook was introduced by
+            Microsoft in 1997. The biggest advantage of Outlook is that it can either be purchased as stand-alone
+            software or as a part of the MS Office ecosystem. Another great thing to note is that it can also be used as
+            an email-client server or if you need shared features like calendars, appointments, or mailboxes.&lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-outlook.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=XNLpzu-Gg9s:0aIEazbQGbI:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=XNLpzu-Gg9s:0aIEazbQGbI:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=XNLpzu-Gg9s:0aIEazbQGbI:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=XNLpzu-Gg9s:0aIEazbQGbI:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=XNLpzu-Gg9s:0aIEazbQGbI:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=XNLpzu-Gg9s:0aIEazbQGbI:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=XNLpzu-Gg9s:0aIEazbQGbI:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=XNLpzu-Gg9s:0aIEazbQGbI:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=XNLpzu-Gg9s:0aIEazbQGbI:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=XNLpzu-Gg9s:0aIEazbQGbI:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/1212674943182084499/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-outlook.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1212674943182084499"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1212674943182084499"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-outlook.html"
+              title="Top 5 Courses to Learn Microsoft Outlook in Depth in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEhhl5oIEN6VwKk-EntZxwkhCglIVcMzn0vnoyT1JA6_EOilCZZfutlHbqfewxFAONMkJdpTM6mtf2spS4c97y_dVEtN7OPqLtkkmjuY6SsD3qR1cavHe7T-wY5Ze0XH3pDYtwRimB63xHM2UivcSsjGDwMiNhBUHhQMga9ljTWB6FM0PLROdMwZN6Id=s72-w431-h242-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-1726371611998074583</id>
+        <published>2022-02-19T20:50:00.000-08:00</published>
+        <updated>2022-02-19T20:50:31.999-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="ElasticSearch"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="tools"/>
+        <title type="text">Top 5 Courses to learn Elasticsearch, Kibana, and Logstash in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p&gt;If
+            you are someone who is running an application or planning to run an application that has a complex
+            search/store functionality and is mainly based on the text? You are surely on the right page! Let&amp;#39;s
+            understand what Elasticsearch is. Elasticsearch is an open-source full-text search and analytics engine that
+            is extremely scalable. It enables you to swiftly store, explore, and analyze large amounts of data in near
+            real-time.  It&amp;#39;s typically employed as the underpinning engine/technology for applications with
+            advanced search functionality and needs.&lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-elasticsearch.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=hrT96Ao7C0E:wMGlCnZRCMQ:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=hrT96Ao7C0E:wMGlCnZRCMQ:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=hrT96Ao7C0E:wMGlCnZRCMQ:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=hrT96Ao7C0E:wMGlCnZRCMQ:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=hrT96Ao7C0E:wMGlCnZRCMQ:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=hrT96Ao7C0E:wMGlCnZRCMQ:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=hrT96Ao7C0E:wMGlCnZRCMQ:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=hrT96Ao7C0E:wMGlCnZRCMQ:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=hrT96Ao7C0E:wMGlCnZRCMQ:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=hrT96Ao7C0E:wMGlCnZRCMQ:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/1726371611998074583/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-elasticsearch.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1726371611998074583"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1726371611998074583"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-elasticsearch.html"
+              title="Top 5 Courses to learn Elasticsearch, Kibana, and Logstash in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEhe5tX9y3j-eg59AOzlta74U5e46zro6bRpQTYnE4DHKju0j6m57XKMwLvfuGkAqBfPcbbNWpen1pL3Okpn6T4BpPm6OMo4EN1W9vjyjchja75kECUKRjDkPjYVgR0DkG-E41xmbsnl4W5GPq2yJVANo3mUc3VGvjzxStMbnvrqMLO3VsPXe-gS0eZXoA=s72-w466-h262-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-1192845100176754921</id>
+        <published>2022-02-19T20:44:00.000-08:00</published>
+        <updated>2022-02-19T20:44:32.899-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Nginex"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="tools"/>
+        <title type="text">Top 5 Courses to learn Nginx in depth in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;For
+            those of you who don&amp;#39;t know, Nginx is an open-source web server that can also be used as a reverse
+            proxy, load balancer, and HTTP cache. Leading tech companies like Autodesk, GitLab, DuckDuckGo, Microsoft,
+            IBM, Google, Adobe, Xerox, LinkedIn, Cisco, Twitter, Apple, and Intl all use Nginx.  Nginx, actually
+            pronounced as &amp;#39;engine-ex&amp;#39;, was created by Igor Syosev and was first released in October
+            2004. Nginx was created as a solution to the C10K problem, which is a famous problem regarding the handling
+            of 10,000 concurrent connections and the performance issues that may arise.&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-nginx-in-depth.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=k-_xk5A6BBg:TdUWBvwFQak:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=k-_xk5A6BBg:TdUWBvwFQak:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=k-_xk5A6BBg:TdUWBvwFQak:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=k-_xk5A6BBg:TdUWBvwFQak:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=k-_xk5A6BBg:TdUWBvwFQak:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=k-_xk5A6BBg:TdUWBvwFQak:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=k-_xk5A6BBg:TdUWBvwFQak:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=k-_xk5A6BBg:TdUWBvwFQak:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=k-_xk5A6BBg:TdUWBvwFQak:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=k-_xk5A6BBg:TdUWBvwFQak:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/1192845100176754921/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-nginx-in-depth.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1192845100176754921"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1192845100176754921"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-nginx-in-depth.html"
+              title="Top 5 Courses to learn Nginx in depth in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEh4KEVfzvwDC4CMC-Mkw8ALrA6_IQwKOfIc914rFTvu6XFiCb4ekRx6ts6V41tY6Tg4hm9TDpPXMdYlaX8CvTJasQnw54LI2iLAtwFWQIZa6t2RzT6cJrqydUQstHuaV1O7thxsF2WYSu_6k4axIYGvM1V-bzSx033yOmq0pLQUw7MfAkv2G0QUKBz9=s72-w361-h203-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-6778976863237271433</id>
+        <published>2022-02-19T20:38:00.000-08:00</published>
+        <updated>2022-02-19T20:38:08.012-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Microsoft Word"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="tools"/>
+        <title type="text">Top 5 Courses to Learn Microsoft Word in Depth in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p&gt;All
+            the people who have used a PC or laptop at least once will know what Microsoft Word is. In the most basic
+            terms, MS Word is one of the most widely used word processors available on the market today. MS Word is a
+            part of the broader ecosystem of Microsoft Office, which is a suite of productivity software. But you can
+            also purchase MS Word as stand-alone software. It was first launched in 1989, and since then Microsoft has
+            released numerous versions. It is available for both Windows and Apple operating systems.&lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-word.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=TjrikddEojA:G7uoLcr-fhM:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=TjrikddEojA:G7uoLcr-fhM:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=TjrikddEojA:G7uoLcr-fhM:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=TjrikddEojA:G7uoLcr-fhM:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=TjrikddEojA:G7uoLcr-fhM:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=TjrikddEojA:G7uoLcr-fhM:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=TjrikddEojA:G7uoLcr-fhM:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=TjrikddEojA:G7uoLcr-fhM:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=TjrikddEojA:G7uoLcr-fhM:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=TjrikddEojA:G7uoLcr-fhM:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/6778976863237271433/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-word.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/6778976863237271433"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/6778976863237271433"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-word.html"
+              title="Top 5 Courses to Learn Microsoft Word in Depth in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEi_jigroxq2FHDCmMt-QNy2fxijq3w8X6dF-f7ZnaNBANN44tBZtQD5zdmMiR2tURniBp11dC0G8S6pf8fP3zxoX7VYOoKAU7LRJFF5OhAN1KqZgkhOwWFKGEjcn0li6PAxSvjxqPIM9s3rzBr8LyA7hdVK7SaQDJH1XX1sK7qiZMex2Qs0m5L2cRk2=s72-w436-h245-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-1452053901934334044</id>
+        <published>2022-02-19T20:28:00.000-08:00</published>
+        <updated>2022-02-19T20:28:04.963-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Microsoft Project"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="tools"/>
+        <title type="text">Top 5 Courses to Learn Microsoft Project Tool in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p&gt;Most
+            of you must have heard about Microsoft Word and Microsoft PowerPoint, right? But what is Microsoft Project?
+            It is actually an application sold by Microsoft that can be used to manage products through project
+            management tools. Microsoft Project is actually made up of a lot of different versions that allow users to
+            understand and control project schedules and finances, communicate and present project information. The
+            first version of Microsoft Project was actually released way back in 1985. The latest version of the
+            software is Microsoft Project 2016. &lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-project.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=cyD065gxMTI:pPnlC4ybtqI:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=cyD065gxMTI:pPnlC4ybtqI:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=cyD065gxMTI:pPnlC4ybtqI:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=cyD065gxMTI:pPnlC4ybtqI:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=cyD065gxMTI:pPnlC4ybtqI:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=cyD065gxMTI:pPnlC4ybtqI:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=cyD065gxMTI:pPnlC4ybtqI:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=cyD065gxMTI:pPnlC4ybtqI:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=cyD065gxMTI:pPnlC4ybtqI:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=cyD065gxMTI:pPnlC4ybtqI:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/1452053901934334044/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-project.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1452053901934334044"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/1452053901934334044"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-microsoft-project.html"
+              title="Top 5  Courses to Learn Microsoft Project Tool in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEhj_Isa_-ThW-G3MyWB8H3LKPBsBhEwlsVdJt72ZXoUkC2ehkMsSVxKuXKUiFNHizQ4NHoqYKF15eFo4yhwl2VkD8iU68iQ2CSADvPO3fsknVkK6wPzLEpfsTNlDcaV8DBGlCTbQkQmF_W7TuLeRhbAAFYYYq1lbuV3x0tSV8zzE1RgmW_5AFgT3MIX=s72-w406-h227-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-9058326039228459467</id>
+        <published>2022-02-19T20:23:00.000-08:00</published>
+        <updated>2022-02-19T20:23:09.792-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="AWS Certifications"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Cloud Certifications"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="IT Certifications"/>
+        <title type="text">Top 5 Courses to Crack AWS Database Specialty (DBS-C01) Exam in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p&gt;Before
+            I tell you about the Best Courses for the AWS Database Specialty exam, let me tell you what it exactly is.
+            It is basically a certification that allows companies to identify and develop talent with critical skills
+            for implementing cloud initiatives. If you earn an AWS Certified Database Specialty, it means that you are
+            an expert in recommending, designing, and maintaining optimal AWS database solutions. The AWS Certified
+            Database Specialty exam is meant for individuals with experience and expertise working with on-premises and
+            AWS CLoud-based relational and non-relational databases.&lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-crack-aws-database-specialty-.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kBL6f-jT0Z0:m6eB6FOwzRA:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=kBL6f-jT0Z0:m6eB6FOwzRA:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=kBL6f-jT0Z0:m6eB6FOwzRA:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kBL6f-jT0Z0:m6eB6FOwzRA:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=kBL6f-jT0Z0:m6eB6FOwzRA:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kBL6f-jT0Z0:m6eB6FOwzRA:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=kBL6f-jT0Z0:m6eB6FOwzRA:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=kBL6f-jT0Z0:m6eB6FOwzRA:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=kBL6f-jT0Z0:m6eB6FOwzRA:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=kBL6f-jT0Z0:m6eB6FOwzRA:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/9058326039228459467/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-crack-aws-database-specialty-.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/9058326039228459467"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/9058326039228459467"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-crack-aws-database-specialty-.html"
+              title="Top 5 Courses to Crack AWS Database Specialty (DBS-C01) Exam in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEg0p-0VNoB9j-1GjvZ8mfe7jX8cgRBBWrDReAEPnMmsvf3xYpyz4rw4SbyKqssGt-W5B2z5BE3c9-rOpCKDjbbp1aXtpxx8Y-XkPIPgboePq7aRYrA0Y7u8Zzx3y4NV8k7Ueyl9SiIMoGpGvOfEchRXZjrTNnve37K18FKTv4rJ21yNg7hHs9JmW1Yg=s72-w403-h268-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+    <entry>
+        <id>tag:blogger.com,1999:blog-8712770457197348465.post-3642380965822525017</id>
+        <published>2022-02-19T04:24:00.004-08:00</published>
+        <updated>2022-02-19T04:24:58.833-08:00</updated>
+        <category scheme="http://www.blogger.com/atom/ns#" term="Apache Cassandra"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="courses"/>
+        <category scheme="http://www.blogger.com/atom/ns#" term="NoSQL"/>
+        <title type="text">Top 5 Courses to learn Apache Cassandra in 2022 - Best of Lot</title>
+        <content type="html">&lt;div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on"&gt;&lt;p&gt;If
+            you guys are planning to use or learn any decentralized storage mechanisms, you have landed right! We will
+            today review Apache Cassandra and see some of the best courses to learn the same. Apache Cassandra is an
+            open-source, decentralized/distributed storage system (database) for handling very large volumes of
+            structured data scattered around the globe. Some of the largest firms, like Facebook, Twitter, Cisco,
+            Rackspace, eBay, Twitter, Netflix, and others, utilize Cassandra. Cassandra is also one of the costliest
+            ones but has a very tremendous performance for large data. So, what&amp;#39;s the wait? let&amp;#39;s see
+            some of the courses from where we can learn Cassandra.&lt;/p&gt;&lt;/div&gt;&lt;a
+            href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-apache-cassandra.html#more"&gt;&lt;/a&gt;&lt;div
+            class="blogger-post-footer"&gt;&lt;hr/&gt;
+            &lt;a href="http://javarevisited.blogspot.com/"&gt;Java, Unix, Tibco RV and FIX Protocol Tutorial&lt;/a&gt;&lt;/div&gt;&lt;div
+            class="feedflare"&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=z1E6fbnpiT4:1E4qnFt1ytQ:yIl2AUoC8zA"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=z1E6fbnpiT4:1E4qnFt1ytQ:F7zBnMyn0Lo"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=z1E6fbnpiT4:1E4qnFt1ytQ:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=z1E6fbnpiT4:1E4qnFt1ytQ:V_sGLiPBpWU"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=z1E6fbnpiT4:1E4qnFt1ytQ:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=z1E6fbnpiT4:1E4qnFt1ytQ:qj6IDK7rITs"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=z1E6fbnpiT4:1E4qnFt1ytQ:l6gmwiTKsz0"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=l6gmwiTKsz0" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+            href="http://feeds.feedburner.com/~ff/Javarevisited?a=z1E6fbnpiT4:1E4qnFt1ytQ:gIN9vFwOqvQ"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?i=z1E6fbnpiT4:1E4qnFt1ytQ:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;a href="http://feeds.feedburner.com/~ff/Javarevisited?a=z1E6fbnpiT4:1E4qnFt1ytQ:TzevzKxY174"&gt;&lt;img
+            src="http://feeds.feedburner.com/~ff/Javarevisited?d=TzevzKxY174" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        </content>
+        <link rel="replies" type="application/atom+xml"
+              href="http://javarevisited.blogspot.com/feeds/3642380965822525017/comments/default"
+              title="Post Comments"/>
+        <link rel="replies" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-apache-cassandra.html#comment-form"
+              title="0 Comments"/>
+        <link rel="edit" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/3642380965822525017"/>
+        <link rel="self" type="application/atom+xml"
+              href="http://www.blogger.com/feeds/8712770457197348465/posts/default/3642380965822525017"/>
+        <link rel="alternate" type="text/html"
+              href="http://javarevisited.blogspot.com/2022/02/top-5-courses-to-learn-apache-cassandra.html"
+              title="Top 5 Courses to learn Apache Cassandra in 2022 - Best of Lot"/>
+        <author>
+            <name>javin paul</name>
+            <uri>http://www.blogger.com/profile/15028902221295732276</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16"
+                      src="https://img1.blogblog.com/img/b16-rounded.gif"/>
+        </author>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+                         url="https://blogger.googleusercontent.com/img/a/AVvXsEjFRRLbeU52fL4kpSQvbzrBpxCIvPWE_S6EGNUYVnTpWujQo5VfNp96-4N55Chc9HYpe5fcMHLa0Cy424_V2YvTuvskyfRqbrTxe0i-PomV1XarIzUEk8L44v-D_PdImqv7B3l8wikssdnVbT4hP0kZIKw1mzAWW3cd_fQ1JSd_lP2VwfrMMBjZRfdtSw=s72-w610-h194-c"
+                         height="72" width="72"/>
+        <thr:total>0</thr:total>
+    </entry>
+</feed>

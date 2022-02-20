@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import static it.petrovich.rss.xml.TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML;
 import static it.petrovich.rss.xml.TestUtil.buildSource;
 import static it.petrovich.rss.xml.TestUtil.initJaxbContext;
 import static it.petrovich.rss.xml.TestUtil.initUnmarshaller;
@@ -90,6 +91,13 @@ class XmlReaderTest {
     @SneakyThrows
     void testUnmarshallAny() {
         val feed = unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)));
+        assertNotNull(feed);
+    }
+
+    @Test
+    @SneakyThrows
+    void testReadJavaRevisited() {
+        val feed = unmarshaller.unmarshal(buildSource(readXml(ATOM_JAVAREVISITED_RESPONSE_XML)), FeedType.class).getValue();
         assertNotNull(feed);
     }
 }

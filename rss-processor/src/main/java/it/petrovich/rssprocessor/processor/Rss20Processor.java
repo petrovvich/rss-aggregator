@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.util.Objects;
+import java.util.UUID;
 
 import static it.petrovich.rss.common.RssType.RSS20;
 
@@ -40,9 +41,10 @@ public final class Rss20Processor implements FeedProcessor {
                 .getItem()
                 .stream()
                 .map(item -> {
-                    val entry = new FeedEntry(item, true);
+                    val entry = new FeedEntry(UUID.randomUUID(), item, true);
                     if (!storedEntries.contains(entry)) {
-                        return new FeedEntry(item, notificationService.sendEvent(new Rss20NotificationEvent(item)));
+                        return new FeedEntry(entry.id(), item,
+                                notificationService.sendEvent(new Rss20NotificationEvent(entry.id(), item)));
                     }
                     return null;
                 })

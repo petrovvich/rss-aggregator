@@ -107,7 +107,7 @@ class InMemoryRssStorageTest {
     private Collection<FeedEntry> buildEntries(int count) {
         return IntStream
                 .range(0, count)
-                .mapToObj(num -> new FeedEntry(num, true))
+                .mapToObj(num -> new FeedEntry(UUID.randomUUID(), num, true))
                 .toList();
     }
 

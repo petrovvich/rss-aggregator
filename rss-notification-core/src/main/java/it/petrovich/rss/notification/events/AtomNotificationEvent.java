@@ -1,10 +1,10 @@
 package it.petrovich.rss.notification.events;
 
-import it.petrovich.rss.xml.rss20111.TRssItem;
+import it.petrovich.rss.xml.atom.EntryType;
 
 import java.util.UUID;
 
-public record Rss20NotificationEvent(UUID eventId, TRssItem body) implements NotificationEvent<TRssItem> {
+public record AtomNotificationEvent(UUID eventId, EntryType body) implements NotificationEvent<EntryType> {
 
     @Override
     public UUID getEventId() {
@@ -12,7 +12,7 @@ public record Rss20NotificationEvent(UUID eventId, TRssItem body) implements Not
     }
 
     @Override
-    public TRssItem getBody() {
+    public EntryType getBody() {
         return body;
     }
 }

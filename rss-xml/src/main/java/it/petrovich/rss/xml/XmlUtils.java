@@ -1,7 +1,10 @@
 package it.petrovich.rss.xml;
 
 import it.petrovich.rss.xml.atom.DateTimeType;
+import it.petrovich.rss.xml.atom.EntryType;
 import it.petrovich.rss.xml.atom.FeedType;
+import it.petrovich.rss.xml.atom.LinkType;
+import it.petrovich.rss.xml.atom.TextType;
 import it.petrovich.rss.xml.rss20111.TRss;
 import it.petrovich.rss.xml.rss20111.TRssItem;
 import jakarta.validation.constraints.NotNull;
@@ -15,9 +18,11 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Collection;
 import java.util.GregorianCalendar;
 import java.util.Optional;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 @UtilityClass
 public class XmlUtils {
@@ -28,6 +33,7 @@ public class XmlUtils {
     public static final String CALENDAR_CLASS = "DateTimeType";
     public static final String HTML_TAG_PATTERN = "<(\"[^\"]*\"|'[^']*'|[^'\">])*>";
     public static final Pattern PATTERN = Pattern.compile(HTML_TAG_PATTERN);
+    public static final String ATOM_ENTRY = "entry";
 
     public static Optional<Object> extractEntry(final TRss feed, final String fieldName) {
         return feed
@@ -57,6 +63,48 @@ public class XmlUtils {
                 .filter(item -> item.getName().getLocalPart().equals(fieldName))
                 .findFirst()
                 .map(JAXBElement::getValue);
+    }
+
+    public static String extractTextOrElse(final EntryType entryType,
+                                           @NotNull final String fieldName,
+                                           @NotNull final String orElse) {
+        return extractEntryAtom(entryType, fieldName)
+                .map(TextType.class::cast)
+                .map(TextType::getContent)
+                .map(content -> content.stream().map(String.class::cast).collect(Collectors.joining("")))
+                .orElse(orElse);
+    }
+
+    public static String atomLinkOrElse(final EntryType entryType,
+                                        @NotNull final String fieldName,
+                                        @NotNull final String orElse) {
+        return entryType
+                .getAuthorOrCategoryOrContent()
+                .stream()
+                .filter(element -> JAXB_ELEM_CLASS.equalsIgnoreCase(element.getClass().getSimpleName()))
+                .map(JAXBElement.class::cast)
+                .filter(elem -> fieldName.equalsIgnoreCase(elem.getName().getLocalPart()))
+                .toList()
+                .stream()
+                .map(JAXBElement::getValue)
+                .filter(value -> "LinkType".equalsIgnoreCase(value.getClass().getSimpleName()))
+                .map(LinkType.class::cast)
+                .filter(linkType -> "alternate".equalsIgnoreCase(linkType.getRel()))
+                .map(LinkType::getHref)
+                .findFirst()
+                .orElse(orElse);
+    }
+
+    public static Collection<EntryType> extractEntries(final FeedType feed) {
+        return feed
+                .getAuthorOrCategoryOrContributor()
+                .stream()
+                .filter(item -> item.getClass().getSimpleName().equalsIgnoreCase(JAXBElement.class.getSimpleName()))
+                .map(JAXBElement.class::cast)
+                .filter(item -> ATOM_ENTRY.equalsIgnoreCase(item.getName().getLocalPart()))
+                .map(JAXBElement::getValue)
+                .map(EntryType.class::cast)
+                .toList();
     }
 
     public static String castToString(final Object source) {
@@ -94,6 +142,16 @@ public class XmlUtils {
                 .stream()
                 .map(JAXBElement.class::cast)
                 .filter(elem -> className.equalsIgnoreCase(elem.getDeclaredType().getSimpleName()))
+                .findFirst()
+                .map(JAXBElement::getValue);
+    }
+
+    public static Optional<Object> extractEntryAtom(final EntryType feed, @NotNull final String fieldName) {
+        return feed
+                .getAuthorOrCategoryOrContent()
+                .stream()
+                .map(JAXBElement.class::cast)
+                .filter(elem -> fieldName.equalsIgnoreCase(elem.getName().getLocalPart()))
                 .findFirst()
                 .map(JAXBElement::getValue);
     }

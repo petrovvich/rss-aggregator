@@ -1,8 +1,8 @@
 package it.petrovich.rssprocessor.service;
 
+import it.petrovich.rss.xml.XmlUtils;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
-import it.petrovich.rss.xml.XmlUtils;
 import jakarta.xml.bind.JAXBContext;
 import lombok.SneakyThrows;
 import lombok.val;
@@ -30,7 +30,6 @@ class RequestServiceTest {
 
     private final JAXBContext jaxbContext = buildJaxbContext();
 
-
     @Test
     @SneakyThrows
     void testXmlSerialization() {
@@ -47,7 +46,6 @@ class RequestServiceTest {
         assertNotNull(lastBuildDate);
         assertNotNull(entries);
     }
-
 
     @SneakyThrows
     private JAXBContext buildJaxbContext() {
