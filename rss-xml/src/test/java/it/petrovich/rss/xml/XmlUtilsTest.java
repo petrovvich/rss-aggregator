@@ -7,7 +7,6 @@ import lombok.SneakyThrows;
 import lombok.val;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.util.Objects;
 
 import static it.petrovich.rss.xml.TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML;
@@ -15,6 +14,7 @@ import static it.petrovich.rss.xml.TestUtil.buildSource;
 import static it.petrovich.rss.xml.TestUtil.initJaxbContext;
 import static it.petrovich.rss.xml.TestUtil.initUnmarshaller;
 import static it.petrovich.rss.xml.TestUtil.readXml;
+import static it.petrovich.rss.xml.XmlUtils.atomContentOrElse;
 import static it.petrovich.rss.xml.XmlUtils.atomLinkOrElse;
 import static it.petrovich.rss.xml.XmlUtils.extractEntries;
 import static it.petrovich.rss.xml.XmlUtils.extractParagraphs;
@@ -129,7 +129,31 @@ class XmlUtilsTest {
         );
     }
 
-    private String readFile(String path) throws IOException {
+    @Test
+    @SneakyThrows
+    void testExtractDescriptionOrElse_shouldReturnExpectedElement() {
+        val feed = unmarshaller.unmarshal(buildSource(readXml("/atom-spring.xml")),
+                FeedType.class).getValue();
+
+        val entryType = extractEntries(feed).stream().findFirst().get();
+        val actual = atomContentOrElse(entryType, "content", "");
+        assertAll(
+                () -> assertNotNull(actual),
+                () -> assertEquals(readFile("/testExtractDescriptionOrElse_expected.txt"), actual)
+        );
+    }
+
+    @Test
+    void testExtractParagraphsAtom() {
+        val actual = extractParagraphs(readFile("/testExtractDescriptionOrElse_expected.txt"));
+        assertAll(
+                () -> assertNotNull(actual),
+                () -> assertEquals(readFile("/testExtractParagraphsAtom_expected.txt"), actual)
+        );
+    }
+
+    @SneakyThrows
+    private String readFile(String path) {
         return new String(Objects.requireNonNull(this.getClass().getResourceAsStream(path)).readAllBytes());
     }
 }

@@ -1,5 +1,6 @@
 package it.petrovich.rss.xml;
 
+import it.petrovich.rss.xml.atom.ContentType;
 import it.petrovich.rss.xml.atom.DateTimeType;
 import it.petrovich.rss.xml.atom.EntryType;
 import it.petrovich.rss.xml.atom.FeedType;
@@ -71,6 +72,16 @@ public class XmlUtils {
         return extractEntryAtom(entryType, fieldName)
                 .map(TextType.class::cast)
                 .map(TextType::getContent)
+                .map(content -> content.stream().map(String.class::cast).collect(Collectors.joining("")))
+                .orElse(orElse);
+    }
+
+    public static String atomContentOrElse(final EntryType entryType,
+                                           @NotNull final String fieldName,
+                                           @NotNull final String orElse) {
+        return extractEntryAtom(entryType, fieldName)
+                .map(ContentType.class::cast)
+                .map(ContentType::getContent)
                 .map(content -> content.stream().map(String.class::cast).collect(Collectors.joining("")))
                 .orElse(orElse);
     }
@@ -150,6 +161,7 @@ public class XmlUtils {
         return feed
                 .getAuthorOrCategoryOrContent()
                 .stream()
+                .filter(element -> JAXB_ELEM_CLASS.equalsIgnoreCase(element.getClass().getSimpleName()))
                 .map(JAXBElement.class::cast)
                 .filter(elem -> fieldName.equalsIgnoreCase(elem.getName().getLocalPart()))
                 .findFirst()

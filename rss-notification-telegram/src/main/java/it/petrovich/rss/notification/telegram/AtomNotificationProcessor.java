@@ -12,7 +12,10 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
+import static it.petrovich.rss.xml.XmlUtils.atomContentOrElse;
+import static it.petrovich.rss.xml.XmlUtils.atomLinkOrElse;
 import static it.petrovich.rss.xml.XmlUtils.extractParagraphs;
+import static it.petrovich.rss.xml.XmlUtils.extractTextOrElse;
 import static java.text.MessageFormat.format;
 
 @Slf4j
@@ -30,7 +33,7 @@ public class AtomNotificationProcessor implements NotificationProcessor {
     }
 
     @Override
-    public boolean process(NotificationEvent<?> event) {
+    public boolean process(final NotificationEvent<?> event) {
         log.debug("Try to send event {}", event);
         bots.forEach(bot -> bot.sendMessage(prepareMessage(event),
                 notificationProperties.getChats().stream().findAny().get()));
@@ -39,9 +42,9 @@ public class AtomNotificationProcessor implements NotificationProcessor {
 
     private String prepareMessage(final NotificationEvent<?> event) {
         val body = ((AtomNotificationEvent) event).getBody();
-        val title = XmlUtils.extractTextOrElse(body, "title", "").toString();
-        val description = formatDescription(extractParagraphs(XmlUtils.extractTextOrElse(body, "description", "").toString()));
-        val link = XmlUtils.atomLinkOrElse(body, "link", "").toString();
+        val title = extractTextOrElse(body, "title", "");
+        val link = atomLinkOrElse(body, "link", "");
+        val description = formatDescription(extractParagraphs(atomContentOrElse(body, "content", "")));
         return format(MSG_TEMPLATE, title, description, link);
     }
 
