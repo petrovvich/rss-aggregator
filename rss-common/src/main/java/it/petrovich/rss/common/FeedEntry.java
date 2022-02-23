@@ -1,7 +1,6 @@
 package it.petrovich.rss.common;
 
 import java.io.Serializable;
-import java.util.UUID;
 
-public record FeedEntry(UUID id, Object entry, boolean isNotified) implements Serializable {
+public record FeedEntry(Object entry, boolean isNotified) implements Serializable {
 }

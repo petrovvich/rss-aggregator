@@ -5,9 +5,9 @@ import it.petrovich.rss.common.FeedSubscription;
 import it.petrovich.rss.common.Pair;
 import it.petrovich.rss.common.ProcessingResult;
 import it.petrovich.rss.common.RssType;
-import it.petrovich.rss.notification.NotificationService;
 import it.petrovich.rss.notification.events.AtomNotificationEvent;
 import it.petrovich.rss.xml.atom.FeedType;
+import it.petrovich.rss.notification.NotificationProvider;
 import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +26,7 @@ import static it.petrovich.rss.xml.XmlUtils.extractEntries;
 @RequiredArgsConstructor
 public final class AtomProcessor implements FeedProcessor {
     private static final long ZERO_PROCESSED = 0;
-    private final NotificationService notificationService;
+    private final NotificationProvider provider;
     private final RssStorage storage;
 
     @Override
@@ -40,10 +40,9 @@ public final class AtomProcessor implements FeedProcessor {
         val stored = storage.getEntries(feed.settings().id());
         val toStore = extractEntries(feedType).stream()
                 .map(item -> {
-                    val entry = new FeedEntry(UUID.randomUUID(), item, true);
+                    val entry = new FeedEntry(item, true);
                     if (!stored.contains(entry)) {
-                        return new FeedEntry(entry.id(), item,
-                                notificationService.sendEvent(new AtomNotificationEvent(entry.id(), item)));
+                        return new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(), item)));
                     }
                     return null;
                 })

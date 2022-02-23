@@ -5,7 +5,7 @@ import it.petrovich.rss.common.FeedSubscription;
 import it.petrovich.rss.common.Pair;
 import it.petrovich.rss.common.ProcessingResult;
 import it.petrovich.rss.common.RssType;
-import it.petrovich.rss.notification.NotificationService;
+import it.petrovich.rss.notification.NotificationProvider;
 import it.petrovich.rss.notification.events.Rss20NotificationEvent;
 import it.petrovich.rss.xml.rss20111.TRss;
 import it.petrovich.rssprocessor.storage.RssStorage;
@@ -25,7 +25,7 @@ import static it.petrovich.rss.common.RssType.RSS20;
 @RequiredArgsConstructor
 public final class Rss20Processor implements FeedProcessor {
     private static final int ZERO_PROCESSED = 0;
-    private final NotificationService notificationService;
+    private final NotificationProvider provider;
     private final RssStorage storage;
 
     @Override
@@ -41,10 +41,9 @@ public final class Rss20Processor implements FeedProcessor {
                 .getItem()
                 .stream()
                 .map(item -> {
-                    val entry = new FeedEntry(UUID.randomUUID(), item, true);
+                    val entry = new FeedEntry(item, true);
                     if (!storedEntries.contains(entry)) {
-                        return new FeedEntry(entry.id(), item,
-                                notificationService.sendEvent(new Rss20NotificationEvent(entry.id(), item)));
+                        return new FeedEntry(item, provider.send(new Rss20NotificationEvent(UUID.randomUUID(), item)));
                     }
                     return null;
                 })
