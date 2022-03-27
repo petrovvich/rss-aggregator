@@ -1,7 +1,0 @@
-app:
-  notification:
-    channels: TG
-    telegram:
-      username: ${BOT_USERNAME}
-      token: ${BOT_TOKEN}
-      chats: ${TG_CHATS}

@@ -18,3 +18,6 @@ rss:
     cron: ${RSS_UPDATE_CRON:*/20 * * * * *} # (second) (minute) (hour) (day of the month) (month) (day of the week)
   process:
     cron: ${RSS_PROCESS_CRON:*/10 * * * * *} # (second) (minute) (hour) (day of the month) (month) (day of the week)
+  events:
+    send:
+      cron: ${RSS_SEND_CRON:*/10 * * * * *} # (second) (minute) (hour) (day of the month) (month) (day of the week)
