@@ -9,8 +9,8 @@
             <encoding>UTF-8</encoding>
             <providers>
                 <timestamp>
-                    <fieldName>log_timestamp</fieldName>
-                    <pattern>[UNIX_TIMESTAMP_AS_NUMBER]</pattern>
+                    <fieldName>calendar</fieldName>
+                    <pattern>yyyy-dd-MM'T'HH:mm:ss.SSS Z</pattern>
                 </timestamp>
                 <pattern>
                     <pattern>
