@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static it.petrovich.rssprocessor.service.ValidationService.validate;
-
 @Slf4j
 @RestController
 @RequiredArgsConstructor
@@ -26,7 +24,6 @@ public class RssController {
     @PostMapping
     public StoreFeedResponse saveSettings(@RequestBody @Valid final StoreFeedRequest settings) {
         log.debug("Start process request {}", settings);
-        validate(settings);
 
         return service.save(settings);
     }

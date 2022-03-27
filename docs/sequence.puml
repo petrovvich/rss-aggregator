@@ -1,0 +1,24 @@
+@startuml
+
+participant client as client
+
+box Processor #LightGreen
+    participant Web as web
+    participant Notifier as notify
+    participant Storage as store
+    participant Requester as request
+end box
+
+participant Internet as internet
+
+client -> web : **Store feed**\n**subscription**
+web -> request
+request -> internet
+internet -> request : **Get rss data**
+request -> web
+web -> store
+store -> web : **In memory**\n**or db storage**
+web -> notify : **Notify via Telegram,**\n**Slack etc.**
+
+@enduml
+

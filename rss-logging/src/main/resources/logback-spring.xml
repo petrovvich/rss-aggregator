@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 minutes" debug="true">
+    <property name="SERVICE_NAME" value="${LOG_SERVICE_NAME}"/>
+    <property name="HOSTNAME" value="${HOSTNAME}"/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <encoding>UTF-8</encoding>
+            <providers>
+                <pattern>
+                    <pattern>
+                        {
+                        "@host": "${HOSTNAME}",
+                        "@timestamp": "%d{yyyy-MM-dd}T%d{HH:mm:ss.SSSZ}",
+                        "loglevel": "%-5level",
+                        "class": "%class{50}.%M:%L",
+                        "log": "#tryJson{%msg}"
+                        }
+                    </pattern>
+                </pattern>
+            </providers>
+        </encoder>
+    </appender>
+
+    <springProfile name="default | dev | test">
+        <logger name="it.petrovich" level="debug" additivity="false">
+            <appender-ref ref="console"/>
+        </logger>
+        <logger name="org.springframework" level="debug" additivity="false">
+            <appender-ref ref="console"/>
+        </logger>
+        <logger name="ch.qos" level="off" additivity="false">
+            <appender-ref ref="console"/>
+        </logger>
+    </springProfile>
+
+    <springProfile name="prod">
+        <logger name="it.petrovich" level="info" additivity="false">
+            <appender-ref ref="console"/>
+        </logger>
+    </springProfile>
+</configuration>

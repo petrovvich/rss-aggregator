@@ -39,6 +39,7 @@
         <module>rss-processor</module>
         <module>rss-storage</module>
         <module>rss-requester</module>
+        <module>rss-logging</module>
     </modules>
     <properties>
         <apache.commons.io.version>2.11.0</apache.commons.io.version>
@@ -55,6 +56,7 @@
         <jaxb2-maven-plugin.version>3.0.0</jaxb2-maven-plugin.version>
         <jsoup.version>1.14.3</jsoup.version>
         <lombok.version>1.18.22</lombok.version>
+        <logstash-encoder.version>7.0.1</logstash-encoder.version>
         <maven.checkstyle.plugin.version>3.1.2</maven.checkstyle.plugin.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>

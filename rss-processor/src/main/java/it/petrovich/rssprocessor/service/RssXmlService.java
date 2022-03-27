@@ -34,8 +34,8 @@ public record RssXmlService(JAXBContext jaxbCtx, Collection<RssConverter> conver
                 .orElse(resolve(response.right()));
 
         return converters.stream()
-                .filter(c -> c.isApplicable(type))
-                .map(c -> c.convert(response))
+                .filter(converter -> converter.isApplicable(type))
+                .map(converter -> converter.convert(response))
                 .findAny()
                 .orElseThrow(() -> new ElementNotFoundException(response.left().id()));
     }
