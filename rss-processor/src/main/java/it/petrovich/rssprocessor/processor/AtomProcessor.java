@@ -15,6 +15,7 @@ import lombok.val;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
+import java.time.OffsetDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -42,7 +43,8 @@ public final class AtomProcessor implements FeedProcessor {
                 .map(item -> {
                     val entry = new FeedEntry(item, true);
                     if (!stored.contains(entry)) {
-                        return new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(), item)));
+                        return new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(),
+                                OffsetDateTime.now(), item)));
                     }
                     return null;
                 })

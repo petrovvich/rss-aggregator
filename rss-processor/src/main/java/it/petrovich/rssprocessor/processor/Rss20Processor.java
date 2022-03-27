@@ -15,6 +15,7 @@ import lombok.val;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
+import java.time.OffsetDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -43,7 +44,8 @@ public final class Rss20Processor implements FeedProcessor {
                 .map(item -> {
                     val entry = new FeedEntry(item, true);
                     if (!storedEntries.contains(entry)) {
-                        return new FeedEntry(item, provider.send(new Rss20NotificationEvent(UUID.randomUUID(), item)));
+                        return new FeedEntry(item, provider.send(new Rss20NotificationEvent(UUID.randomUUID(),
+                                OffsetDateTime.now(), item)));
                     }
                     return null;
                 })
