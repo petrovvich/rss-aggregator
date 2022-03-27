@@ -3,17 +3,21 @@
     <property name="SERVICE_NAME" value="${LOG_SERVICE_NAME}"/>
     <property name="HOSTNAME" value="${HOSTNAME}"/>
 
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+<!--            <jsonGeneratorDecorator class="net.logstash.logback.decorate.PrettyPrintingJsonGeneratorDecorator"/>-->
             <encoding>UTF-8</encoding>
             <providers>
+                <timestamp>
+                    <fieldName>log_timestamp</fieldName>
+                    <pattern>[UNIX_TIMESTAMP_AS_NUMBER]</pattern>
+                </timestamp>
                 <pattern>
                     <pattern>
                         {
                         "@host": "${HOSTNAME}",
-                        "@timestamp": "%d{yyyy-MM-dd}T%d{HH:mm:ss.SSSZ}",
-                        "loglevel": "%-5level",
-                        "class": "%class{50}.%M:%L",
+                        "level": "%level",
+                        "class": "%class{0}#%M:%L",
                         "log": "#tryJson{%msg}"
                         }
                     </pattern>
@@ -22,21 +26,15 @@
         </encoder>
     </appender>
 
-    <springProfile name="default | dev | test">
+    <springProfile name="!prod">
         <logger name="it.petrovich" level="debug" additivity="false">
-            <appender-ref ref="console"/>
-        </logger>
-        <logger name="org.springframework" level="debug" additivity="false">
-            <appender-ref ref="console"/>
-        </logger>
-        <logger name="ch.qos" level="off" additivity="false">
-            <appender-ref ref="console"/>
+            <appender-ref ref="Console"/>
         </logger>
     </springProfile>
 
     <springProfile name="prod">
         <logger name="it.petrovich" level="info" additivity="false">
-            <appender-ref ref="console"/>
+            <appender-ref ref="Console"/>
         </logger>
     </springProfile>
 </configuration>
