@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor.service;
+package it.petrovich.rss.requester;
 
 import java.net.URL;
 

@@ -133,6 +133,7 @@ public class XmlUtils {
     public static LocalDateTime stringToDate(final String source) {
         return Optional
                 .ofNullable(source)
+                .map(String::trim)
                 .map(str -> LocalDateTime.parse(str, FORMATTER))
                 .orElse(LocalDateTime.now());
     }

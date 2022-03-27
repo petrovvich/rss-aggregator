@@ -1,0 +1,20 @@
+@startuml
+
+skinparam componentStyle rectangle
+
+component [client] #Yellow
+
+component Processor {
+    component [Web] as web #LightBlue
+    component [Storage] as store #LightCoral
+    component [Notifier] as notify #LightGreen
+    component [Requester] as request
+}
+
+client -r-> web : HTTP request\nwith auth
+web -d-> request
+request -> web : Get rss\ndata
+web -r-> store : In memory\nor db storage
+web -d-> notify : Telegram, Slack etc.
+
+@enduml

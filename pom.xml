@@ -38,6 +38,7 @@
         <module>rss-xml</module>
         <module>rss-processor</module>
         <module>rss-storage</module>
+        <module>rss-requester</module>
     </modules>
     <properties>
         <apache.commons.io.version>2.11.0</apache.commons.io.version>
@@ -60,6 +61,7 @@
         <puppycrawl.version>9.1</puppycrawl.version>
         <spring.boot.version>2.6.3</spring.boot.version>
         <telegram.bots.version>5.7.1</telegram.bots.version>
+        <webflux.version>2.6.5</webflux.version>
     </properties>
     <dependencies>
         <dependency>

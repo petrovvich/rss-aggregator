@@ -1,5 +1,7 @@
 package it.petrovich.rssprocessor.service;
 
+import it.petrovich.rss.requester.RequestService;
+import it.petrovich.rss.requester.SyncHttpRequestService;
 import it.petrovich.rss.xml.XmlUtils;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
@@ -11,6 +13,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
@@ -23,7 +26,7 @@ import static it.petrovich.rssprocessor.TestUtils.ann;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {SyncHttpRequestService.class})
+@ContextConfiguration(classes = {SyncHttpRequestService.class, WebClient.class})
 class RequestServiceTest {
 
     @Autowired
