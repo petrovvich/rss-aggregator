@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.3</version>
+        <version>2.6.4</version>
         <relativePath></relativePath>
     </parent>
 
@@ -17,12 +17,12 @@
     <modules>
         <module>checkstyle-tools</module>
         <module>rss-notification-core</module>
+        <module>rss-notification-provider</module>
         <module>rss-notification-telegram</module>
-        <module>rss-processor</module>
+        <module>rss-common</module>
         <module>rss-validation</module>
         <module>rss-xml</module>
-        <module>rss-common</module>
-        <module>rss-notification-provider</module>
+        <module>rss-processor</module>
     </modules>
     <properties>
         <apache.commons.io.version>2.11.0</apache.commons.io.version>

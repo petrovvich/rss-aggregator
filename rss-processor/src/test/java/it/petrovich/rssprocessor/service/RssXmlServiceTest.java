@@ -6,6 +6,8 @@ import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.xml.XmlConfiguration;
 import it.petrovich.rss.xml.atom.FeedType;
 import it.petrovich.rss.xml.rss20111.TRss;
+import it.petrovich.rssprocessor.converter.AtomConverter;
+import it.petrovich.rssprocessor.converter.Rss20Converter;
 import lombok.SneakyThrows;
 import lombok.val;
 import org.apache.commons.io.IOUtils;
@@ -25,7 +27,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {RssXmlService.class, XmlConfiguration.class})
+@ContextConfiguration(classes = {RssXmlService.class, XmlConfiguration.class, AtomConverter.class,
+        Rss20Converter.class})
 class RssXmlServiceTest {
     public static final String ATOM = "/atom-response.xml";
     public static final String RSS_20 = "/rss20-response.xml";
