@@ -8,6 +8,8 @@ import it.petrovich.rss.common.FeedSubscription;
 import it.petrovich.rss.common.Pair;
 import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.common.StoreFeedRequest;
+import it.petrovich.rss.storage.RssStorage;
+import it.petrovich.rss.xml.XmlUtils;
 import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import jakarta.validation.constraints.NotNull;
@@ -24,7 +26,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static it.petrovich.rss.xml.XmlUtils.parse;
 import static java.util.Optional.ofNullable;
 
 @Slf4j
@@ -48,7 +49,7 @@ public final class InMemoryRssStorage implements RssStorage {
     public Optional<Feed> putRequest(@NotNull final StoreFeedRequest storeFeedRequest) {
         log.debug("Start save feed {}", storeFeedRequest);
         return ofNullable(storeFeedRequest)
-                .map(request -> new Feed(UUID.randomUUID(), request.name(), parse(request.url()),
+                .map(request -> new Feed(UUID.randomUUID(), request.name(), XmlUtils.parse(request.url()),
                         request.refreshInterval(), getType(request)))
                 .map(request -> {
                     requestsCache.put(request.id(), request);
@@ -58,7 +59,7 @@ public final class InMemoryRssStorage implements RssStorage {
 
     private RssType getType(final StoreFeedRequest req) {
         return ofNullable(req.type())
-                .orElseGet(() -> xmlService.resolve(requestService.getRss(parse(req.url()))));
+                .orElseGet(() -> xmlService.resolve(requestService.getRss(XmlUtils.parse(req.url()))));
     }
 
     @Override

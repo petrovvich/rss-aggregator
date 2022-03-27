@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor.storage;
+package it.petrovich.rss.storage;
 
 import it.petrovich.rss.common.Feed;
 import it.petrovich.rss.common.FeedEntry;
@@ -11,7 +11,7 @@ import java.util.Collection;
 import java.util.Optional;
 import java.util.UUID;
 
-public sealed interface RssStorage permits InMemoryRssStorage {
+public interface RssStorage {
     Optional<Feed> putRequest(@NotNull StoreFeedRequest request);
 
     Optional<Feed> getRequest(@NotNull UUID id);

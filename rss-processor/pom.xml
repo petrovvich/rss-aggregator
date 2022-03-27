@@ -14,11 +14,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${guava.version}</version>
-        </dependency>
-        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>${apache.commons.io.version}</version>
@@ -37,6 +32,12 @@
             <groupId>it.petrovich</groupId>
             <artifactId>rss-notification-provider</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>it.petrovich</groupId>
+            <artifactId>rss-storage</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
         <!--        <dependency>-->
         <!--            <groupId>it.petrovich</groupId>-->

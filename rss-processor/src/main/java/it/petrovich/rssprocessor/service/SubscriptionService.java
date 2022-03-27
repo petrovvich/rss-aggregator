@@ -2,8 +2,8 @@ package it.petrovich.rssprocessor.service;
 
 import it.petrovich.rss.common.StoreFeedRequest;
 import it.petrovich.rss.common.StoreFeedResponse;
+import it.petrovich.rss.storage.RssStorage;
 import it.petrovich.rssprocessor.error.NoFeedException;
-import it.petrovich.rssprocessor.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

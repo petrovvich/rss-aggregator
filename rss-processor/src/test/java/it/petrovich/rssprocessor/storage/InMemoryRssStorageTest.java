@@ -4,6 +4,7 @@ import it.petrovich.rss.common.FeedEntry;
 import it.petrovich.rss.common.Pair;
 import it.petrovich.rss.common.RssType;
 import it.petrovich.rss.common.StoreFeedRequest;
+import it.petrovich.rss.storage.RssStorage;
 import it.petrovich.rssprocessor.service.RequestService;
 import it.petrovich.rssprocessor.service.RssXmlService;
 import lombok.val;

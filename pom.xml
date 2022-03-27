@@ -23,6 +23,7 @@
         <module>rss-validation</module>
         <module>rss-xml</module>
         <module>rss-processor</module>
+        <module>rss-storage</module>
     </modules>
     <properties>
         <apache.commons.io.version>2.11.0</apache.commons.io.version>
