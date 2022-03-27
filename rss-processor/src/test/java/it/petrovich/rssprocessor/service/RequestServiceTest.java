@@ -19,7 +19,8 @@ import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 
 import static it.petrovich.rss.xml.XmlUtils.extractEntry;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static it.petrovich.rssprocessor.TestUtils.ann;
+import static org.junit.jupiter.api.Assertions.assertAll;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {SyncHttpRequestService.class})
@@ -42,9 +43,11 @@ class RequestServiceTest {
                 .orElse(LocalDateTime.now());
         val entries = rssObject.getChannel().getItem();
 
-        assertNotNull(rssObject);
-        assertNotNull(lastBuildDate);
-        assertNotNull(entries);
+        assertAll(
+                ann(rssObject),
+                ann(lastBuildDate),
+                ann(entries)
+        );
     }
 
     @SneakyThrows

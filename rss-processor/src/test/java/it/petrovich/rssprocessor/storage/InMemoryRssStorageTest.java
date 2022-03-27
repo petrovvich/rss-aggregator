@@ -18,10 +18,10 @@ import java.util.Collection;
 import java.util.UUID;
 import java.util.stream.IntStream;
 
+import static it.petrovich.rssprocessor.TestUtils.ae;
+import static it.petrovich.rssprocessor.TestUtils.ann;
+import static it.petrovich.rssprocessor.TestUtils.at;
 import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {InMemoryRssStorage.class})
@@ -42,8 +42,8 @@ class InMemoryRssStorageTest {
 
         // then
         assertAll(
-                () -> assertNotNull(saved),
-                () -> assertTrue(saved.isPresent())
+                ann(saved),
+                at(saved.isPresent())
         );
     }
 
@@ -58,8 +58,8 @@ class InMemoryRssStorageTest {
 
         // then
         assertAll(
-                () -> assertTrue(actual),
-                () -> assertEquals(expectedEntries, storage.getEntries(expectedUuid))
+                at(actual),
+                ae(expectedEntries, storage.getEntries(expectedUuid))
         );
     }
 
@@ -75,7 +75,7 @@ class InMemoryRssStorageTest {
 
         // then
         assertAll(
-                () -> assertTrue(actual)
+                at(actual)
         );
     }
 
@@ -87,9 +87,9 @@ class InMemoryRssStorageTest {
         boolean expectedFirst = storage.putOrReplaceEntry(new Pair<>(expectedUuid, expectedEntries));
 
         assertAll(
-                () -> assertTrue(expectedFirst),
-                () -> assertEquals(1, storage.getEntries(expectedUuid).size()),
-                () -> assertEquals(expectedEntries, storage.getEntries(expectedUuid))
+                at(expectedFirst),
+                ae(1, storage.getEntries(expectedUuid).size()),
+                ae(expectedEntries, storage.getEntries(expectedUuid))
         );
 
         val expectedEntriesSecond = new Pair<>(expectedUuid, buildEntries(4));
@@ -98,9 +98,9 @@ class InMemoryRssStorageTest {
 
         // then
         assertAll(
-                () -> assertTrue(expectedSecond),
-                () -> assertEquals(4, storage.getEntries(expectedUuid).size()),
-                () -> assertEquals(expectedEntriesSecond.right(), storage.getEntries(expectedUuid))
+                at(expectedSecond),
+                ae(4, storage.getEntries(expectedUuid).size()),
+                ae(expectedEntriesSecond.right(), storage.getEntries(expectedUuid))
         );
     }
 

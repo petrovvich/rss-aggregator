@@ -22,9 +22,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import java.util.UUID;
 
+import static it.petrovich.rssprocessor.TestUtils.ae;
+import static it.petrovich.rssprocessor.TestUtils.ann;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {RssXmlService.class, XmlConfiguration.class, AtomConverter.class,
@@ -40,8 +41,8 @@ class RssXmlServiceTest {
         val actual = service.convert(buildPair(ATOM));
 
         assertAll(
-                () -> assertNotNull(actual),
-                () -> assertEquals(FeedType.class.getSimpleName(), actual.rssEntry().getClass().getSimpleName())
+                ann(actual),
+                ae(FeedType.class.getSimpleName(), actual.rssEntry().getClass().getSimpleName())
         );
     }
 
@@ -50,8 +51,8 @@ class RssXmlServiceTest {
         val actual = service.convert(buildPair(RSS_20));
 
         assertAll(
-                () -> assertNotNull(actual),
-                () -> assertEquals(TRss.class.getSimpleName(), actual.rssEntry().getClass().getSimpleName())
+                ann(actual),
+                ae(TRss.class.getSimpleName(), actual.rssEntry().getClass().getSimpleName())
         );
     }
 
