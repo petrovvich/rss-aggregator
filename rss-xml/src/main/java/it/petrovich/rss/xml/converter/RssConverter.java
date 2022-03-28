@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor.converter;
+package it.petrovich.rss.xml.converter;
 
 import it.petrovich.rss.common.Feed;
 import it.petrovich.rss.common.FeedSubscription;

@@ -1,19 +1,18 @@
-package it.petrovich.rssprocessor.converter;
+package it.petrovich.rss.xml.converter;
 
 import it.petrovich.rss.common.Feed;
 import it.petrovich.rss.common.FeedSubscription;
 import it.petrovich.rss.common.Pair;
 import it.petrovich.rss.common.RssType;
+import it.petrovich.rss.common.error.ElementNotFoundException;
 import it.petrovich.rss.xml.XmlUtils;
 import it.petrovich.rss.xml.atom.FeedType;
-import it.petrovich.rssprocessor.error.ElementNotFoundException;
 import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.JAXBException;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.stereotype.Component;
 
@@ -24,7 +23,6 @@ import static it.petrovich.rss.xml.XmlUtils.DATE_TIME_ELEM_CLASS;
 import static it.petrovich.rss.xml.XmlUtils.extractEntry;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-@Slf4j
 @Component
 @RequiredArgsConstructor
 public final class AtomConverter implements RssConverter {

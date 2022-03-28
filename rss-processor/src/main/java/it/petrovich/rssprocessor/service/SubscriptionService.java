@@ -8,7 +8,7 @@ import it.petrovich.rss.common.StoreFeedRequest;
 import it.petrovich.rss.common.StoreFeedResponse;
 import it.petrovich.rss.requester.RequestService;
 import it.petrovich.rss.storage.RssStorage;
-import it.petrovich.rssprocessor.error.NoFeedException;
+import it.petrovich.rss.common.error.NoFeedException;
 import it.petrovich.rssprocessor.processor.FeedProcessor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;

@@ -1,4 +1,4 @@
-package it.petrovich.rssprocessor.error;
+package it.petrovich.rss.common.error;
 
 import java.text.MessageFormat;
 

@@ -9,15 +9,15 @@
             <encoding>UTF-8</encoding>
             <providers>
                 <timestamp>
-                    <fieldName>calendar</fieldName>
+                    <fieldName>timetsamp</fieldName>
                     <pattern>yyyy-dd-MM'T'HH:mm:ss.SSS Z</pattern>
                 </timestamp>
                 <pattern>
                     <pattern>
                         {
-                        "@host": "${HOSTNAME}",
+                        "host": "${HOSTNAME}",
                         "level": "%level",
-                        "class": "%class{0}#%M:%L",
+                        "class": "%class{0}.%M:%L",
                         "log": "#tryJson{%msg}"
                         }
                     </pattern>
