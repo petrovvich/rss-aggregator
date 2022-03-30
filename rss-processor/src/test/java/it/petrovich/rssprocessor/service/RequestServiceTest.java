@@ -8,6 +8,7 @@ import it.petrovich.rss.xml.rss20111.TRss;
 import jakarta.xml.bind.JAXBContext;
 import lombok.SneakyThrows;
 import lombok.val;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,7 @@ class RequestServiceTest {
 
     @Test
     @SneakyThrows
+    @Disabled("Too long for the test, only for debug purposes")
     void testXmlSerialization() {
         val unmarshaller = jaxbContext.createUnmarshaller();
         val rssContent = requestService.getRss(new URL("https://www.infoworld.com/category/java/index.rss"));
