@@ -17,13 +17,16 @@ import lombok.Getter;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
-import org.springframework.web.reactive.function.client.WebClient;
 
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.io.Serializable;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -38,7 +41,7 @@ public final class Rss implements Serializable {
     private static final String T_RSS = "TRss";
 
     private final JAXBContext jaxbContext;
-    private final WebClient webClient;
+    private final HttpClient webClient;
     private final Collection<RssConverter> converters;
 
     private final String name;
@@ -79,17 +82,11 @@ public final class Rss implements Serializable {
         return new Rss(request);
     }
 
-    @SneakyThrows(value = {URISyntaxException.class})
+    @SneakyThrows(value = {URISyntaxException.class, IOException.class, InterruptedException.class})
     private String getRss(final URL url) {
-        val uri = url.toURI();
+        val httpRequest = HttpRequest.newBuilder().uri(url.toURI()).GET().build();
 
-        val response = webClient
-                .get()
-                .uri(uri)
-                .exchangeToMono(rawResponse -> rawResponse.bodyToMono(String.class))
-                .block();
-        log.debug("Response from {} has received {}", url, response);
-        return response;
+        return webClient.send(httpRequest, HttpResponse.BodyHandlers.ofString()).body();
     }
 
     public RssType resolve(final String sourceXml) {
@@ -120,12 +117,12 @@ public final class Rss implements Serializable {
                 .orElseThrow(() -> new ElementNotFoundException(id));
     }
 
-    public String fetch() {
+    public String renew() {
         return getRss(this.url);
     }
 
     public Object convert(final String rawRss) {
-        return internalConvert(rawRss);
+        return internalConvert(rawRss).rssEntry();
     }
 
     public boolean hasItems() {

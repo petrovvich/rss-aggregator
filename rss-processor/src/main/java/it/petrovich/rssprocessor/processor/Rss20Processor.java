@@ -6,7 +6,6 @@ import it.petrovich.rss.domain.Rss;
 import it.petrovich.rss.domain.storing.RssType;
 import it.petrovich.rss.notification.NotificationProvider;
 import it.petrovich.rss.notification.events.Rss20NotificationEvent;
-import it.petrovich.rss.storage.RssStorage;
 import it.petrovich.rss.xml.rss20111.TRss;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +25,6 @@ import static it.petrovich.rss.domain.storing.RssType.RSS20;
 public final class Rss20Processor implements FeedProcessor {
     private static final int ZERO_PROCESSED = 0;
     private final NotificationProvider provider;
-    private final RssStorage storage;
 
     @Override
     public RssType getType() {
@@ -35,7 +33,7 @@ public final class Rss20Processor implements FeedProcessor {
 
     @Override
     public ProcessingResult process(final Rss feed) {
-        val feedObject = (TRss) feed.getRssEntry();
+        val feedObject = (TRss) feed.convert(feed.renew());
         val feedEntries = feedObject.getChannel()
                 .getItem()
                 .stream()

@@ -1,16 +1,12 @@
 package it.petrovich.rss.domain;
 
-import org.springframework.web.reactive.function.client.WebClient;
+import java.net.http.HttpClient;
 
 public class WebClientFactory {
 
-    private static final WebClient WEB_CLIENT = initClient();
+    private static final HttpClient WEB_CLIENT = HttpClient.newHttpClient();
 
-    private static WebClient initClient() {
-        return WebClient.builder().build();
-    }
-
-    public static WebClient webClient() {
+    public static HttpClient webClient() {
         return WEB_CLIENT;
     }
 }
