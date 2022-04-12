@@ -1,6 +1,6 @@
 package it.petrovich.rssprocessor.config;
 
-import it.petrovich.rss.common.RssType;
+import it.petrovich.rss.domain.storing.RssType;
 import it.petrovich.rss.xml.XmlConfiguration;
 import it.petrovich.rssprocessor.processor.FeedProcessor;
 import lombok.RequiredArgsConstructor;

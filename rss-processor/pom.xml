@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>it.petrovich</groupId>
-            <artifactId>rss-common</artifactId>
+            <artifactId>rss-domain</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
@@ -34,12 +34,6 @@
             <groupId>it.petrovich</groupId>
             <artifactId>rss-notification-provider</artifactId>
             <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>it.petrovich</groupId>
-            <artifactId>rss-requester</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>it.petrovich</groupId>

@@ -1,12 +1,12 @@
 package it.petrovich.rssprocessor.processor;
 
-import it.petrovich.rss.common.FeedSubscription;
-import it.petrovich.rss.common.ProcessingResult;
-import it.petrovich.rss.common.RssType;
+import it.petrovich.rss.domain.ProcessingResult;
+import it.petrovich.rss.domain.Rss;
+import it.petrovich.rss.domain.storing.RssType;
 
 public sealed interface FeedProcessor permits Rss20Processor, AtomProcessor {
 
     RssType getType();
 
-    ProcessingResult process(FeedSubscription feed);
+    ProcessingResult process(Rss feed);
 }

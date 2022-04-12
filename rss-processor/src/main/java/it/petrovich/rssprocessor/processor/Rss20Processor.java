@@ -1,10 +1,9 @@
 package it.petrovich.rssprocessor.processor;
 
-import it.petrovich.rss.common.FeedEntry;
-import it.petrovich.rss.common.FeedSubscription;
-import it.petrovich.rss.common.Pair;
-import it.petrovich.rss.common.ProcessingResult;
-import it.petrovich.rss.common.RssType;
+import it.petrovich.rss.domain.FeedEntry;
+import it.petrovich.rss.domain.ProcessingResult;
+import it.petrovich.rss.domain.Rss;
+import it.petrovich.rss.domain.storing.RssType;
 import it.petrovich.rss.notification.NotificationProvider;
 import it.petrovich.rss.notification.events.Rss20NotificationEvent;
 import it.petrovich.rss.storage.RssStorage;
@@ -19,7 +18,7 @@ import java.time.OffsetDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
-import static it.petrovich.rss.common.RssType.RSS20;
+import static it.petrovich.rss.domain.storing.RssType.RSS20;
 
 @Slf4j
 @Component
@@ -35,17 +34,18 @@ public final class Rss20Processor implements FeedProcessor {
     }
 
     @Override
-    public ProcessingResult process(final FeedSubscription feed) {
-        val feedObject = (TRss) feed.rssEntry();
-        val storedEntries = storage.getEntries(feed.settings().id());
+    public ProcessingResult process(final Rss feed) {
+        val feedObject = (TRss) feed.getRssEntry();
         val feedEntries = feedObject.getChannel()
                 .getItem()
                 .stream()
                 .map(item -> {
                     val entry = new FeedEntry(item, true);
-                    if (!storedEntries.contains(entry)) {
-                        return new FeedEntry(item, provider.send(new Rss20NotificationEvent(UUID.randomUUID(),
+                    if (!feed.contains(entry)) {
+                        val feedEntry = new FeedEntry(item, provider.send(new Rss20NotificationEvent(UUID.randomUUID(),
                                 OffsetDateTime.now(), item)));
+                        feed.addItem(feedEntry);
+                        return feedEntry;
                     }
                     return null;
                 })
@@ -53,9 +53,8 @@ public final class Rss20Processor implements FeedProcessor {
                 .toList();
         log.debug("Extracted {} entries", feedEntries.size());
         if (!CollectionUtils.isEmpty(feedEntries)) {
-            val storeResult = storage.putOrReplaceEntry(new Pair<>(feed.settings().id(), feedEntries));
-            return new ProcessingResult(storeResult, feed.settings().id(), feedEntries.size());
+            return new ProcessingResult(true, feed.getId(), feedEntries.size());
         }
-        return new ProcessingResult(true, feed.settings().id(), ZERO_PROCESSED);
+        return new ProcessingResult(true, feed.getId(), ZERO_PROCESSED);
     }
 }

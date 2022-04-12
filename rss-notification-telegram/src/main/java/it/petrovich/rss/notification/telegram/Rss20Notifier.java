@@ -11,8 +11,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-import static it.petrovich.rss.xml.XmlUtils.extractOrElse;
-import static it.petrovich.rss.xml.XmlUtils.extractParagraphs;
+import static it.petrovich.rss.domain.XmlUtils.extractOrElse;
+import static it.petrovich.rss.domain.XmlUtils.extractParagraphs;
 
 @Slf4j
 @RequiredArgsConstructor

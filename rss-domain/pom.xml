@@ -7,34 +7,45 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>rss-notification-telegram</artifactId>
+    <artifactId>rss-domain</artifactId>
 
     <properties>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
-
     <dependencies>
         <dependency>
-            <groupId>it.petrovich</groupId>
-            <artifactId>rss-domain</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>${google.findbugs.version}</version>
         </dependency>
         <dependency>
             <groupId>it.petrovich</groupId>
-            <artifactId>rss-notification-core</artifactId>
+            <artifactId>rss-validation</artifactId>
             <version>1.0</version>
-            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>it.petrovich</groupId>
+            <artifactId>rss-xml</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>${jsoup.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.telegram</groupId>
-            <artifactId>telegrambots</artifactId>
-            <version>${telegram.bots.version}</version>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
     </dependencies>
 

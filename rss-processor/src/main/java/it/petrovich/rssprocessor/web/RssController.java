@@ -1,7 +1,8 @@
 package it.petrovich.rssprocessor.web;
 
-import it.petrovich.rss.common.StoreFeedRequest;
-import it.petrovich.rss.common.StoreFeedResponse;
+import it.petrovich.rss.domain.Rss;
+import it.petrovich.rss.domain.storing.StoreFeedRequest;
+import it.petrovich.rss.domain.storing.StoreFeedResponse;
 import it.petrovich.rssprocessor.service.SubscriptionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +26,6 @@ public class RssController {
     public StoreFeedResponse saveSettings(@RequestBody @Valid final StoreFeedRequest settings) {
         log.debug("Start process request {}", settings);
 
-        return service.save(settings);
+        return service.save(Rss.fromRequest(settings));
     }
 }

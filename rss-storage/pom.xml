@@ -21,7 +21,7 @@
         </dependency>
         <dependency>
             <groupId>it.petrovich</groupId>
-            <artifactId>rss-common</artifactId>
+            <artifactId>rss-domain</artifactId>
             <version>1.0</version>
             <scope>compile</scope>
         </dependency>

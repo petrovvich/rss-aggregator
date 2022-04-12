@@ -5,20 +5,21 @@ import it.petrovich.rss.xml.rss20111.TRss;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import lombok.SneakyThrows;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
 public class XmlConfiguration {
+
     /**
-     * Creates {@link JAXBContext} conyains all RSS objects.
-     * At the moment supports only RSS 2.0 and Atom.
-     *
-     * @return {@link JAXBContext}
+     * This field exists only for caching purposes.
+     * Many times created JAXBContext class has potentially memory leak issues.
      */
-    @Bean
+    private static final JAXBContext JAXB_CONTEXT = initContext();
+
     @SneakyThrows(value = {JAXBException.class})
-    public JAXBContext jaxbContext() {
+    private static JAXBContext initContext() {
         return JAXBContext.newInstance(TRss.class, FeedType.class);
+    }
+
+    public static JAXBContext getJaxbCtx() {
+        return JAXB_CONTEXT;
     }
 }

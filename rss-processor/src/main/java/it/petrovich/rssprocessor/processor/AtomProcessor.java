@@ -1,10 +1,9 @@
 package it.petrovich.rssprocessor.processor;
 
-import it.petrovich.rss.common.FeedEntry;
-import it.petrovich.rss.common.FeedSubscription;
-import it.petrovich.rss.common.Pair;
-import it.petrovich.rss.common.ProcessingResult;
-import it.petrovich.rss.common.RssType;
+import it.petrovich.rss.domain.FeedEntry;
+import it.petrovich.rss.domain.ProcessingResult;
+import it.petrovich.rss.domain.Rss;
+import it.petrovich.rss.domain.storing.RssType;
 import it.petrovich.rss.notification.NotificationProvider;
 import it.petrovich.rss.notification.events.AtomNotificationEvent;
 import it.petrovich.rss.storage.RssStorage;
@@ -19,8 +18,8 @@ import java.time.OffsetDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
-import static it.petrovich.rss.common.RssType.ATOM;
-import static it.petrovich.rss.xml.XmlUtils.extractEntries;
+import static it.petrovich.rss.domain.XmlUtils.extractEntries;
+import static it.petrovich.rss.domain.storing.RssType.ATOM;
 
 @Slf4j
 @Component
@@ -36,15 +35,16 @@ public final class AtomProcessor implements FeedProcessor {
     }
 
     @Override
-    public ProcessingResult process(final FeedSubscription feed) {
-        val feedType = (FeedType) feed.rssEntry();
-        val stored = storage.getEntries(feed.settings().id());
+    public ProcessingResult process(final Rss feed) {
+        val feedType = (FeedType) feed.getRssEntry();
         val toStore = extractEntries(feedType).stream()
                 .map(item -> {
                     val entry = new FeedEntry(item, true);
-                    if (!stored.contains(entry)) {
-                        return new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(),
+                    if (!feed.contains(entry)) {
+                        val feedEntry = new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(),
                                 OffsetDateTime.now(), item)));
+                        feed.addItem(feedEntry);
+                        return feedEntry;
                     }
                     return null;
                 })
@@ -52,9 +52,8 @@ public final class AtomProcessor implements FeedProcessor {
                 .toList();
         log.debug("Stored {} entries", toStore.size());
         if (!CollectionUtils.isEmpty(toStore)) {
-            val storeResult = storage.putOrReplaceEntry(new Pair<>(feed.settings().id(), toStore));
-            return new ProcessingResult(storeResult, feed.settings().id(), toStore.size());
+            return new ProcessingResult(true, feed.getId(), toStore.size());
         }
-        return new ProcessingResult(true, feed.settings().id(), ZERO_PROCESSED);
+        return new ProcessingResult(true, feed.getId(), ZERO_PROCESSED);
     }
 }

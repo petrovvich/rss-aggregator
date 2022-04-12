@@ -11,10 +11,10 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-import static it.petrovich.rss.xml.XmlUtils.atomContentOrElse;
-import static it.petrovich.rss.xml.XmlUtils.atomLinkOrElse;
-import static it.petrovich.rss.xml.XmlUtils.extractParagraphs;
-import static it.petrovich.rss.xml.XmlUtils.extractTextOrElse;
+import static it.petrovich.rss.domain.XmlUtils.atomContentOrElse;
+import static it.petrovich.rss.domain.XmlUtils.atomLinkOrElse;
+import static it.petrovich.rss.domain.XmlUtils.extractParagraphs;
+import static it.petrovich.rss.domain.XmlUtils.extractTextOrElse;
 
 @Slf4j
 @RequiredArgsConstructor
