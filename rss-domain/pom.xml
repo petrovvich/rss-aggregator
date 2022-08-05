@@ -25,6 +25,11 @@
         </dependency>
         <dependency>
             <groupId>it.petrovich</groupId>
+            <artifactId>rss-logging</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>it.petrovich</groupId>
             <artifactId>rss-validation</artifactId>
             <version>1.0</version>
         </dependency>
@@ -42,11 +47,6 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>it.petrovich</groupId>
-            <artifactId>rss-logging</artifactId>
-            <version>1.0</version>
         </dependency>
     </dependencies>
 
