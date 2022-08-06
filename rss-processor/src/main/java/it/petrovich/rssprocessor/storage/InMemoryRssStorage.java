@@ -23,13 +23,11 @@ public final class InMemoryRssStorage implements RssStorage {
     private final Cache<UUID, Rss> subscriptionsCache = CacheBuilder.newBuilder().maximumSize(CACHE_CAPACITY).build();
 
     @Override
-    public Optional<Rss> put(final Optional<Rss> rss) {
+    public Optional<Rss> put(final Rss rss) {
         log.debug("Start save feed {}", rss);
 
-        return rss.map(source -> {
-            subscriptionsCache.put(source.getId(), source);
-            return source;
-        });
+        subscriptionsCache.put(rss.getId(), rss);
+        return Optional.of(rss);
     }
 
     @Override

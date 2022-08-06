@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.Optional;
 
 public interface RssStorage {
-    Optional<Rss> put(Optional<Rss> request);
+    Optional<Rss> put(Rss request);
 
     Collection<Rss> getAllSubscriptions();
 }

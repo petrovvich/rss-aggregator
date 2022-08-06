@@ -1,4 +1,4 @@
-package it.petrovich.rss.domain.storing;
+package it.petrovich.rss.domain.refactoring;
 
 import lombok.Getter;
 

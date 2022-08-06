@@ -6,8 +6,8 @@ import it.petrovich.rss.domain.conversion.converter.ConverterFactory;
 import it.petrovich.rss.domain.conversion.converter.RssConverter;
 import it.petrovich.rss.domain.error.ElementNotFoundException;
 import it.petrovich.rss.domain.error.UnknownRssTypeException;
-import it.petrovich.rss.domain.storing.RssType;
-import it.petrovich.rss.domain.storing.StoreFeedRequest;
+import it.petrovich.rss.domain.refactoring.RssType;
+import it.petrovich.rss.domain.refactoring.StoreFeedRequest;
 import it.petrovich.rss.xml.XmlConfiguration;
 import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.JAXBContext;
@@ -64,7 +64,7 @@ public final class Rss implements Serializable {
         this.converters = ConverterFactory.converters();
 
         this.name = request.name();
-        this.url = new URL(request.url());
+        this.url = request.uri().toURL();
         this.refreshInterval = request.refreshInterval();
 
         final var rawRss = getRss(this.url);

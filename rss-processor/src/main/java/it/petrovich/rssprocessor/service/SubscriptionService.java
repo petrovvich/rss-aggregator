@@ -2,9 +2,10 @@ package it.petrovich.rssprocessor.service;
 
 import it.petrovich.rss.domain.ProcessingResult;
 import it.petrovich.rss.domain.Rss;
-import it.petrovich.rss.domain.storing.RssType;
-import it.petrovich.rss.domain.storing.StoreFeedResponse;
 import it.petrovich.rss.domain.error.NoFeedException;
+import it.petrovich.rss.domain.refactoring.RssType;
+import it.petrovich.rss.domain.refactoring.StoreFeedRequest;
+import it.petrovich.rss.domain.refactoring.StoreFeedResponse;
 import it.petrovich.rss.storage.RssStorage;
 import it.petrovich.rssprocessor.processor.FeedProcessor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,9 +27,17 @@ public record SubscriptionService(RssStorage storage,
     public StoreFeedResponse save(final Rss rss) {
         log.debug("Start process feed request {}", rss);
         return storage
-                .put(Optional.of(rss))
+                .put(rss)
                 .map(feed -> new StoreFeedResponse(feed.getId(), SUCCESS, "Subscription has stored successfully"))
                 .orElseThrow(() -> new NoFeedException(rss));
+    }
+
+    public StoreFeedResponse save(final StoreFeedRequest storeFeedRequest) {
+        log.debug("Start process feed request {}", storeFeedRequest);
+        return storage
+                .put(Rss.fromRequest(storeFeedRequest))
+                .map(feed -> new StoreFeedResponse(feed.getId(), SUCCESS, "Subscription has stored successfully"))
+                .orElseThrow(() -> new NoFeedException(storeFeedRequest));
     }
 
     @Scheduled(cron = "${rss.process.cron}")

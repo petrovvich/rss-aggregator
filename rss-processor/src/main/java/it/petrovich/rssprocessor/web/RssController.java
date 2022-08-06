@@ -1,8 +1,8 @@
 package it.petrovich.rssprocessor.web;
 
 import it.petrovich.rss.domain.Rss;
-import it.petrovich.rss.domain.storing.StoreFeedRequest;
-import it.petrovich.rss.domain.storing.StoreFeedResponse;
+import it.petrovich.rss.domain.refactoring.StoreFeedRequest;
+import it.petrovich.rss.domain.refactoring.StoreFeedResponse;
 import it.petrovich.rssprocessor.service.SubscriptionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

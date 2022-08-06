@@ -1,0 +1,144 @@
+openapi: 3.0.3
+info:
+  description: Документация к REST API модуля управления RSS подписками
+  version: "1.0"
+  title: RSS REST API
+  contact:
+    name: Developer
+    url: https://github.com/Petrovvich
+    email: alexromantrue@gmail.com
+
+servers:
+  - url: http://localhost:8567/api/v1
+    description: Local server
+
+paths:
+  /subscription:
+    post:
+      summary: Subscription to RSS-channel
+      tags:
+        - RSS subscription management
+      requestBody:
+        required: true
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/SubscriptionRequest'
+      responses:
+        '201':
+          description: Subscription creation result
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/SubscriptionResponse'
+        '400':
+          description: Subscription creation error
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '500':
+          description: Subscription creation error
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/ApiError'
+
+components:
+  schemas:
+    SubscriptionRequest:
+      required:
+        - name
+        - url
+        - refresh
+        - type
+      properties:
+        name:
+          description: Channel name or any other human readable information about subscription
+          type: string
+          example: Cool java blog about persistence
+          minLength: 1
+        url:
+          description: An URL where RSS feed is located
+          type: string
+          format: uri
+          example: https://cool.java.net/
+          x-constraints: "@NotBlankUrl"
+        refresh:
+          description: Refresh interval
+          type: integer
+          format: int64
+          example: 10000
+          minimum: 100
+        type:
+          description: |
+            RSS feed type.
+            
+            May be following values:
+            
+            1. RSS20 - RSS 2.0+ feed
+            2. ATOM - atom feed
+          type: string
+          enum:
+            - RSS20
+            - ATOM
+          example: ATOM
+
+
+    ## REST API responses
+    SubscriptionResponse:
+      required:
+        - subscription_id
+        - status
+        - description
+      properties:
+        subscription_id:
+          description: Subscription identifier
+          type: string
+          format: uuid
+          example: c2b57465-7354-488d-9735-85972da66528
+        status:
+          description: |
+            Subscription registration status.
+            
+            May have one of the following values:
+            
+            1. SUCCESS - subscription saved successfully. Uses in the response.
+            2. FAIL - subscription does not save. Uses in the response.
+          type: string
+          enum:
+            - SUCCESS
+            - FAIL
+          example: SUCCESS
+        description:
+          description: Detailed description about subscription storing result
+          type: string
+          example: Subscription stored successfully
+
+    ApiError:
+      required:
+        - error
+        - message
+      properties:
+        error:
+          description: Kind of error that occurs on the backend
+          type: string
+          example: NullPointerException
+        message:
+          description: Detailed error description that occurs on the backend
+          type: string
+          example: Division by zero
+        cause:
+          description: Detailed reason of error description that occurs on the backend
+          type: string
+          example: Don't divide on zero!
+
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - bearerAuth: [ ]

@@ -3,7 +3,7 @@ package it.petrovich.rssprocessor.processor;
 import it.petrovich.rss.domain.FeedEntry;
 import it.petrovich.rss.domain.ProcessingResult;
 import it.petrovich.rss.domain.Rss;
-import it.petrovich.rss.domain.storing.RssType;
+import it.petrovich.rss.domain.refactoring.RssType;
 import it.petrovich.rss.notification.NotificationProvider;
 import it.petrovich.rss.notification.events.Rss20NotificationEvent;
 import it.petrovich.rss.xml.rss20111.TRss;
@@ -17,7 +17,7 @@ import java.time.OffsetDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
-import static it.petrovich.rss.domain.storing.RssType.RSS20;
+import static it.petrovich.rss.domain.refactoring.RssType.RSS20;
 
 @Slf4j
 @Component

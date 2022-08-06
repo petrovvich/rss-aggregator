@@ -2,7 +2,7 @@ package it.petrovich.rss.domain.conversion.converter;
 
 import it.petrovich.rss.domain.conversion.ConversionRequest;
 import it.petrovich.rss.domain.conversion.ConversionResponse;
-import it.petrovich.rss.domain.storing.RssType;
+import it.petrovich.rss.domain.refactoring.RssType;
 import it.petrovich.rss.domain.error.ElementNotFoundException;
 import it.petrovich.rss.domain.XmlUtils;
 import it.petrovich.rss.xml.rss20111.TRss;

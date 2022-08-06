@@ -5,7 +5,8 @@ skinparam componentStyle rectangle
 component [client] #Yellow
 
 component Processor {
-    component [Web] as web #LightBlue
+    component [API] as api #LightBlue
+    component [Processor] as pr #LightGreen
     component [Storage] as store #LightCoral
     component [Requester] as request
     component [Notifier] as notify #LightGreen
@@ -13,12 +14,13 @@ component Processor {
 
 component Internet as internet
 
-client -r-> web : HTTP request\nwith auth
-web -> request
+client -r-> api : HTTP request\nwith auth
+api -> pr : Validate and\nsend to process
+pr -> request
 request -r-> internet
 internet -l-> request : Get rss\ndata
-request -> web
-web -d-> notify : Notify via\nTelegram, Slack\netc.
-web -u-> store : In memory\nor db storage
+request -> pr
+pr -d-> notify : Notify via\nTelegram, Slack\netc.
+pr -u-> store : In memory\nor db storage
 
 @enduml

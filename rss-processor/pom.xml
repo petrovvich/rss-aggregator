@@ -9,6 +9,7 @@
 
     <artifactId>rss-processor</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
     <name>rss-processor</name>
     <description>rss-processor</description>
 
@@ -39,11 +40,6 @@
             <artifactId>rss-storage</artifactId>
             <version>1.0</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>it.petrovich</groupId>
-            <artifactId>rss-validation</artifactId>
-            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>it.petrovich</groupId>

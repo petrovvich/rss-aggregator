@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0-SNAPSHOT</version>
+        <version>3.0.0-M4</version>
         <relativePath></relativePath>
     </parent>
 
@@ -23,18 +23,20 @@
         <module>rss-notification-telegram</module>
         <module>rss-processor</module>
         <module>rss-storage</module>
-        <module>rss-validation</module>
         <module>rss-xml</module>
+        <module>rss-api</module>
     </modules>
 
     <properties>
         <apache.commons.io.version>2.11.0</apache.commons.io.version>
+        <findbugs.version>3.0.2</findbugs.version>
         <glassfish.jakarta.el.version>4.0.1</glassfish.jakarta.el.version>
         <google.findbugs.version>3.0.2</google.findbugs.version>
         <guava.version>31.0.1-jre</guava.version>
-        <hibernate.validator.version>8.0.0.Alpha2</hibernate.validator.version>
+        <hibernate.validator.version>8.0.0.CR2</hibernate.validator.version>
         <jakarta.activation.version>2.0.1</jakarta.activation.version>
         <jakarta.el.version>4.0.0</jakarta.el.version>
+        <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
         <jakarta.validation.version>3.0.1</jakarta.validation.version>
         <jakarta.xml.bind.version>3.0.1</jakarta.xml.bind.version>
         <java.version>17</java.version>
@@ -44,11 +46,14 @@
         <jsoup.version>1.14.3</jsoup.version>
         <logback.version>1.2.11</logback.version>
         <logstash-encoder.version>7.0.1</logstash-encoder.version>
-        <lombok.version>1.18.22</lombok.version>
+        <lombok.version>1.18.24</lombok.version>
+        <mapstruct.version>1.5.2.Final</mapstruct.version>
         <maven.checkstyle.plugin.version>3.1.2</maven.checkstyle.plugin.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <puppycrawl.version>9.1</puppycrawl.version>
+        <springdoc-webflux-ui.version>1.6.9</springdoc-webflux-ui.version>
         <telegram.bots.version>5.7.1</telegram.bots.version>
     </properties>
 
@@ -77,6 +82,19 @@
             <url>https://repo.spring.io/snapshot</url>
         </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repository.spring.milestone</id>
+            <name>Spring Milestone Repository</name>
+            <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>repository.spring.snapshot</id>
+            <name>Spring Snapshot Repository</name>
+            <url>https://repo.spring.io/snapshot</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <plugins>
@@ -116,7 +134,7 @@
             <plugin>
                 <groupId>com.github.ekryd.sortpom</groupId>
                 <artifactId>sortpom-maven-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.2.0</version>
                 <configuration>
                     <createBackupFile>false</createBackupFile>
                     <sortProperties>true</sortProperties>
@@ -129,14 +147,14 @@
                         <goals>
                             <goal>sort</goal>
                         </goals>
-                        <phase>verify</phase>
+                        <phase>validate</phase>
                     </execution>
                 </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>3.0.0-M7</version>
             </plugin>
         </plugins>
     </build>

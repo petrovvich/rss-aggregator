@@ -1,0 +1,16 @@
+server:
+  port: 8567
+  http2:
+    enabled: true
+  compression:
+    enabled: true
+
+springdoc:
+  swagger-ui:
+    url: /rest-api-spec.yaml
+    use-root-path: true
+    disable-swagger-default-url: true
+
+spring:
+  main:
+    banner-mode: off
