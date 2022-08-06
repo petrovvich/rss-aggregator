@@ -3,13 +3,14 @@ package it.petrovich.api.rest;
 import it.petrovich.api.model.SubscriptionRequest;
 import it.petrovich.api.model.SubscriptionResponse;
 import it.petrovich.rssprocessor.service.SubscriptionService;
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.NativeWebRequest;
 
 import java.net.URI;
+import java.util.Optional;
 
 @Slf4j
 @Component
@@ -17,9 +18,13 @@ import java.net.URI;
 public class SubscriptionDelegate implements SubscriptionApiDelegate {
 
     private final ApiToDomainMapper mapper = ApiToDomainMapper.INSTANCE;
-    private final HttpServletRequest httpServletRequest;
     private final SubscriptionService subscriptionService;
+    private final NativeWebRequest nativeWebRequest;
 
+    @Override
+    public Optional<NativeWebRequest> getRequest() {
+        return Optional.of(nativeWebRequest);
+    }
 
     @Override
     public ResponseEntity<SubscriptionResponse> subscriptionPost(final SubscriptionRequest subscriptionRequest) {
@@ -30,7 +35,7 @@ public class SubscriptionDelegate implements SubscriptionApiDelegate {
 
         log.debug("Subscription stored response is {}", apiResponse);
         return ResponseEntity
-                .created(URI.create(httpServletRequest.getRequestURI()))
+                .created(URI.create(nativeWebRequest.getContextPath()))
                 .body(apiResponse);
     }
 }

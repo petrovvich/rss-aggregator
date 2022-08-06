@@ -2,7 +2,6 @@ package it.petrovich.rssprocessor.service;
 
 import it.petrovich.rss.domain.ProcessingResult;
 import it.petrovich.rss.domain.Rss;
-import it.petrovich.rss.domain.error.NoFeedException;
 import it.petrovich.rss.domain.refactoring.RssType;
 import it.petrovich.rss.domain.refactoring.StoreFeedRequest;
 import it.petrovich.rss.domain.refactoring.StoreFeedResponse;
@@ -15,7 +14,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import java.util.Map;
 import java.util.Optional;
 
-import static it.petrovich.rss.domain.RegistrationStatus.SUCCESS;
 import static java.util.Optional.ofNullable;
 
 @Slf4j
@@ -23,10 +21,7 @@ public record SubscriptionService(RssStorage storage, Map<RssType, FeedProcessor
 
     public StoreFeedResponse save(final StoreFeedRequest storeFeedRequest) {
         log.debug("Start process feed request {}", storeFeedRequest);
-        return storage
-                .put(Rss.fromRequest(storeFeedRequest))
-                .map(feed -> new StoreFeedResponse(feed.getId(), SUCCESS, "Subscription has stored successfully"))
-                .orElseThrow(() -> new NoFeedException(storeFeedRequest));
+        return storage.put(storeFeedRequest);
     }
 
     @Scheduled(cron = "${rss.process.cron}")
