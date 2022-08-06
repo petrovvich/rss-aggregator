@@ -4,7 +4,6 @@ import it.petrovich.rss.xml.atom.FeedType;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.Unmarshaller;
 import lombok.SneakyThrows;
-import lombok.val;
 import org.junit.jupiter.api.Test;
 
 import java.util.Objects;
@@ -26,7 +25,7 @@ class XmlUtilsTest {
     @Test
     void testCast_shouldReturnExpectedString() {
         Object source = "test";
-        val actual = XmlUtils.castToString(source);
+        final var actual = XmlUtils.castToString(source);
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals("test", actual)
@@ -36,7 +35,7 @@ class XmlUtilsTest {
     @Test
     void testCast_shouldReturnEmptyString() {
         Object source = 12;
-        val actual = XmlUtils.castToString(source);
+        final var actual = XmlUtils.castToString(source);
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals("", actual)
@@ -45,7 +44,7 @@ class XmlUtilsTest {
 
     @Test
     void testHtmlToTextNonHtml_shouldReturnExpectedString() {
-        val actual = extractParagraphs("Hello world!");
+        final var actual = extractParagraphs("Hello world!");
 
         assertAll(
                 () -> assertNotNull(actual),
@@ -56,9 +55,9 @@ class XmlUtilsTest {
     @Test
     @SneakyThrows
     void testHtmlToText_shouldReturnValidTextFromPTags() {
-        val source = readFile("/testHtmlToText_shouldReturnValidTextFromPTags_source.txt");
-        val expected = readFile("/testHtmlToText_shouldReturnValidTextFromPTags_expected.txt");
-        val actual = extractParagraphs(source);
+        final var source = readFile("/testHtmlToText_shouldReturnValidTextFromPTags_source.txt");
+        final var expected = readFile("/testHtmlToText_shouldReturnValidTextFromPTags_expected.txt");
+        final var actual = extractParagraphs(source);
 
         assertAll(
                 () -> assertNotNull(actual),
@@ -69,10 +68,10 @@ class XmlUtilsTest {
     @Test
     @SneakyThrows
     void testExtractEntryAtom_shouldReturnExpectedElements() {
-        val feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml(TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML)),
+        final var feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml(TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML)),
                 FeedType.class).getValue();
 
-        val actual = extractEntries(feed);
+        final var actual = extractEntries(feed);
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals(11, actual.size())
@@ -83,11 +82,11 @@ class XmlUtilsTest {
     @Test
     @SneakyThrows
     void testExtractTextOrElse_shouldReturnExpectedElementValue() {
-        val feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml(TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML)),
+        final var feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml(TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML)),
                 FeedType.class).getValue();
 
-        val entryType = extractEntries(feed).stream().findFirst().get();
-        val actual = extractTextOrElse(entryType, "title", "");
+        final var entryType = extractEntries(feed).stream().findFirst().get();
+        final var actual = extractTextOrElse(entryType, "title", "");
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals("How to log SQL statements in Spring Boot? Example Tutorial", actual)
@@ -97,11 +96,11 @@ class XmlUtilsTest {
     @Test
     @SneakyThrows
     void testExtractLinkOrElse_shouldReturnExpectedElementValue() {
-        val feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml(TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML)),
+        final var feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml(TestUtil.ATOM_JAVAREVISITED_RESPONSE_XML)),
                 FeedType.class).getValue();
 
-        val entryType = extractEntries(feed).stream().findFirst().get();
-        val actual = atomLinkOrElse(entryType, "link", "");
+        final var entryType = extractEntries(feed).stream().findFirst().get();
+        final var actual = atomLinkOrElse(entryType, "link", "");
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals("http://javarevisited.blogspot.com/2022/02/how-to-log-sql-statements-in-spring.html",
@@ -112,11 +111,11 @@ class XmlUtilsTest {
     @Test
     @SneakyThrows
     void testExtractLinkOrElse_shouldReturnExpectedElement() {
-        val feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml("/atom-java67-response.xml")),
+        final var feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml("/atom-java67-response.xml")),
                 FeedType.class).getValue();
 
-        val entryType = extractEntries(feed).stream().findFirst().get();
-        val actual = atomLinkOrElse(entryType, "link", "");
+        final var entryType = extractEntries(feed).stream().findFirst().get();
+        final var actual = atomLinkOrElse(entryType, "link", "");
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals("http://www.java67.com/2022/02/how-to-find-longest-common-prefix-in.html",
@@ -127,11 +126,11 @@ class XmlUtilsTest {
     @Test
     @SneakyThrows
     void testExtractDescriptionOrElse_shouldReturnExpectedElement() {
-        val feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml("/atom-spring.xml")),
+        final var feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml("/atom-spring.xml")),
                 FeedType.class).getValue();
 
-        val entryType = extractEntries(feed).stream().findFirst().get();
-        val actual = atomContentOrElse(entryType, "content", "");
+        final var entryType = extractEntries(feed).stream().findFirst().get();
+        final var actual = atomContentOrElse(entryType, "content", "");
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals(readFile("/testExtractDescriptionOrElse_expected.txt"), actual)
@@ -140,7 +139,7 @@ class XmlUtilsTest {
 
     @Test
     void testExtractParagraphsAtom() {
-        val actual = extractParagraphs(readFile("/testExtractDescriptionOrElse_expected.txt"));
+        final var actual = extractParagraphs(readFile("/testExtractDescriptionOrElse_expected.txt"));
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals(readFile("/testExtractParagraphsAtom_expected.txt"), actual)

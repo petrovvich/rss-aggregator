@@ -8,7 +8,6 @@ import it.petrovich.rss.domain.refactoring.StoreFeedResponse;
 import it.petrovich.rss.storage.RssStorage;
 import it.petrovich.rssprocessor.processor.FeedProcessor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import java.util.Map;
@@ -24,15 +23,24 @@ public record SubscriptionService(RssStorage storage, Map<RssType, FeedProcessor
         return storage.put(storeFeedRequest);
     }
 
+    @Scheduled(cron = "${rss.create.cron}")
+    public void createRss() {
+        final var processed = storage.getAllRequests()
+                .stream()
+                .map(pair -> Rss.fromRequest(pair.right(), pair.left()))
+                .toList();
+        log.debug("Subscription requests processed {} entries is {}", processed.size(), processed);
+    }
+
     @Scheduled(cron = "${rss.process.cron}")
     public void processRss() {
-        val processed = storage.getAllSubscriptions()
+        final var processed = storage.getAllSubscriptions()
                 .stream()
                 .map(this::process)
                 .filter(Optional::isPresent)
                 .map(Optional::get)
                 .toList();
-        log.debug("Entries have processed {} entries is {}", processed.size(), processed);
+        log.debug("RSS processed {} entries is {}", processed.size(), processed);
     }
 
     private Optional<ProcessingResult> process(final Rss rss) {

@@ -9,7 +9,6 @@ import it.petrovich.rss.notification.events.AtomNotificationEvent;
 import it.petrovich.rss.xml.atom.FeedType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 import org.springframework.util.CollectionUtils;
 
 import java.time.OffsetDateTime;
@@ -32,12 +31,12 @@ public final class AtomProcessor implements FeedProcessor {
 
     @Override
     public ProcessingResult process(final Rss feed) {
-        val feedType = (FeedType) feed.convert(feed.renew());
-        val toStore = extractEntries(feedType).stream()
+        final var feedType = (FeedType) feed.convert(feed.renew());
+        final var toStore = extractEntries(feedType).stream()
                 .map(item -> {
-                    val entry = new FeedEntry(item, true);
+                    final var entry = new FeedEntry(item, true);
                     if (!feed.contains(entry)) {
-                        val feedEntry = new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(),
+                        final var feedEntry = new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(),
                                 OffsetDateTime.now(), item)));
                         feed.addItem(feedEntry);
                         return feedEntry;

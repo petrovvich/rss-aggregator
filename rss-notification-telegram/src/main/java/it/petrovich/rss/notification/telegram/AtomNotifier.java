@@ -5,7 +5,6 @@ import it.petrovich.rss.notification.events.AtomNotificationEvent;
 import it.petrovich.rss.notification.events.NotificationEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -39,10 +38,10 @@ public class AtomNotifier implements NotificationProcessor {
     }
 
     private String prepareMessage(final NotificationEvent<?> event) {
-        val body = ((AtomNotificationEvent) event).getBody();
-        val title = extractTextOrElse(body, "title", "");
-        val link = atomLinkOrElse(body, "link", "");
-        val description = formatDescription(extractParagraphs(atomContentOrElse(body, "content", "")));
+        final var body = ((AtomNotificationEvent) event).getBody();
+        final var title = extractTextOrElse(body, "title", "");
+        final var link = atomLinkOrElse(body, "link", "");
+        final var description = formatDescription(extractParagraphs(atomContentOrElse(body, "content", "")));
 
         return TelegramMessage.builder()
                 .description(description)

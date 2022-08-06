@@ -2,6 +2,7 @@ package it.petrovich.rssprocessor.storage;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import it.petrovich.rss.domain.Pair;
 import it.petrovich.rss.domain.RegistrationStatus;
 import it.petrovich.rss.domain.Rss;
 import it.petrovich.rss.domain.refactoring.StoreFeedRequest;
@@ -46,5 +47,16 @@ public final class InMemoryRssStorage implements RssStorage {
     @Override
     public Collection<Rss> getAllSubscriptions() {
         return subscriptionsCache.asMap().values();
+    }
+
+    @Override
+    public Collection<Pair<UUID, StoreFeedRequest>> getAllRequests() {
+        final var pairs = requestsCache.asMap()
+                .entrySet()
+                .stream()
+                .map(entry -> new Pair<>(entry.getKey(), entry.getValue()))
+                .toList();
+        requestsCache.cleanUp();
+        return pairs;
     }
 }

@@ -16,7 +16,6 @@ import jakarta.xml.bind.JAXBException;
 import lombok.Getter;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
@@ -56,8 +55,8 @@ public final class Rss implements Serializable {
 
 
     @SneakyThrows
-    private Rss(@NotNull final StoreFeedRequest request) {
-        this.id = UUID.randomUUID();
+    private Rss(@NotNull final StoreFeedRequest request, @NotNull UUID subscriptionId) {
+        this.id = subscriptionId;
 
         this.jaxbContext = XmlConfiguration.getJaxbCtx();
         this.webClient = WebClientFactory.webClient();
@@ -78,20 +77,20 @@ public final class Rss implements Serializable {
         this.rssEntry = conversionResponse.rssEntry();
     }
 
-    public static Rss fromRequest(@NotNull final StoreFeedRequest request) {
-        return new Rss(request);
+    public static Rss fromRequest(@NotNull final StoreFeedRequest request, @NotNull UUID subscriptionId) {
+        return new Rss(request, subscriptionId);
     }
 
     @SneakyThrows(value = {URISyntaxException.class, IOException.class, InterruptedException.class})
     private String getRss(final URL url) {
-        val httpRequest = HttpRequest.newBuilder().uri(url.toURI()).GET().build();
+        final var httpRequest = HttpRequest.newBuilder().uri(url.toURI()).GET().build();
 
         return webClient.send(httpRequest, HttpResponse.BodyHandlers.ofString()).body();
     }
 
     public RssType resolve(final String sourceXml) {
-        val feed = unmarshall(sourceXml);
-        val targetClass = feed.getValue().getClass().getSimpleName();
+        final var feed = unmarshall(sourceXml);
+        final var targetClass = feed.getValue().getClass().getSimpleName();
 
         return switch (targetClass) {
             case T_RSS -> RssType.RSS20;
@@ -102,9 +101,9 @@ public final class Rss implements Serializable {
 
     @SneakyThrows(value = {JAXBException.class})
     private JAXBElement<?> unmarshall(@NotNull final String source) {
-        val unmarshaller = jaxbContext.createUnmarshaller();
-        val inputStream = new ByteArrayInputStream(source.getBytes(UTF_8));
-        val streamSource = new StreamSource(inputStream);
+        final var unmarshaller = jaxbContext.createUnmarshaller();
+        final var inputStream = new ByteArrayInputStream(source.getBytes(UTF_8));
+        final var streamSource = new StreamSource(inputStream);
 
         return (JAXBElement<?>) unmarshaller.unmarshal(streamSource);
     }

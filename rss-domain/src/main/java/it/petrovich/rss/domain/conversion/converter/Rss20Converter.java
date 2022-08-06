@@ -1,10 +1,10 @@
 package it.petrovich.rss.domain.conversion.converter;
 
+import it.petrovich.rss.domain.XmlUtils;
 import it.petrovich.rss.domain.conversion.ConversionRequest;
 import it.petrovich.rss.domain.conversion.ConversionResponse;
-import it.petrovich.rss.domain.refactoring.RssType;
 import it.petrovich.rss.domain.error.ElementNotFoundException;
-import it.petrovich.rss.domain.XmlUtils;
+import it.petrovich.rss.domain.refactoring.RssType;
 import it.petrovich.rss.xml.rss20111.TRss;
 import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.JAXBContext;
@@ -12,7 +12,6 @@ import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.JAXBException;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.val;
 
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
@@ -39,9 +38,9 @@ public final class Rss20Converter implements RssConverter {
 
     @Override
     public ConversionResponse convert(final ConversionRequest request) {
-        val feed = (TRss) unmarshall(request.rawRss()).getValue();
+        final var feed = (TRss) unmarshall(request.rawRss()).getValue();
 
-        val lastUpdateDate = extractEntry(feed, LAST_BUILD_DATE)
+        final var lastUpdateDate = extractEntry(feed, LAST_BUILD_DATE)
                 .map(XmlUtils::parseDate)
                 .orElseThrow(() -> new ElementNotFoundException(request.id()));
         return new ConversionResponse(request.id(), lastUpdateDate, feed);
@@ -49,9 +48,9 @@ public final class Rss20Converter implements RssConverter {
 
     @SneakyThrows(value = {JAXBException.class})
     private JAXBElement<?> unmarshall(@NotNull final String source) {
-        val unmarshaller = jaxbCtx.createUnmarshaller();
-        val inputStream = new ByteArrayInputStream(source.getBytes(UTF_8));
-        val streamSource = new StreamSource(inputStream);
+        final var unmarshaller = jaxbCtx.createUnmarshaller();
+        final var inputStream = new ByteArrayInputStream(source.getBytes(UTF_8));
+        final var streamSource = new StreamSource(inputStream);
         return unmarshaller.unmarshal(streamSource, TRss.class);
     }
 }

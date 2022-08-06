@@ -24,14 +24,17 @@ app:
       token: ${BOT_TOKEN}
       chats: ${TG_CHATS}
 
+# (second) (minute) (hour) (day of the month) (month) (day of the week)
 rss:
+  create:
+    cron: ${RSS_UPDATE_CRON:*/5 * * * * *}
   update:
-    cron: ${RSS_UPDATE_CRON:*/20 * * * * *} # (second) (minute) (hour) (day of the month) (month) (day of the week)
+    cron: ${RSS_UPDATE_CRON:*/20 * * * * *}
   process:
-    cron: ${RSS_PROCESS_CRON:*/10 * * * * *} # (second) (minute) (hour) (day of the month) (month) (day of the week)
+    cron: ${RSS_PROCESS_CRON:*/10 * * * * *}
   events:
     send:
-      cron: ${RSS_SEND_CRON:*/10 * * * * *} # (second) (minute) (hour) (day of the month) (month) (day of the week)
+      cron: ${RSS_SEND_CRON:*/10 * * * * *}
 
 log:
   service:

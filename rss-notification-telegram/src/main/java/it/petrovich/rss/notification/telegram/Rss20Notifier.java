@@ -5,7 +5,6 @@ import it.petrovich.rss.notification.events.NotificationEvent;
 import it.petrovich.rss.notification.events.Rss20NotificationEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -37,10 +36,10 @@ public class Rss20Notifier implements NotificationProcessor {
     }
 
     private String prepareMessage(final NotificationEvent<?> event) {
-        val body = ((Rss20NotificationEvent) event).getBody();
-        val title = extractOrElse(body, "title", "").toString();
-        val description = formatDescription(extractParagraphs(extractOrElse(body, "description", "").toString()));
-        val link = extractOrElse(body, "link", "").toString();
+        final var body = ((Rss20NotificationEvent) event).getBody();
+        final var title = extractOrElse(body, "title", "").toString();
+        final var description = formatDescription(extractParagraphs(extractOrElse(body, "description", "").toString()));
+        final var link = extractOrElse(body, "link", "").toString();
         return TelegramMessage.builder()
                 .link(link)
                 .description(description)

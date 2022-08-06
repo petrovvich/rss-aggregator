@@ -6,7 +6,6 @@ import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.Unmarshaller;
 import lombok.SneakyThrows;
-import lombok.val;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
@@ -32,20 +31,20 @@ class XmlReaderTest {
     @Test
     @SneakyThrows
     void testReadRss20() {
-        val rssObj = (TRss) unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)), TRss.class).getValue();
+        final var rssObj = (TRss) unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)), TRss.class).getValue();
 
         assertNotNull(rssObj);
         assertNotNull(rssObj.getVersion());
         assertNotNull(rssObj.getOtherAttributes());
         assertNotNull(rssObj.getAny());
 
-        val channel = rssObj.getChannel();
+        final var channel = rssObj.getChannel();
         assertNotNull(channel);
         assertNotNull(channel.getAny());
         assertNotNull(channel.getOtherAttributes());
         assertNotNull(channel.getTitleOrLinkOrDescription());
 
-        val items = channel.getItem();
+        final var items = channel.getItem();
         assertNotNull(items);
         assertEquals(12, items.size());
 
@@ -59,12 +58,12 @@ class XmlReaderTest {
     @Test
     @SneakyThrows
     void testReadAtom() {
-        val feed = (FeedType) unmarshaller.unmarshal(buildSource(readXml(ATOM_PATH)), FeedType.class).getValue();
+        final var feed = (FeedType) unmarshaller.unmarshal(buildSource(readXml(ATOM_PATH)), FeedType.class).getValue();
 
         assertNotNull(feed);
         assertNotNull(feed.getOtherAttributes());
 
-        val entries = feed.getAuthorOrCategoryOrContributor();
+        final var entries = feed.getAuthorOrCategoryOrContributor();
         assertNotNull(entries);
         assertEquals(26, entries.size());
     }
@@ -72,9 +71,9 @@ class XmlReaderTest {
     @Test
     @SneakyThrows
     void testGetLastUpdateDate() {
-        val rssObj = (TRss) unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)), TRss.class).getValue();
+        final var rssObj = (TRss) unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)), TRss.class).getValue();
 
-        val dateString = rssObj.getChannel().getTitleOrLinkOrDescription().stream()
+        final var dateString = rssObj.getChannel().getTitleOrLinkOrDescription().stream()
                 .filter(item -> item.getClass().getSimpleName().equalsIgnoreCase(JAXBElement.class.getSimpleName()))
                 .map(JAXBElement.class::cast)
                 .filter(item -> item.getName().getLocalPart().equals("lastBuildDate"))
@@ -83,21 +82,21 @@ class XmlReaderTest {
                 .orElse(LocalDateTime.now().toString());
         assertNotNull(dateString);
 
-        val localDateTime = FORMATTER.parse((CharSequence) dateString);
+        final var localDateTime = FORMATTER.parse((CharSequence) dateString);
         assertNotNull(localDateTime);
     }
 
     @Test
     @SneakyThrows
     void testUnmarshallAny() {
-        val feed = unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)));
+        final var feed = unmarshaller.unmarshal(buildSource(readXml(RSS_20_PATH)));
         assertNotNull(feed);
     }
 
     @Test
     @SneakyThrows
     void testReadJavaRevisited() {
-        val feed = unmarshaller.unmarshal(buildSource(readXml(ATOM_JAVAREVISITED_RESPONSE_XML)), FeedType.class).getValue();
+        final var feed = unmarshaller.unmarshal(buildSource(readXml(ATOM_JAVAREVISITED_RESPONSE_XML)), FeedType.class).getValue();
         assertNotNull(feed);
     }
 }

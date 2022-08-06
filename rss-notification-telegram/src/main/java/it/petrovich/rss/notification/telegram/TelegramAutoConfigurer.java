@@ -7,7 +7,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -58,7 +57,7 @@ public class TelegramAutoConfigurer {
     @Bean
     @SneakyThrows({TelegramApiException.class})
     public TelegramBotsApi telegramBotsApi(final Collection<NotificationBot> bots) {
-        val apiClient = new TelegramBotsApi(DefaultBotSession.class);
+        final var apiClient = new TelegramBotsApi(DefaultBotSession.class);
         bots.forEach(bot -> {
             try {
                 apiClient.registerBot(bot);
