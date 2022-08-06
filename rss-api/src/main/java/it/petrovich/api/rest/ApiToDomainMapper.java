@@ -16,6 +16,7 @@ public interface ApiToDomainMapper {
     ApiToDomainMapper INSTANCE = Mappers.getMapper(ApiToDomainMapper.class);
 
     @Mapping(target = "refreshInterval", source = "refresh")
+    @Mapping(target = "uri", source = "url")
     StoreFeedRequest map(SubscriptionRequest source);
 
 

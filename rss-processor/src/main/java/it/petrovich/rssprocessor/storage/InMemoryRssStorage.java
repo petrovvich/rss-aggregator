@@ -7,14 +7,12 @@ import it.petrovich.rss.storage.RssStorage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
-@Component
 @Profile(value = "!prod")
 @RequiredArgsConstructor
 public final class InMemoryRssStorage implements RssStorage {

@@ -18,14 +18,14 @@ public class SubscriptionDelegate implements SubscriptionApiDelegate {
 
     private final ApiToDomainMapper mapper = ApiToDomainMapper.INSTANCE;
     private final HttpServletRequest httpServletRequest;
-    private final SubscriptionService processor;
+    private final SubscriptionService subscriptionService;
 
 
     @Override
     public ResponseEntity<SubscriptionResponse> subscriptionPost(final SubscriptionRequest subscriptionRequest) {
         log.debug("Start process subscription request {}", subscriptionRequest);
         final var domainRequest = mapper.map(subscriptionRequest);
-        final var domainResponse = processor.save(domainRequest);
+        final var domainResponse = subscriptionService.save(domainRequest);
         final var apiResponse = mapper.map(domainResponse);
 
         log.debug("Subscription stored response is {}", apiResponse);

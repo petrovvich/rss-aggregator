@@ -11,7 +11,6 @@ import it.petrovich.rssprocessor.processor.FeedProcessor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
 
 import java.util.Map;
 import java.util.Optional;
@@ -20,17 +19,7 @@ import static it.petrovich.rss.domain.RegistrationStatus.SUCCESS;
 import static java.util.Optional.ofNullable;
 
 @Slf4j
-@Service
-public record SubscriptionService(RssStorage storage,
-                                  Map<RssType, FeedProcessor> processors) {
-
-    public StoreFeedResponse save(final Rss rss) {
-        log.debug("Start process feed request {}", rss);
-        return storage
-                .put(rss)
-                .map(feed -> new StoreFeedResponse(feed.getId(), SUCCESS, "Subscription has stored successfully"))
-                .orElseThrow(() -> new NoFeedException(rss));
-    }
+public record SubscriptionService(RssStorage storage, Map<RssType, FeedProcessor> processors) {
 
     public StoreFeedResponse save(final StoreFeedRequest storeFeedRequest) {
         log.debug("Start process feed request {}", storeFeedRequest);

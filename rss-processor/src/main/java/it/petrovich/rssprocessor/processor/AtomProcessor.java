@@ -10,7 +10,6 @@ import it.petrovich.rss.xml.atom.FeedType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
-import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.time.OffsetDateTime;
@@ -21,7 +20,6 @@ import static it.petrovich.rss.domain.XmlUtils.extractEntries;
 import static it.petrovich.rss.domain.refactoring.RssType.ATOM;
 
 @Slf4j
-@Component
 @RequiredArgsConstructor
 public final class AtomProcessor implements FeedProcessor {
     private static final long ZERO_PROCESSED = 0;

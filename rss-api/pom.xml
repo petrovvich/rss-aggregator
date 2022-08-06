@@ -26,6 +26,11 @@
         </dependency>
         <dependency>
             <groupId>it.petrovich</groupId>
+            <artifactId>rss-notification-provider</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>it.petrovich</groupId>
             <artifactId>rss-processor</artifactId>
             <version>1.0</version>
         </dependency>
@@ -94,7 +99,6 @@
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>${project.artifactId}</artifactId>
                                 <artifactVersion>${project.version}</artifactVersion>
-                                <basePackage>${project.groupId}.api</basePackage>
                                 <configPackage>${project.groupId}.api.config</configPackage>
                                 <dateLibrary>java8</dateLibrary>
                                 <interfaceOnly>false</interfaceOnly>

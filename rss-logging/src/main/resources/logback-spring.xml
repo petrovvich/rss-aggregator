@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration scan="true" scanPeriod="30 minutes" debug="true">
-    <property name="SERVICE_NAME" value="${LOG_SERVICE_NAME}"/>
+<configuration scan="true" scanPeriod="30 minutes">
+    <springProperty name="SERVICE_NAME" source="log.service.name"/>
     <property name="HOSTNAME" value="${HOSTNAME}"/>
 
-    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
-<!--            <jsonGeneratorDecorator class="net.logstash.logback.decorate.PrettyPrintingJsonGeneratorDecorator"/>-->
+            <jsonGeneratorDecorator class="net.logstash.logback.decorate.PrettyPrintingJsonGeneratorDecorator"/>
             <encoding>UTF-8</encoding>
             <providers>
                 <timestamp>
-                    <fieldName>timetsamp</fieldName>
-                    <pattern>yyyy-dd-MM'T'HH:mm:ss.SSS Z</pattern>
+                    <fieldName>time</fieldName>
+                    <pattern>yyyy-dd-MM'T'HH:mm:ss.SSSZ</pattern>
                 </timestamp>
                 <pattern>
                     <pattern>
                         {
+                        "app": "${SERVICE_NAME}",
                         "host": "${HOSTNAME}",
                         "level": "%level",
                         "class": "%class{0}.%M:%L",
@@ -28,13 +29,13 @@
 
     <springProfile name="!prod">
         <logger name="it.petrovich" level="debug" additivity="false">
-            <appender-ref ref="Console"/>
+            <appender-ref ref="stdout"/>
         </logger>
     </springProfile>
 
     <springProfile name="prod">
         <logger name="it.petrovich" level="info" additivity="false">
-            <appender-ref ref="Console"/>
+            <appender-ref ref="stdout"/>
         </logger>
     </springProfile>
 </configuration>

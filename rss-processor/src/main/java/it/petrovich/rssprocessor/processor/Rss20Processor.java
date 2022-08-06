@@ -10,7 +10,6 @@ import it.petrovich.rss.xml.rss20111.TRss;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
-import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.time.OffsetDateTime;
@@ -20,7 +19,6 @@ import java.util.UUID;
 import static it.petrovich.rss.domain.refactoring.RssType.RSS20;
 
 @Slf4j
-@Component
 @RequiredArgsConstructor
 public final class Rss20Processor implements FeedProcessor {
     private static final int ZERO_PROCESSED = 0;
