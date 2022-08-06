@@ -55,7 +55,7 @@ public final class Rss implements Serializable {
 
 
     @SneakyThrows
-    private Rss(@NotNull final StoreFeedRequest request, @NotNull UUID subscriptionId) {
+    private Rss(@NotNull final StoreFeedRequest request, @NotNull final UUID subscriptionId) {
         this.id = subscriptionId;
 
         this.jaxbContext = XmlConfiguration.getJaxbCtx();
@@ -77,7 +77,7 @@ public final class Rss implements Serializable {
         this.rssEntry = conversionResponse.rssEntry();
     }
 
-    public static Rss fromRequest(@NotNull final StoreFeedRequest request, @NotNull UUID subscriptionId) {
+    public static Rss fromRequest(@NotNull final StoreFeedRequest request, @NotNull final UUID subscriptionId) {
         return new Rss(request, subscriptionId);
     }
 

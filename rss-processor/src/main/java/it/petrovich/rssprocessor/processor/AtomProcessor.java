@@ -36,8 +36,10 @@ public final class AtomProcessor implements FeedProcessor {
                 .map(item -> {
                     final var entry = new FeedEntry(item, true);
                     if (!feed.contains(entry)) {
-                        final var feedEntry = new FeedEntry(item, provider.send(new AtomNotificationEvent(UUID.randomUUID(),
-                                OffsetDateTime.now(), item)));
+                        final var feedEntry = new FeedEntry(item, provider.send(new AtomNotificationEvent(
+                                UUID.randomUUID(),
+                                OffsetDateTime.now(),
+                                item)));
                         feed.addItem(feedEntry);
                         return feedEntry;
                     }

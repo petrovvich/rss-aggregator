@@ -21,9 +21,14 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public final class InMemoryRssStorage implements RssStorage {
     private static final int CACHE_CAPACITY = 1000;
+    public static final String SUCCESS_MSG = "Subscription saved successfully";
 
-    private final Cache<UUID, StoreFeedRequest> requestsCache = CacheBuilder.newBuilder().maximumSize(CACHE_CAPACITY).build();
-    private final Cache<UUID, Rss> subscriptionsCache = CacheBuilder.newBuilder().maximumSize(CACHE_CAPACITY).build();
+    private final Cache<UUID, StoreFeedRequest> requestsCache = CacheBuilder.newBuilder()
+            .maximumSize(CACHE_CAPACITY)
+            .build();
+    private final Cache<UUID, Rss> subscriptionsCache = CacheBuilder.newBuilder()
+            .maximumSize(CACHE_CAPACITY)
+            .build();
 
     @Override
     public Optional<Rss> put(final Rss rss) {
@@ -34,14 +39,13 @@ public final class InMemoryRssStorage implements RssStorage {
     }
 
     @Override
-    public StoreFeedResponse put(StoreFeedRequest request) {
+    public StoreFeedResponse put(final StoreFeedRequest request) {
         log.debug("Start save request {}", request);
 
         final var subscriptionId = UUID.randomUUID();
         requestsCache.put(subscriptionId, request);
 
-        return new StoreFeedResponse(subscriptionId, RegistrationStatus.SUCCESS,
-                "Subscription saved successfully");
+        return new StoreFeedResponse(subscriptionId, RegistrationStatus.SUCCESS, SUCCESS_MSG);
     }
 
     @Override

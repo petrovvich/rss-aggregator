@@ -37,7 +37,8 @@ public final class Rss20Processor implements FeedProcessor {
                 .map(item -> {
                     final var entry = new FeedEntry(item, true);
                     if (!feed.contains(entry)) {
-                        final var feedEntry = new FeedEntry(item, provider.send(new Rss20NotificationEvent(UUID.randomUUID(),
+                        final var feedEntry = new FeedEntry(item, provider.send(new Rss20NotificationEvent(
+                                UUID.randomUUID(),
                                 OffsetDateTime.now(), item)));
                         feed.addItem(feedEntry);
                         return feedEntry;
