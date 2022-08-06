@@ -60,7 +60,7 @@ public final class InMemoryRssStorage implements RssStorage {
                 .stream()
                 .map(entry -> new Pair<>(entry.getKey(), entry.getValue()))
                 .toList();
-        requestsCache.cleanUp();
+        requestsCache.invalidateAll();
         return pairs;
     }
 }

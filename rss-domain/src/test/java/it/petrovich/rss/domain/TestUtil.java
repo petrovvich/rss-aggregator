@@ -15,6 +15,7 @@ import java.util.Objects;
 @UtilityClass
 public class TestUtil {
     public static final String ATOM_JAVAREVISITED_RESPONSE_XML = "/atom-javarevisited-response.xml";
+    public static final String ATOM_RESPONSE_NEW = "/atom-response-new.xml";
 
     @SneakyThrows(value = {JAXBException.class})
     public static JAXBContext initJaxbContext() {

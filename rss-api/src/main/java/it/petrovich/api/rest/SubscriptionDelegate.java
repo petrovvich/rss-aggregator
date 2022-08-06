@@ -6,6 +6,7 @@ import it.petrovich.rssprocessor.service.SubscriptionService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.NativeWebRequest;
 
@@ -14,6 +15,7 @@ import java.util.Optional;
 
 @Slf4j
 @Component
+@EnableScheduling
 @RequiredArgsConstructor
 public class SubscriptionDelegate implements SubscriptionApiDelegate {
 

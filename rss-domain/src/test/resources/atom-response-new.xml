@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>A Java geek</title>
+        <description>Nicolas Fränkel&apos;s blog</description>
+        <link>https://blog.frankel.ch/</link>
+        <language>en</language>
+        <copyright>Copyright 2008-2022 Nicolas Fränkel</copyright>
+        <atom:link href="https://blog.frankel.ch/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 05 Aug 2022 20:14:21 +0000</pubDate>
+        <lastBuildDate>Fri, 05 Aug 2022 20:14:21 +0000</lastBuildDate>
+        <generator>Jekyll</generator>
+        <image>
+            <url>https://blog.frankel.ch/assets/pages/me/me.jpg</url>
+            <title>A Java geek</title>
+            <link>https://blog.frankel.ch/</link>
+        </image>
+        <item>
+            <title>On cosmetics vs. intrinsics in programming</title>
+            <description>A ruthless battle occurs every day on the World Wide Web. Its goal is to decide which
+                programming flavor is the best: OOP or FP? I assume that imperative and procedural programming are not
+                part of the contenders. Arguments range from the factual to the irrelevant to the utterly stupid. A
+                couple of years ago, I wanted to listen to a video of Martin Odersky (of Scala fame). I remember neither
+                the exact talk nor the subject. What I remember is the introduction, though: he explained that FP was
+                mor
+            </description>
+            <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/on-cosmetics-vs-intrinsics-programming/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/on-cosmetics-vs-intrinsics-programming/</guid>
+            <media:content
+                    url="https://blog.frankel.ch/assets/resources/on-cosmetics-vs-intrinsics-programming/spice-chiles-paprika-chili-54453.jpg"
+                    width="1280" height="847"/>
+            <category>Object-Oriented Programming</category>
+            <category>Function Programming</category>
+            <category>Procedural Programming</category>
+            <category>asynchronous programming</category>
+            <category>non-blocking programming</category>
+            <category>Development</category>
+        </item>
+        <item>
+            <title>Discussing Backend For Front-end</title>
+            <description>In the good old days, applications were simple. A browser sent a request to a webapp endpoint;
+                the latter fetched data from a database and returned the response. The rise of mobile clients and
+                integrations with other apps upset this simplicity. I want to discuss one solution to handle the
+                complexity in this post. The increased complexity of system architecture Let&amp;#8217;s first model the
+                above simple architecture. Mobile clients changed this approach. The display area of mobile clients
+            </description>
+            <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/backend-for-frontend/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/backend-for-frontend/</guid>
+            <media:content
+                    url="https://blog.frankel.ch/assets/resources/backend-for-frontend/pinky-swear-g6402e3105.jpg"
+                    width="1280" height="853"/>
+            <category>system architecture</category>
+            <category>microservices</category>
+            <category>Technical</category>
+        </item>
+        <item>
+            <title>Writing your own service discovery client for Apache APISIX</title>
+            <description>API Gateways in general, and Apache APISIX in particular, provide a single entry point into one&amp;#8217;s
+                information system. This architecture allows for managing load balancing and failover over similar
+                nodes. For example, here&amp;#8217;s how you can create a route balanced over two nodes in Apache
+                APISIX: curl http://localhost:9080/apisix/admin/routes/1 -H &apos;X-API-KEY:
+                edd1c9f034335f136f87ad84b625c8f1&apos; -X PUT -i -d &apos;{ &apos;uri&apos;: &apos;/*&apos;, &apos;upstream&apos;:
+                { &apos;type&apos;: &apos;roundrobin&apos;, &apos;nodes&apos;: { &apos;
+            </description>
+            <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/own-service-discovery-client-apisix/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/own-service-discovery-client-apisix/</guid>
+            <media:content
+                    url="https://blog.frankel.ch/assets/resources/own-service-discovery-client-apisix/pexels-3996179.jpg"
+                    width="1280" height="853"/>
+            <category>service discovery</category>
+            <category>DevOps</category>
+            <category>Apache APISIX</category>
+            <category>Technical</category>
+        </item>
+        <item>
+            <title>Secure your web apps with an API Gateway</title>
+            <description>API management solutions, also known as API gateways, are a must in the day and age of APIs.
+                However, once you&amp;#8217;ve set up such a gateway, you can use it for different purposes unrelated to
+                APIs. Today, I want to show you how to improve the security of web apps. Prevent sniffing Browsers are
+                fantastic pieces of technology that try to make the life of users as comfortable as possible. However,
+                the balance between ease of use and security may sometimes tip on the former to the latter&amp;#8217;
+            </description>
+            <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/secure-webapps-api-gateway/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/secure-webapps-api-gateway/</guid>
+            <media:content url="https://blog.frankel.ch/assets/resources/secure-webapps-api-gateway/safe-g188ed805c.jpg"
+                           width="1280" height="1112"/>
+            <category>security</category>
+            <category>webapp</category>
+            <category>API Gateway</category>
+            <category>Apache APISIX</category>
+            <category>Technical</category>
+        </item>
+        <item>
+            <title>Learning by auditing Kubernetes manifests</title>
+            <description>Last year, I spoke at the National DevOps Conference that took place at the British Museum. I
+                had already visited the museum before, but speaking there was a fantastic experience. Besides, we had
+                the museum all for ourselves for a couple of hours. If you&amp;#8217;ve ever visited the place, you know
+                what I mean. Anyway, I also attended a talk about Checkov: Checkov scans cloud infrastructure
+                configurations to find misconfigurations before they&amp;#8217;re deployed. Checkov uses a common
+                command
+            </description>
+            <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/learning-auditing-kubernetes-manifests/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/learning-auditing-kubernetes-manifests/</guid>
+            <media:content
+                    url="https://blog.frankel.ch/assets/resources/learning-auditing-kubernetes-manifests/20211006091437.jpg"
+                    width="4032" height="3024"/>
+            <category>Kubernetes</category>
+            <category>security</category>
+            <category>good practices</category>
+            <category>Development</category>
+        </item>
+        <item>
+            <title>Hard things in Computer Science</title>
+            <description>If you&amp;#8217;ve more than a couple of years of experience in IT, you probably have stumbled
+                upon the following quote: There are only two hard things in computer science: cache invalidation and
+                naming things. &amp;#8212; Phil Karlton Then, because it&amp;#8217;s such a great quote, it evolved:
+                There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.&amp;mdash;
+                Jeff Atwood (@codinghorror) August 31, 2014 However, I think that the initial quote is
+            </description>
+            <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/hard-things-computer-science/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/hard-things-computer-science/</guid>
+            <media:content
+                    url="https://blog.frankel.ch/assets/resources/hard-things-computer-science/fractal-g5ca5fa693.jpg"
+                    width="1280" height="960"/>
+            <category>hard things</category>
+            <category>computer science</category>
+            <category>Technical</category>
+        </item>
+        <item>
+            <title>Taking VSCodium for a spin</title>
+            <description>As part of my new job on Apache APISIX, I write less Java and Kotlin code. And when I do, the
+                code is really simple. My coding hours (unfortunately not days) involve: A lot of containerization,
+                including Dockerfile, docker-compose.yml, and soon Kubernetes manifestsSome Python for scripting jobs -
+                I abandoned Kotlin Scripting for thisA bit of Lua because I want to learn it as part of my jobA bit of
+                Rust because I want to learn it for funA bit of Kotlin because I still love it Because of this, I
+            </description>
+            <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/take-vscode-spin/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/take-vscode-spin/</guid>
+            <media:content url="https://blog.frankel.ch/assets/resources/take-vscode-spin/VSCodium_Logo.jpg"
+                           width="1024" height="1024"/>
+            <category>vscode</category>
+            <category>IDE</category>
+            <category>Development</category>
+        </item>
+        <item>
+            <title>What I miss in Java, the perspective of a Kotlin developer</title>
+            <description>Java has been my bread and butter for almost two decades. Several years ago, I started to learn
+                Kotlin; I never regretted it. Though Kotlin compiles to JVM bytecode, I sometimes have to write Java
+                again. Every time I do, I cannot stop pondering why my code doesn&amp;#8217;t look as nice as in Kotlin.
+                I miss some features that would improve my code&amp;#8217;s readability, expressiveness, and
+                maintainability. This post is not meant to bash Java but to list some features I&amp;#8217;d like to
+                find in Java.
+            </description>
+            <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/miss-in-java-kotlin-developer/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/miss-in-java-kotlin-developer/</guid>
+            <media:content
+                    url="https://blog.frankel.ch/assets/resources/miss-in-java-kotlin-developer/cat-g641127bfa.jpg"
+                    width="1288" height="988"/>
+            <category>java</category>
+            <category>kotlin</category>
+            <category>programming languages</category>
+            <category>JVM</category>
+            <category>Development</category>
+        </item>
+        <item>
+            <title>Running Jekyll on a Mac</title>
+            <description>At the beginning of the year, I had two new Macs in a row in one month. I changed my company
+                and had to return my previous laptop. Thus, I ordered a replacement one, but due to the current hardware
+                shortage, the shipping took weeks: I had to rent one in the meanwhile. It means I had to install my
+                Jekyll stack twice in a row. The first time took quite some time; the second one was much faster. In
+                this post, I&amp;#8217;d like to write it down once and for all to help other developers who want to d
+            </description>
+            <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/running-jekyll-mac/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/running-jekyll-mac/</guid>
+            <media:content
+                    url="https://blog.frankel.ch/assets/resources/running-jekyll-mac/chemical-scientist-test-chemistry-chemist-student.jpg"
+                    width="1280" height="837"/>
+            <category>jekyll</category>
+            <category>blog</category>
+            <category>mac os</category>
+            <category>install</category>
+            <category>Development</category>
+        </item>
+        <item>
+            <title>My summary of jPrime 2022</title>
+            <description>Writing summaries of conference talks is the best way to focus on the talk and listen actively.
+                Before conference speaking became part of my job, I did it. However, I don&amp;#8217;t attend that many
+                talks now, and I don&amp;#8217;t take notes when I do. jPrime is a conference in Bulgaria, and after two
+                cancellations due to Covid, they had their edition this week. Probably, for this reason, the atmosphere
+                is quite emulating: I attended a couple of talks; here are my notes. Replicating production on y
+            </description>
+            <pubDate>Sun, 29 May 2022 00:00:00 +0000</pubDate>
+            <link>https://blog.frankel.ch/jprime-2022/</link>
+            <guid isPermaLink="true">https://blog.frankel.ch/jprime-2022/</guid>
+            <media:content url="https://blog.frankel.ch/assets/resources/jprime-2022/jprime.jpg" width="3456"
+                           height="1820"/>
+            <category>bulgaria</category>
+            <category>Conference</category>
+        </item>
+    </channel>
+</rss>

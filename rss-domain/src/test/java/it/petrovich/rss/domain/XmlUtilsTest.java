@@ -1,6 +1,7 @@
 package it.petrovich.rss.domain;
 
 import it.petrovich.rss.xml.atom.FeedType;
+import it.petrovich.rss.xml.rss20111.TRss;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.Unmarshaller;
 import lombok.SneakyThrows;
@@ -143,6 +144,17 @@ class XmlUtilsTest {
         assertAll(
                 () -> assertNotNull(actual),
                 () -> assertEquals(readFile("/testExtractParagraphsAtom_expected.txt"), actual)
+        );
+    }
+
+    @Test
+    @SneakyThrows
+    void testAtom_ShouldNotThrowException() {
+        final var feed = unmarshaller.unmarshal(TestUtil.buildSource(TestUtil.readXml(TestUtil.ATOM_RESPONSE_NEW)),
+                TRss.class).getValue();
+
+        assertAll(
+                () -> assertNotNull(feed)
         );
     }
 

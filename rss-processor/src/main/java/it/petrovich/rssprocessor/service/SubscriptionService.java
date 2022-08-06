@@ -28,6 +28,7 @@ public record SubscriptionService(RssStorage storage, Map<RssType, FeedProcessor
         final var processed = storage.getAllRequests()
                 .stream()
                 .map(pair -> Rss.fromRequest(pair.right(), pair.left()))
+                .map(storage::put)
                 .toList();
         log.debug("Subscription requests processed {} entries is {}", processed.size(), processed);
     }
